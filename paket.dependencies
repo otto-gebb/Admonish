@@ -1,0 +1,23 @@
+framework: auto-detect
+
+source https://nuget.org/api/v2
+
+
+nuget Expecto.BenchmarkDotNet
+nuget Expecto.FsCheck
+nuget Expecto.VisualStudio.TestAdapter version_in_path: true
+
+group FakeBuild
+    source https://api.nuget.org/v3/index.json
+
+    nuget Fake.Api.GitHub
+    nuget Fake.Core.ReleaseNotes
+    nuget Fake.Core.Target
+    nuget Fake.Core.Xml
+    nuget Fake.DotNet.AssemblyInfoFile
+    nuget Fake.DotNet.Cli
+    nuget Fake.DotNet.Paket
+    nuget Fake.DotNet.Testing.Expecto
+    nuget Fake.IO.FileSystem
+    nuget Fake.Tools.Git
+
