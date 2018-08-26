@@ -32,7 +32,7 @@ let licenceUrl = sprintf "https://github.com/%s/%s/blob/master/LICENSE" gitOwner
 let copyright = "Copyright 2018"
 
 let srcProjects = !! "src/**/*.*proj"
-let testProjects = !! "tests/**/*Tests.*proj"
+let testProjects = !! "test/**/*Tests.*proj"
 
 // Read additional information from the release notes document
 let release = ReleaseNotes.load "RELEASE_NOTES.md"
