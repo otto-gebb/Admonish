@@ -92,7 +92,7 @@ namespace Admonish
         {
             if (!Success)
             {
-                _exceptionFactory(this);
+                throw _exceptionFactory(this);
             }
 
             return this;

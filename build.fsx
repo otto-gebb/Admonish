@@ -82,7 +82,7 @@ Target.create "RunTest" (fun _ ->
     let runTest project =
         let (projName, projDir) = getProjectInfo project
         let dll = projDir </> "bin" </> configuration </> "netcoreapp2.1" </> projName + ".dll"
-        DotNet.exec id dll "--summary"
+        DotNet.exec id dll ""
         |> fun r -> if r.ExitCode<>0 then projName+".dll failed" |> failwith
     testProjects
     |> Seq.iter runTest
