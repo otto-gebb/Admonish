@@ -10,9 +10,9 @@ build_script:
 test: off
 artifacts:
 - path: nugetpkg/*.nupkg
-  name: NuGet
+  name: packages
 deploy:
 - provider: NuGet
   api_key:
     secure: ZVtUInEH/ZxA6fWIsFZOE45PALWk84+U/kPqFIVBeREKiMADoEI4FZ/LuOStaLF4
-  artifact: nugetpkg\*.nupkg
+  artifact: packages
