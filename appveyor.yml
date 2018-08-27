@@ -7,7 +7,7 @@ skip_non_tags: true
 install:
 - ps: dotnet tool install fake-cli -g
 build_script:
-- ps: fake build -t PublishNuget
+- ps: fake build -t BuildPackage
 test: off
 artifacts:
 - path: nugetpkg/*.nupkg
