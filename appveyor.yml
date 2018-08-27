@@ -10,5 +10,5 @@ build_script:
 - ps: fake build -t PublishNuget
 test: off
 artifacts:
-- path: nugetpkg\*.nupkg
+- path: nugetpkg/*.nupkg
   name: NuGet

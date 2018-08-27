@@ -118,14 +118,24 @@ Target.create "BuildPackage" (fun _ ->
   |> Seq.iter pack
 )
 
+// For manual nuget publishing.
 Target.create "PublishNuget" (fun _ ->
-    Paket.push (fun p -> { p with WorkingDir = "nugetpkg" })
+  // To run this target create a file named "PublishNuget.cmd" with the following contents:
+  // SET nugetkey=<your_nuget_api_key>
+  // fake.cmd build -t PublishNuget
+  let key = Environment.environVar "nugetkey"
+  if String.IsNullOrEmpty key then failwith "nugetkey env veriable was not set"
+  let push package =
+    let name = Path.GetFileNameWithoutExtension package
+    DotNet.exec id "nuget" (sprintf "push %s -s https://www.nuget.org -k %s" package key)
+    |> fun r -> if r.ExitCode<>0 then name+" push failed" |> failwith
+  !! "nugetpkg/*.nupkg"
+  |> Seq.iter push
 )
 
 Target.create "Release" (fun _ ->
     // To run this target create a file named "release.cmd" with the following contents:
     // SET GITHUB_TOKEN=<your_github_token>
-    // SET nugetkey=<your_nuget_api_key>
     // fake.cmd build -t Release
 
     let gitName = product
@@ -155,7 +165,6 @@ Target.create "All" ignore
   ==> "RunTest"
   ==> "All"
   ==> "BuildPackage"
-//  AppVeyor will run this.
   ==> "PublishNuget"
 
 "BuildPackage"
