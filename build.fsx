@@ -125,7 +125,8 @@ Target.create "PublishNuget" (fun _ ->
 Target.create "Release" (fun _ ->
     // To run this target create a file named "release.cmd" with the following contents:
     // SET GITHUB_TOKEN=<your_github_token>
-    // fake.cmd Release
+    // SET nugetkey=<your_nuget_api_key>
+    // fake.cmd build -t Release
 
     let gitName = product
     let v = release.NugetVersion
