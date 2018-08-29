@@ -5,10 +5,6 @@ open Admonish
 
 [<Tests>]
 let tests =
-  /// A test of ValidationResult.
-  let vtest name (body: ValidationResult -> unit) = testCase name <| fun _ ->
-    let vr = Validator.Create()
-    body vr
   testList "NestedValidators" [
     vtest "WithKey prepends outer key to the error added within the scope" <| fun vr ->
       vr.WithKey("p1", fun x -> x.WithKey("p2", fun y -> y.AddError("p3", "dummy"))) |> ignore

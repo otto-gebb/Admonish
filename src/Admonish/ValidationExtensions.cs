@@ -4,7 +4,7 @@ using System.Collections.Generic;
 namespace Admonish
 {
     /// <summary>
-    /// Contains sonvenience methods for <see cref="ValidationResult" />.
+    /// Contains convenience methods for <see cref="ValidationResult" />.
     /// </summary>
     public static class ValidationExtensions
     {
@@ -47,28 +47,6 @@ namespace Admonish
             string message)
         {
             return r.Check(ValidationResult.NoKey, condition, message);
-        }
-
-        /// <summary>
-        /// Checks whether the specified string is not null or empty.
-        /// When it is, adds the specified error message to the
-        /// <see cref="ValidationResult" /> and associates it with the specified key.
-        /// </summary>
-        /// <param name="r">The validation result.</param>
-        /// <param name="key">The key to associate the error with.</param>
-        /// <param name="value">The string to check.</param>
-        /// <returns>The validation result.</returns>
-        public static ValidationResult NonNullOrEmpty(
-            this ValidationResult r,
-            string key,
-            string value)
-        {
-            if (string.IsNullOrEmpty(value))
-            {
-                r.AddError(key, "The value must not be null or empty.");
-            }
-
-            return r;
         }
 
         /// <summary>

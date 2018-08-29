@@ -8,6 +8,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="Utils.fs" />
+    <Compile Include="StringExtensionTests.fs" />
     <Compile Include="ExtensionTests.fs" />
     <Compile Include="NestedValidatorTests.fs" />
     <Compile Include="ValidationResultTests.fs" />

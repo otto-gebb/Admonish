@@ -5,10 +5,6 @@ open Admonish
 
 [<Tests>]
 let tests =
-  /// A test of ValidationResult.
-  let vtest name (body: ValidationResult -> unit) = testCase name <| fun _ ->
-    let vr = Validator.Create()
-    body vr
   testList "ValidationResult" [
     vtest "Created is empty" <| fun vr ->
       Expect.isEmpty (vr.ToDictionary()) "New result contained errors"
