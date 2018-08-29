@@ -1,3 +1,7 @@
+### 0.1.9 – 2018-08-29
+
+- Add some numeric validation helpers.
+
 ### 0.1.8 – 2018-08-29
 
 - Add some helpers to validate string values.
