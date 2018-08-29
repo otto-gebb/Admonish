@@ -8,21 +8,19 @@ using WebApplication.Dtos;
 
 namespace WebApplication
 {
+    // NB. Fix documentation (intro.md) if you change this class.
     public class AppService
     {
         private static Dictionary<string, Entity> _db =
             new Dictionary<string, Entity>();
 
-        public void AddEntity(int age, string name)
-        {
-            
-        }
-
         internal void AddEntity(CreateEntityDto dto)
         {
             Validator
                 .Create()
-                .Check(!_db.ContainsKey(dto.Name ?? ""), "An entity with this name already exists.")
+                .Check(
+                    !_db.ContainsKey(dto.Name ?? ""),
+                    "An entity with this name already exists.")
                 .ThrowIfInvalid();
 
             var e = new Entity(dto.Age, dto.Name);

@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Routing;
 
 namespace WebApiUtils
 {
+    // NB. Fix documentation (intro.md) if you change this class.
     public class ErrorHandlerMiddleware
     {
         private readonly RequestDelegate _next;

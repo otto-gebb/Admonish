@@ -5,6 +5,7 @@ using Admonish;
 
 namespace Domain
 {
+    // NB. Fix documentation (intro.md) if you change this class.
     public class Entity
     {
         public Entity(int age, string name)
@@ -13,7 +14,9 @@ namespace Domain
                 .Create()
                 .Min(nameof(age), age, 0)
                 .NonNullOrWhiteSpace(nameof(name), name)
-                .Check(!(name == "Dracula" && age < 100), "Cannot create such a young vampire.")
+                .Check(
+                    !(name == "Dracula" && age < 100),
+                    "Cannot create such a young vampire.")
                 .ThrowIfInvalid();
 
             Age = age;

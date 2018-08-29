@@ -13,6 +13,7 @@ using WebApiUtils;
 
 namespace WebApplication
 {
+    // NB. Fix documentation (intro.md) if you change this class.
     public class Startup
     {
         public Startup(IConfiguration configuration)
