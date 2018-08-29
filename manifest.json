@@ -5,11 +5,35 @@
   "files": [
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Admonish.NumericValidationExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Admonish.NumericValidationExtensions.html",
+          "hash": "7yk336LlU9fm38F02yMtyg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Admonish.ObjectValidationExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Admonish.ObjectValidationExtensions.html",
+          "hash": "I3IK4YMpr/0+HIdgrWEJeA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Admonish.StringValidationExtensions.yml",
       "output": {
         ".html": {
           "relative_path": "api/Admonish.StringValidationExtensions.html",
-          "hash": "cVPi7VaJRUTckh/n9pRwDg=="
+          "hash": "clkR2piATHWT0FL6FNyDIA=="
         }
       },
       "is_incremental": false,
@@ -33,7 +57,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Admonish.ValidationExtensions.html",
-          "hash": "8aSmWmPfYwxTRx6trgz3tA=="
+          "hash": "MuV4e1wNmurwW7yhU2mJ3Q=="
         }
       },
       "is_incremental": false,
@@ -45,7 +69,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Admonish.ValidationResult.html",
-          "hash": "+Szp/Acam5cV4YBP9d1u0g=="
+          "hash": "zBx26sM9HWPzMd3ioxlRVw=="
         }
       },
       "is_incremental": false,
@@ -69,7 +93,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Admonish.html",
-          "hash": "YRtt9T4RrydH5QgnAYNa0A=="
+          "hash": "0oM4jSHDSzzIxW/g0IHAHg=="
         }
       },
       "is_incremental": false,
@@ -84,7 +108,7 @@
           "hash": "zUS/Uz4XozwLtuY8UJztkg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -93,7 +117,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "XepSIajiCJdJJd/1KcC8Dg=="
+          "hash": "L6C727wj6yiVHiuFuDuX4w=="
         }
       },
       "is_incremental": false,

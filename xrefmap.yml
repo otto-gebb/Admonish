@@ -7,6 +7,100 @@ references:
   commentId: N:Admonish
   fullName: Admonish
   nameWithType: Admonish
+- uid: Admonish.NumericValidationExtensions
+  name: NumericValidationExtensions
+  href: api/Admonish.NumericValidationExtensions.html
+  commentId: T:Admonish.NumericValidationExtensions
+  fullName: Admonish.NumericValidationExtensions
+  nameWithType: NumericValidationExtensions
+- uid: Admonish.NumericValidationExtensions.Between(Admonish.ValidationResult,System.String,System.Decimal,System.Decimal,System.Decimal)
+  name: Between(ValidationResult, String, Decimal, Decimal, Decimal)
+  href: api/Admonish.NumericValidationExtensions.html#Admonish_NumericValidationExtensions_Between_Admonish_ValidationResult_System_String_System_Decimal_System_Decimal_System_Decimal_
+  commentId: M:Admonish.NumericValidationExtensions.Between(Admonish.ValidationResult,System.String,System.Decimal,System.Decimal,System.Decimal)
+  fullName: Admonish.NumericValidationExtensions.Between(Admonish.ValidationResult, System.String, System.Decimal, System.Decimal, System.Decimal)
+  nameWithType: NumericValidationExtensions.Between(ValidationResult, String, Decimal, Decimal, Decimal)
+- uid: Admonish.NumericValidationExtensions.Between(Admonish.ValidationResult,System.String,System.Int32,System.Int32,System.Int32)
+  name: Between(ValidationResult, String, Int32, Int32, Int32)
+  href: api/Admonish.NumericValidationExtensions.html#Admonish_NumericValidationExtensions_Between_Admonish_ValidationResult_System_String_System_Int32_System_Int32_System_Int32_
+  commentId: M:Admonish.NumericValidationExtensions.Between(Admonish.ValidationResult,System.String,System.Int32,System.Int32,System.Int32)
+  fullName: Admonish.NumericValidationExtensions.Between(Admonish.ValidationResult, System.String, System.Int32, System.Int32, System.Int32)
+  nameWithType: NumericValidationExtensions.Between(ValidationResult, String, Int32, Int32, Int32)
+- uid: Admonish.NumericValidationExtensions.Between*
+  name: Between
+  href: api/Admonish.NumericValidationExtensions.html#Admonish_NumericValidationExtensions_Between_
+  commentId: Overload:Admonish.NumericValidationExtensions.Between
+  isSpec: "True"
+  fullName: Admonish.NumericValidationExtensions.Between
+  nameWithType: NumericValidationExtensions.Between
+- uid: Admonish.NumericValidationExtensions.Max(Admonish.ValidationResult,System.String,System.Decimal,System.Decimal)
+  name: Max(ValidationResult, String, Decimal, Decimal)
+  href: api/Admonish.NumericValidationExtensions.html#Admonish_NumericValidationExtensions_Max_Admonish_ValidationResult_System_String_System_Decimal_System_Decimal_
+  commentId: M:Admonish.NumericValidationExtensions.Max(Admonish.ValidationResult,System.String,System.Decimal,System.Decimal)
+  fullName: Admonish.NumericValidationExtensions.Max(Admonish.ValidationResult, System.String, System.Decimal, System.Decimal)
+  nameWithType: NumericValidationExtensions.Max(ValidationResult, String, Decimal, Decimal)
+- uid: Admonish.NumericValidationExtensions.Max(Admonish.ValidationResult,System.String,System.Int32,System.Int32)
+  name: Max(ValidationResult, String, Int32, Int32)
+  href: api/Admonish.NumericValidationExtensions.html#Admonish_NumericValidationExtensions_Max_Admonish_ValidationResult_System_String_System_Int32_System_Int32_
+  commentId: M:Admonish.NumericValidationExtensions.Max(Admonish.ValidationResult,System.String,System.Int32,System.Int32)
+  fullName: Admonish.NumericValidationExtensions.Max(Admonish.ValidationResult, System.String, System.Int32, System.Int32)
+  nameWithType: NumericValidationExtensions.Max(ValidationResult, String, Int32, Int32)
+- uid: Admonish.NumericValidationExtensions.Max*
+  name: Max
+  href: api/Admonish.NumericValidationExtensions.html#Admonish_NumericValidationExtensions_Max_
+  commentId: Overload:Admonish.NumericValidationExtensions.Max
+  isSpec: "True"
+  fullName: Admonish.NumericValidationExtensions.Max
+  nameWithType: NumericValidationExtensions.Max
+- uid: Admonish.NumericValidationExtensions.Min(Admonish.ValidationResult,System.String,System.Decimal,System.Decimal)
+  name: Min(ValidationResult, String, Decimal, Decimal)
+  href: api/Admonish.NumericValidationExtensions.html#Admonish_NumericValidationExtensions_Min_Admonish_ValidationResult_System_String_System_Decimal_System_Decimal_
+  commentId: M:Admonish.NumericValidationExtensions.Min(Admonish.ValidationResult,System.String,System.Decimal,System.Decimal)
+  fullName: Admonish.NumericValidationExtensions.Min(Admonish.ValidationResult, System.String, System.Decimal, System.Decimal)
+  nameWithType: NumericValidationExtensions.Min(ValidationResult, String, Decimal, Decimal)
+- uid: Admonish.NumericValidationExtensions.Min(Admonish.ValidationResult,System.String,System.Int32,System.Int32)
+  name: Min(ValidationResult, String, Int32, Int32)
+  href: api/Admonish.NumericValidationExtensions.html#Admonish_NumericValidationExtensions_Min_Admonish_ValidationResult_System_String_System_Int32_System_Int32_
+  commentId: M:Admonish.NumericValidationExtensions.Min(Admonish.ValidationResult,System.String,System.Int32,System.Int32)
+  fullName: Admonish.NumericValidationExtensions.Min(Admonish.ValidationResult, System.String, System.Int32, System.Int32)
+  nameWithType: NumericValidationExtensions.Min(ValidationResult, String, Int32, Int32)
+- uid: Admonish.NumericValidationExtensions.Min*
+  name: Min
+  href: api/Admonish.NumericValidationExtensions.html#Admonish_NumericValidationExtensions_Min_
+  commentId: Overload:Admonish.NumericValidationExtensions.Min
+  isSpec: "True"
+  fullName: Admonish.NumericValidationExtensions.Min
+  nameWithType: NumericValidationExtensions.Min
+- uid: Admonish.ObjectValidationExtensions
+  name: ObjectValidationExtensions
+  href: api/Admonish.ObjectValidationExtensions.html
+  commentId: T:Admonish.ObjectValidationExtensions
+  fullName: Admonish.ObjectValidationExtensions
+  nameWithType: ObjectValidationExtensions
+- uid: Admonish.ObjectValidationExtensions.NonNull*
+  name: NonNull
+  href: api/Admonish.ObjectValidationExtensions.html#Admonish_ObjectValidationExtensions_NonNull_
+  commentId: Overload:Admonish.ObjectValidationExtensions.NonNull
+  isSpec: "True"
+  fullName: Admonish.ObjectValidationExtensions.NonNull
+  nameWithType: ObjectValidationExtensions.NonNull
+- uid: Admonish.ObjectValidationExtensions.NonNull``1(Admonish.ValidationResult,System.String,``0)
+  name: NonNull<T>(ValidationResult, String, T)
+  href: api/Admonish.ObjectValidationExtensions.html#Admonish_ObjectValidationExtensions_NonNull__1_Admonish_ValidationResult_System_String___0_
+  commentId: M:Admonish.ObjectValidationExtensions.NonNull``1(Admonish.ValidationResult,System.String,``0)
+  name.vb: NonNull(Of T)(ValidationResult, String, T)
+  fullName: Admonish.ObjectValidationExtensions.NonNull<T>(Admonish.ValidationResult, System.String, T)
+  fullName.vb: Admonish.ObjectValidationExtensions.NonNull(Of T)(Admonish.ValidationResult, System.String, T)
+  nameWithType: ObjectValidationExtensions.NonNull<T>(ValidationResult, String, T)
+  nameWithType.vb: ObjectValidationExtensions.NonNull(Of T)(ValidationResult, String, T)
+- uid: Admonish.ObjectValidationExtensions.NonNull``1(Admonish.ValidationResult,System.String,System.Nullable{``0})
+  name: NonNull<T>(ValidationResult, String, Nullable<T>)
+  href: api/Admonish.ObjectValidationExtensions.html#Admonish_ObjectValidationExtensions_NonNull__1_Admonish_ValidationResult_System_String_System_Nullable___0__
+  commentId: M:Admonish.ObjectValidationExtensions.NonNull``1(Admonish.ValidationResult,System.String,System.Nullable{``0})
+  name.vb: NonNull(Of T)(ValidationResult, String, Nullable(Of T))
+  fullName: Admonish.ObjectValidationExtensions.NonNull<T>(Admonish.ValidationResult, System.String, System.Nullable<T>)
+  fullName.vb: Admonish.ObjectValidationExtensions.NonNull(Of T)(Admonish.ValidationResult, System.String, System.Nullable(Of T))
+  nameWithType: ObjectValidationExtensions.NonNull<T>(ValidationResult, String, Nullable<T>)
+  nameWithType.vb: ObjectValidationExtensions.NonNull(Of T)(ValidationResult, String, Nullable(Of T))
 - uid: Admonish.StringValidationExtensions
   name: StringValidationExtensions
   href: api/Admonish.StringValidationExtensions.html
