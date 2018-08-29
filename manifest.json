@@ -5,14 +5,26 @@
   "files": [
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Admonish.StringValidationExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Admonish.StringValidationExtensions.html",
+          "hash": "cVPi7VaJRUTckh/n9pRwDg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Admonish.ValidationException.yml",
       "output": {
         ".html": {
           "relative_path": "api/Admonish.ValidationException.html",
-          "hash": "7dSaqpi+yFChWOzWGXqDXg=="
+          "hash": "mn1UAxoM+TNX/wpph5ZLGw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -21,10 +33,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Admonish.ValidationExtensions.html",
-          "hash": "EaL3w2MvIms/IOHQtAXbDw=="
+          "hash": "8aSmWmPfYwxTRx6trgz3tA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -33,10 +45,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Admonish.ValidationResult.html",
-          "hash": "wZlc/acfkvXd8EJ2z+4IlQ=="
+          "hash": "+Szp/Acam5cV4YBP9d1u0g=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -45,10 +57,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Admonish.Validator.html",
-          "hash": "E7/u7UghEGKf9ZxdfArrjA=="
+          "hash": "K+n270RlDXcGoqKoYZszRg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -57,10 +69,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Admonish.html",
-          "hash": "JZbHe3vIIB0isnkY13NzKg=="
+          "hash": "YRtt9T4RrydH5QgnAYNa0A=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -72,7 +84,7 @@
           "hash": "zUS/Uz4XozwLtuY8UJztkg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -81,7 +93,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "tVyXMLuZ4nutKz4jjkgQXg=="
+          "hash": "XepSIajiCJdJJd/1KcC8Dg=="
         }
       },
       "is_incremental": false,
@@ -128,10 +140,10 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "eYYkKnN3iEP5S04kWorfDA=="
+          "hash": "R65J/WGjcmCMH7RrfIhIDw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -154,6 +166,11 @@
         "incrementalPhase": "build"
       },
       "processors": {
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build"
@@ -165,11 +182,6 @@
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }

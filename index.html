@@ -67,19 +67,32 @@
 <h2 id="motivation">Motivation</h2>
 <p>Sometimes validation logic is duplicated</p>
 <ul>
-<li>in application services, where a special kind of exception is   thrown that is converted to a 400 HTTP response,</li>
-<li>and in domain entities, where preconditions are checked according to the usual OOP practice to keep the class state consistent.
+<li>in application services, where a special kind of exception is
+thrown that is converted to a 400 HTTP response,</li>
+<li>and in domain entities, where preconditions are checked according to the usual OOP practice to
+keep the class state consistent.
 An ArgumentException or a sublcass of it is usually thrown in this case.</li>
 </ul>
-<p>The idea behind this library is to throw that &quot;special kind of exception&quot; from entities without referring to it explicitly, allowing one to remove duplication and keep entity-related validation only in entities.</p>
+<p>The idea behind this library is to throw that &quot;special kind of exception&quot; from entities without
+referring to it explicitly, allowing one to remove duplication and keep entity-related validation
+only in entities.</p>
 <h2 id="highlights">Highlights</h2>
 <h3 id="focus-on-primitive-values">Focus on primitive values</h3>
-<p>Because in domain entities one doesn't usually have access to DTOs Admonish is focused on validating privitive values, not DTOs, unlike most other libraries.</p>
+<p>Because in domain entities one doesn't usually have access to DTOs Admonish is focused on
+validating privitive values, not DTOs, unlike most other libraries.</p>
 <p>Although some methods are provided to validate complex objects, such usage is discouraged.</p>
+<h3 id="error-accumulation">Error accumulation</h3>
+<p>Admonish accumulates errors until <a class="xref" href="api/Admonish.ValidationResult.html#Admonish_ValidationResult_ThrowIfInvalid">ThrowIfInvalid()</a> is called. This
+is in contrast to the approach taken in some other libraries that throw an exception
+immediately on the first error encounterd.</p>
 <h3 id="extensibility">Extensibility</h3>
-<p>Users can write their own extension methods to the <code>ValidationResult</code> class to create custom named validation rules, e.g. <code>CheckCreditCard</code>.</p>
+<p>Users can write their own extension methods to the <code>ValidationResult</code> class to create custom named
+validation rules, e.g. <code>CheckCreditCard</code>.</p>
 <h3 id="customization">Customization</h3>
-<p>Users can substitute the type of exception thrown on validation errors (see the <a class="xref" href="api/Admonish.Validator.html#Admonish_Validator_UnsafeConfigureException_System_Func_Admonish_ValidationResult_System_Exception__">UnsafeConfigureException</a> method) making domain validation code throw a custom exception (defined e.g. in a web infrastructure library) without &quot;knowing&quot; about it.</p>
+<p>Users can substitute the type of exception thrown on validation errors (see the
+<a class="xref" href="api/Admonish.Validator.html#Admonish_Validator_UnsafeConfigureException_System_Func_Admonish_ValidationResult_System_Exception__">UnsafeConfigureException</a>
+method) making domain validation code throw a custom exception (defined e.g. in a web
+infrastructure library) without &quot;knowing&quot; about it.</p>
 <h3 id="simplicity">Simplicity</h3>
 <p>The code and the API of the library are kept as simple as possible.</p>
 </article>

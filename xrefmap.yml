@@ -7,6 +7,64 @@ references:
   commentId: N:Admonish
   fullName: Admonish
   nameWithType: Admonish
+- uid: Admonish.StringValidationExtensions
+  name: StringValidationExtensions
+  href: api/Admonish.StringValidationExtensions.html
+  commentId: T:Admonish.StringValidationExtensions
+  fullName: Admonish.StringValidationExtensions
+  nameWithType: StringValidationExtensions
+- uid: Admonish.StringValidationExtensions.LengthBetween(Admonish.ValidationResult,System.String,System.String,System.Int32,System.Int32)
+  name: LengthBetween(ValidationResult, String, String, Int32, Int32)
+  href: api/Admonish.StringValidationExtensions.html#Admonish_StringValidationExtensions_LengthBetween_Admonish_ValidationResult_System_String_System_String_System_Int32_System_Int32_
+  commentId: M:Admonish.StringValidationExtensions.LengthBetween(Admonish.ValidationResult,System.String,System.String,System.Int32,System.Int32)
+  fullName: Admonish.StringValidationExtensions.LengthBetween(Admonish.ValidationResult, System.String, System.String, System.Int32, System.Int32)
+  nameWithType: StringValidationExtensions.LengthBetween(ValidationResult, String, String, Int32, Int32)
+- uid: Admonish.StringValidationExtensions.LengthBetween*
+  name: LengthBetween
+  href: api/Admonish.StringValidationExtensions.html#Admonish_StringValidationExtensions_LengthBetween_
+  commentId: Overload:Admonish.StringValidationExtensions.LengthBetween
+  isSpec: "True"
+  fullName: Admonish.StringValidationExtensions.LengthBetween
+  nameWithType: StringValidationExtensions.LengthBetween
+- uid: Admonish.StringValidationExtensions.Matches(Admonish.ValidationResult,System.String,System.String,System.Text.RegularExpressions.Regex,System.String)
+  name: Matches(ValidationResult, String, String, Regex, String)
+  href: api/Admonish.StringValidationExtensions.html#Admonish_StringValidationExtensions_Matches_Admonish_ValidationResult_System_String_System_String_System_Text_RegularExpressions_Regex_System_String_
+  commentId: M:Admonish.StringValidationExtensions.Matches(Admonish.ValidationResult,System.String,System.String,System.Text.RegularExpressions.Regex,System.String)
+  fullName: Admonish.StringValidationExtensions.Matches(Admonish.ValidationResult, System.String, System.String, System.Text.RegularExpressions.Regex, System.String)
+  nameWithType: StringValidationExtensions.Matches(ValidationResult, String, String, Regex, String)
+- uid: Admonish.StringValidationExtensions.Matches*
+  name: Matches
+  href: api/Admonish.StringValidationExtensions.html#Admonish_StringValidationExtensions_Matches_
+  commentId: Overload:Admonish.StringValidationExtensions.Matches
+  isSpec: "True"
+  fullName: Admonish.StringValidationExtensions.Matches
+  nameWithType: StringValidationExtensions.Matches
+- uid: Admonish.StringValidationExtensions.NonNullOrEmpty(Admonish.ValidationResult,System.String,System.String)
+  name: NonNullOrEmpty(ValidationResult, String, String)
+  href: api/Admonish.StringValidationExtensions.html#Admonish_StringValidationExtensions_NonNullOrEmpty_Admonish_ValidationResult_System_String_System_String_
+  commentId: M:Admonish.StringValidationExtensions.NonNullOrEmpty(Admonish.ValidationResult,System.String,System.String)
+  fullName: Admonish.StringValidationExtensions.NonNullOrEmpty(Admonish.ValidationResult, System.String, System.String)
+  nameWithType: StringValidationExtensions.NonNullOrEmpty(ValidationResult, String, String)
+- uid: Admonish.StringValidationExtensions.NonNullOrEmpty*
+  name: NonNullOrEmpty
+  href: api/Admonish.StringValidationExtensions.html#Admonish_StringValidationExtensions_NonNullOrEmpty_
+  commentId: Overload:Admonish.StringValidationExtensions.NonNullOrEmpty
+  isSpec: "True"
+  fullName: Admonish.StringValidationExtensions.NonNullOrEmpty
+  nameWithType: StringValidationExtensions.NonNullOrEmpty
+- uid: Admonish.StringValidationExtensions.NonNullOrWhiteSpace(Admonish.ValidationResult,System.String,System.String)
+  name: NonNullOrWhiteSpace(ValidationResult, String, String)
+  href: api/Admonish.StringValidationExtensions.html#Admonish_StringValidationExtensions_NonNullOrWhiteSpace_Admonish_ValidationResult_System_String_System_String_
+  commentId: M:Admonish.StringValidationExtensions.NonNullOrWhiteSpace(Admonish.ValidationResult,System.String,System.String)
+  fullName: Admonish.StringValidationExtensions.NonNullOrWhiteSpace(Admonish.ValidationResult, System.String, System.String)
+  nameWithType: StringValidationExtensions.NonNullOrWhiteSpace(ValidationResult, String, String)
+- uid: Admonish.StringValidationExtensions.NonNullOrWhiteSpace*
+  name: NonNullOrWhiteSpace
+  href: api/Admonish.StringValidationExtensions.html#Admonish_StringValidationExtensions_NonNullOrWhiteSpace_
+  commentId: Overload:Admonish.StringValidationExtensions.NonNullOrWhiteSpace
+  isSpec: "True"
+  fullName: Admonish.StringValidationExtensions.NonNullOrWhiteSpace
+  nameWithType: StringValidationExtensions.NonNullOrWhiteSpace
 - uid: Admonish.ValidationException
   name: ValidationException
   href: api/Admonish.ValidationException.html
@@ -92,19 +150,6 @@ references:
   fullName.vb: Admonish.ValidationExtensions.Collection(Of T)(Admonish.ValidationResult, System.String, System.Collections.Generic.IEnumerable(Of T), System.Func(Of Admonish.ValidationResult, T, Admonish.ValidationResult))
   nameWithType: ValidationExtensions.Collection<T>(ValidationResult, String, IEnumerable<T>, Func<ValidationResult, T, ValidationResult>)
   nameWithType.vb: ValidationExtensions.Collection(Of T)(ValidationResult, String, IEnumerable(Of T), Func(Of ValidationResult, T, ValidationResult))
-- uid: Admonish.ValidationExtensions.NonNullOrEmpty(Admonish.ValidationResult,System.String,System.String)
-  name: NonNullOrEmpty(ValidationResult, String, String)
-  href: api/Admonish.ValidationExtensions.html#Admonish_ValidationExtensions_NonNullOrEmpty_Admonish_ValidationResult_System_String_System_String_
-  commentId: M:Admonish.ValidationExtensions.NonNullOrEmpty(Admonish.ValidationResult,System.String,System.String)
-  fullName: Admonish.ValidationExtensions.NonNullOrEmpty(Admonish.ValidationResult, System.String, System.String)
-  nameWithType: ValidationExtensions.NonNullOrEmpty(ValidationResult, String, String)
-- uid: Admonish.ValidationExtensions.NonNullOrEmpty*
-  name: NonNullOrEmpty
-  href: api/Admonish.ValidationExtensions.html#Admonish_ValidationExtensions_NonNullOrEmpty_
-  commentId: Overload:Admonish.ValidationExtensions.NonNullOrEmpty
-  isSpec: "True"
-  fullName: Admonish.ValidationExtensions.NonNullOrEmpty
-  nameWithType: ValidationExtensions.NonNullOrEmpty
 - uid: Admonish.ValidationExtensions.WithKey(Admonish.ValidationResult,System.String,System.Func{Admonish.ValidationResult,Admonish.ValidationResult})
   name: WithKey(ValidationResult, String, Func<ValidationResult, ValidationResult>)
   href: api/Admonish.ValidationExtensions.html#Admonish_ValidationExtensions_WithKey_Admonish_ValidationResult_System_String_System_Func_Admonish_ValidationResult_Admonish_ValidationResult__
