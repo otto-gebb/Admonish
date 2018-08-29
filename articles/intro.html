@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Add your introductions here! | Admonish validation library </title>
+    <title>Introduction | Admonish validation library </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Add your introductions here! | Admonish validation library ">
+    <meta name="title" content="Introduction | Admonish validation library ">
     <meta name="generator" content="docfx 2.38.1.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -67,9 +67,139 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="add-your-introductions-here">Add your introductions here!</h1>
+<h1 id="introduction">Introduction</h1>
 
-</article>
+<p>How to validate parameters of entity methods:</p>
+<pre><code class="lang-csharp" name="Startup" highlight-lines="13-20">using System;
+using System.Collections.Generic;
+using System.Text;
+using Admonish;
+
+namespace Domain
+{
+    // NB. Fix documentation (intro.md) if you change this class.
+    public class Entity
+    {
+        public Entity(int age, string name)
+        {
+            Validator
+                .Create()
+                .Min(nameof(age), age, 0)
+                .NonNullOrWhiteSpace(nameof(name), name)
+                .Check(
+                    !(name == &quot;Dracula&quot; &amp;&amp; age &lt; 100),
+                    &quot;Cannot create such a young vampire.&quot;)
+                .ThrowIfInvalid();
+
+            Age = age;
+            Name = name;
+        }
+
+        public string Name { get; }
+        public int Age { get; }
+    }
+}
+</code></pre>
+<p>If you need additional validation in an app service, for example, you need to check if such an
+entity already exists in the database, you do it like this:</p>
+<pre><code class="lang-csharp" name="Startup" highlight-lines="19-24">public class AppService
+{
+    private static Dictionary&lt;string, Entity&gt; _db =
+        new Dictionary&lt;string, Entity&gt;();
+
+    internal void AddEntity(CreateEntityDto dto)
+    {
+        Validator
+            .Create()
+            .Check(
+                !_db.ContainsKey(dto.Name ?? &quot;&quot;),
+                &quot;An entity with this name already exists.&quot;)
+            .ThrowIfInvalid();
+
+        var e = new Entity(dto.Age, dto.Name);
+        _db.Add(e.Name, e);
+    }
+}
+</code></pre>
+<p>Imagine you have a custom validatin exception (defined e.g. in your <code>WebApiUtils</code> library)
+which you handle with a special middleware</p>
+<pre><code class="lang-csharp" name="Startup">public class ErrorHandlerMiddleware
+{
+    private readonly RequestDelegate _next;
+    private static readonly RouteData EmptyRouteData = new RouteData();
+    private static readonly ActionDescriptor EmptyActionDescriptor = new ActionDescriptor();
+
+    public ErrorHandlerMiddleware(RequestDelegate next)
+    {
+        _next = next;
+    }
+
+    public async Task InvokeAsync(HttpContext context)
+    {
+        try
+        {
+            await _next(context);
+        }
+        catch (CustomValidationException ve)
+        {
+            await WriteError(context, ve.Errors);
+        }
+    }
+
+    private Task WriteError(HttpContext context, object error)
+    {
+        RouteData routeData = context.GetRouteData() ?? EmptyRouteData;
+        var actionContext = new ActionContext(context, routeData, EmptyActionDescriptor);
+        var result = new ObjectResult(error)
+        {
+            StatusCode = (int)HttpStatusCode.BadRequest
+        };
+        return result.ExecuteResultAsync(actionContext);
+    }
+}
+</code></pre>
+<p>You can configure Admonish to throw the needed excepton type, so that validation errors from
+domain and application modules are still handled by your middleware
+without making any changes in it:</p>
+<pre><code class="lang-csharp" name="Startup">public class Startup
+{
+    public Startup(IConfiguration configuration)
+    {
+        Configuration = configuration;
+    }
+
+    public IConfiguration Configuration { get; }
+
+    public void ConfigureServices(IServiceCollection services)
+    {
+        services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+        services.AddTransient&lt;AppService&gt;();
+
+        // Throw a custom exception on validation
+        // errors that is handled by ErrorHandlerMiddleware.
+        Admonish.Validator.UnsafeConfigureException(
+            r =&gt; new CustomValidationException(r.ToDictionary()));
+    }
+
+    public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+    {
+        if (env.IsDevelopment())
+        {
+            app.UseDeveloperExceptionPage();
+        }
+        else
+        {
+            app.UseHsts();
+        }
+
+        // Convert the custom validation exception to a 400 response.
+        app.UseMiddleware&lt;ErrorHandlerMiddleware&gt;();
+
+        app.UseHttpsRedirection();
+        app.UseMvc();
+    }
+}
+</code></pre></article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
