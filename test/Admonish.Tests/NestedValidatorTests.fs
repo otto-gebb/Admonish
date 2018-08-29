@@ -9,8 +9,7 @@ let tests =
     vtest "WithKey prepends outer key to the error added within the scope" <| fun vr ->
       vr.WithKey("p1", fun x -> x.WithKey("p2", fun y -> y.AddError("p3", "dummy"))) |> ignore
 
-      let key = vr.ToDictionary().Keys |> Seq.head
-      Expect.equal key "p1.p2.p3" "Unexpected key"
+      expectKeys vr ["p1.p2.p3"]
 
     vtest "Nested errors added without a key are added to the outer key" <| fun vr ->
       vr.WithKey("p1", fun x -> x.AddError("m1").AddError("m2")) |> ignore

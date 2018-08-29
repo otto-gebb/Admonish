@@ -12,14 +12,13 @@ let nonNullOrEmpty =
         .NonNullOrEmpty("null", null)
         .NonNullOrEmpty("empty", "") |> ignore
 
-      let actualKeys = vr.ToDictionary().Keys
-      Expect.containsAll actualKeys ["null"; "empty"] "Unexpected keys"
+      expectKeys vr ["null"; "empty"]
 
     vtest "Should not add an error for a correct string" <| fun vr ->
       vr
         .NonNullOrEmpty("key", "valid") |> ignore
 
-      Expect.isTrue vr.Success "Failed result was unexpected"
+      expectSuccess vr
   ]
 
 [<Tests>]
@@ -31,14 +30,12 @@ let nonNullOrWhiteSpace =
         .NonNullOrWhiteSpace("null", null)
         .NonNullOrWhiteSpace("empty", "") |> ignore
 
-      let actualKeys = vr.ToDictionary().Keys
-      Expect.containsAll actualKeys ["whitespace"; "null"; "empty"] "Unexpected keys"
+      expectKeys vr ["whitespace"; "null"; "empty"]
 
     vtest "Should not add an error for a correct string" <| fun vr ->
-      vr
-        .NonNullOrEmpty("key", "valid") |> ignore
+      vr.NonNullOrEmpty("key", "valid") |> ignore
 
-      Expect.isTrue vr.Success "Failed result was unexpected"
+      expectSuccess vr
   ]
 
 [<Tests>]
@@ -46,11 +43,11 @@ let matches =
   let reg = Regex("a.")
   testList "String.Matches" [
     vtest "Should add an error for an incorrect string" <| fun vr ->
-      vr.Matches("null", null, reg)
+      vr
+        .Matches("null", null, reg)
         .Matches("nonmatcn", "bb", reg) |> ignore
 
-      let actualKeys = vr.ToDictionary().Keys
-      Expect.containsAll actualKeys ["null"; "nonmatcn"] "Unexpected keys"
+      expectKeys vr ["null"; "nonmatcn"]
 
     vtest "Should add the specified error message" <| fun vr ->
       vr.Matches("nonmatcn", "bb", reg, "fail") |> ignore
@@ -62,22 +59,22 @@ let matches =
     vtest "Should not add an error for a correct string" <| fun vr ->
       vr.Matches("nonmatcn", "aa", reg) |> ignore
 
-      Expect.isTrue vr.Success "Failed result was unexpected"
+      expectSuccess vr
   ]
 
 [<Tests>]
 let lengthBetween =
   testList "String.LengthBetween" [
     vtest "Should add an error for an incorrect string" <| fun vr ->
-      vr.LengthBetween("null", null, 3, 4)
+      vr
+        .LengthBetween("null", null, 3, 4)
         .LengthBetween("short", "12", 3, 4)
         .LengthBetween("long", "12345", 3, 4) |> ignore
 
-      let actualKeys = vr.ToDictionary().Keys
-      Expect.containsAll actualKeys ["null"; "short"; "long"] "Unexpected keys"
+      expectKeys vr ["null"; "short"; "long"]
 
     vtest "Should not add an error for a correct string" <| fun vr ->
       vr.LengthBetween("length", "123", 3, 4) |> ignore
 
-      Expect.isTrue vr.Success "Failed result was unexpected"
+      expectSuccess vr
   ]
