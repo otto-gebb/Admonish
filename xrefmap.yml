@@ -1,0 +1,241 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: Admonish
+  name: Admonish
+  href: api/Admonish.html
+  commentId: N:Admonish
+  fullName: Admonish
+  nameWithType: Admonish
+- uid: Admonish.ValidationException
+  name: ValidationException
+  href: api/Admonish.ValidationException.html
+  commentId: T:Admonish.ValidationException
+  fullName: Admonish.ValidationException
+  nameWithType: ValidationException
+- uid: Admonish.ValidationException.#ctor(Admonish.ValidationResult)
+  name: ValidationException(ValidationResult)
+  href: api/Admonish.ValidationException.html#Admonish_ValidationException__ctor_Admonish_ValidationResult_
+  commentId: M:Admonish.ValidationException.#ctor(Admonish.ValidationResult)
+  fullName: Admonish.ValidationException.ValidationException(Admonish.ValidationResult)
+  nameWithType: ValidationException.ValidationException(ValidationResult)
+- uid: Admonish.ValidationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  name: ValidationException(SerializationInfo, StreamingContext)
+  href: api/Admonish.ValidationException.html#Admonish_ValidationException__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_
+  commentId: M:Admonish.ValidationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  fullName: Admonish.ValidationException.ValidationException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  nameWithType: ValidationException.ValidationException(SerializationInfo, StreamingContext)
+- uid: Admonish.ValidationException.#ctor(System.String)
+  name: ValidationException(String)
+  href: api/Admonish.ValidationException.html#Admonish_ValidationException__ctor_System_String_
+  commentId: M:Admonish.ValidationException.#ctor(System.String)
+  fullName: Admonish.ValidationException.ValidationException(System.String)
+  nameWithType: ValidationException.ValidationException(String)
+- uid: Admonish.ValidationException.#ctor*
+  name: ValidationException
+  href: api/Admonish.ValidationException.html#Admonish_ValidationException__ctor_
+  commentId: Overload:Admonish.ValidationException.#ctor
+  isSpec: "True"
+  fullName: Admonish.ValidationException.ValidationException
+  nameWithType: ValidationException.ValidationException
+- uid: Admonish.ValidationException.Errors
+  name: Errors
+  href: api/Admonish.ValidationException.html#Admonish_ValidationException_Errors
+  commentId: P:Admonish.ValidationException.Errors
+  fullName: Admonish.ValidationException.Errors
+  nameWithType: ValidationException.Errors
+- uid: Admonish.ValidationException.Errors*
+  name: Errors
+  href: api/Admonish.ValidationException.html#Admonish_ValidationException_Errors_
+  commentId: Overload:Admonish.ValidationException.Errors
+  isSpec: "True"
+  fullName: Admonish.ValidationException.Errors
+  nameWithType: ValidationException.Errors
+- uid: Admonish.ValidationExtensions
+  name: ValidationExtensions
+  href: api/Admonish.ValidationExtensions.html
+  commentId: T:Admonish.ValidationExtensions
+  fullName: Admonish.ValidationExtensions
+  nameWithType: ValidationExtensions
+- uid: Admonish.ValidationExtensions.Check(Admonish.ValidationResult,System.Boolean,System.String)
+  name: Check(ValidationResult, Boolean, String)
+  href: api/Admonish.ValidationExtensions.html#Admonish_ValidationExtensions_Check_Admonish_ValidationResult_System_Boolean_System_String_
+  commentId: M:Admonish.ValidationExtensions.Check(Admonish.ValidationResult,System.Boolean,System.String)
+  fullName: Admonish.ValidationExtensions.Check(Admonish.ValidationResult, System.Boolean, System.String)
+  nameWithType: ValidationExtensions.Check(ValidationResult, Boolean, String)
+- uid: Admonish.ValidationExtensions.Check(Admonish.ValidationResult,System.String,System.Boolean,System.String)
+  name: Check(ValidationResult, String, Boolean, String)
+  href: api/Admonish.ValidationExtensions.html#Admonish_ValidationExtensions_Check_Admonish_ValidationResult_System_String_System_Boolean_System_String_
+  commentId: M:Admonish.ValidationExtensions.Check(Admonish.ValidationResult,System.String,System.Boolean,System.String)
+  fullName: Admonish.ValidationExtensions.Check(Admonish.ValidationResult, System.String, System.Boolean, System.String)
+  nameWithType: ValidationExtensions.Check(ValidationResult, String, Boolean, String)
+- uid: Admonish.ValidationExtensions.Check*
+  name: Check
+  href: api/Admonish.ValidationExtensions.html#Admonish_ValidationExtensions_Check_
+  commentId: Overload:Admonish.ValidationExtensions.Check
+  isSpec: "True"
+  fullName: Admonish.ValidationExtensions.Check
+  nameWithType: ValidationExtensions.Check
+- uid: Admonish.ValidationExtensions.Collection*
+  name: Collection
+  href: api/Admonish.ValidationExtensions.html#Admonish_ValidationExtensions_Collection_
+  commentId: Overload:Admonish.ValidationExtensions.Collection
+  isSpec: "True"
+  fullName: Admonish.ValidationExtensions.Collection
+  nameWithType: ValidationExtensions.Collection
+- uid: Admonish.ValidationExtensions.Collection``1(Admonish.ValidationResult,System.String,System.Collections.Generic.IEnumerable{``0},System.Func{Admonish.ValidationResult,``0,Admonish.ValidationResult})
+  name: Collection<T>(ValidationResult, String, IEnumerable<T>, Func<ValidationResult, T, ValidationResult>)
+  href: api/Admonish.ValidationExtensions.html#Admonish_ValidationExtensions_Collection__1_Admonish_ValidationResult_System_String_System_Collections_Generic_IEnumerable___0__System_Func_Admonish_ValidationResult___0_Admonish_ValidationResult__
+  commentId: M:Admonish.ValidationExtensions.Collection``1(Admonish.ValidationResult,System.String,System.Collections.Generic.IEnumerable{``0},System.Func{Admonish.ValidationResult,``0,Admonish.ValidationResult})
+  name.vb: Collection(Of T)(ValidationResult, String, IEnumerable(Of T), Func(Of ValidationResult, T, ValidationResult))
+  fullName: Admonish.ValidationExtensions.Collection<T>(Admonish.ValidationResult, System.String, System.Collections.Generic.IEnumerable<T>, System.Func<Admonish.ValidationResult, T, Admonish.ValidationResult>)
+  fullName.vb: Admonish.ValidationExtensions.Collection(Of T)(Admonish.ValidationResult, System.String, System.Collections.Generic.IEnumerable(Of T), System.Func(Of Admonish.ValidationResult, T, Admonish.ValidationResult))
+  nameWithType: ValidationExtensions.Collection<T>(ValidationResult, String, IEnumerable<T>, Func<ValidationResult, T, ValidationResult>)
+  nameWithType.vb: ValidationExtensions.Collection(Of T)(ValidationResult, String, IEnumerable(Of T), Func(Of ValidationResult, T, ValidationResult))
+- uid: Admonish.ValidationExtensions.NonNullOrEmpty(Admonish.ValidationResult,System.String,System.String)
+  name: NonNullOrEmpty(ValidationResult, String, String)
+  href: api/Admonish.ValidationExtensions.html#Admonish_ValidationExtensions_NonNullOrEmpty_Admonish_ValidationResult_System_String_System_String_
+  commentId: M:Admonish.ValidationExtensions.NonNullOrEmpty(Admonish.ValidationResult,System.String,System.String)
+  fullName: Admonish.ValidationExtensions.NonNullOrEmpty(Admonish.ValidationResult, System.String, System.String)
+  nameWithType: ValidationExtensions.NonNullOrEmpty(ValidationResult, String, String)
+- uid: Admonish.ValidationExtensions.NonNullOrEmpty*
+  name: NonNullOrEmpty
+  href: api/Admonish.ValidationExtensions.html#Admonish_ValidationExtensions_NonNullOrEmpty_
+  commentId: Overload:Admonish.ValidationExtensions.NonNullOrEmpty
+  isSpec: "True"
+  fullName: Admonish.ValidationExtensions.NonNullOrEmpty
+  nameWithType: ValidationExtensions.NonNullOrEmpty
+- uid: Admonish.ValidationExtensions.WithKey(Admonish.ValidationResult,System.String,System.Func{Admonish.ValidationResult,Admonish.ValidationResult})
+  name: WithKey(ValidationResult, String, Func<ValidationResult, ValidationResult>)
+  href: api/Admonish.ValidationExtensions.html#Admonish_ValidationExtensions_WithKey_Admonish_ValidationResult_System_String_System_Func_Admonish_ValidationResult_Admonish_ValidationResult__
+  commentId: M:Admonish.ValidationExtensions.WithKey(Admonish.ValidationResult,System.String,System.Func{Admonish.ValidationResult,Admonish.ValidationResult})
+  name.vb: WithKey(ValidationResult, String, Func(Of ValidationResult, ValidationResult))
+  fullName: Admonish.ValidationExtensions.WithKey(Admonish.ValidationResult, System.String, System.Func<Admonish.ValidationResult, Admonish.ValidationResult>)
+  fullName.vb: Admonish.ValidationExtensions.WithKey(Admonish.ValidationResult, System.String, System.Func(Of Admonish.ValidationResult, Admonish.ValidationResult))
+  nameWithType: ValidationExtensions.WithKey(ValidationResult, String, Func<ValidationResult, ValidationResult>)
+  nameWithType.vb: ValidationExtensions.WithKey(ValidationResult, String, Func(Of ValidationResult, ValidationResult))
+- uid: Admonish.ValidationExtensions.WithKey*
+  name: WithKey
+  href: api/Admonish.ValidationExtensions.html#Admonish_ValidationExtensions_WithKey_
+  commentId: Overload:Admonish.ValidationExtensions.WithKey
+  isSpec: "True"
+  fullName: Admonish.ValidationExtensions.WithKey
+  nameWithType: ValidationExtensions.WithKey
+- uid: Admonish.ValidationResult
+  name: ValidationResult
+  href: api/Admonish.ValidationResult.html
+  commentId: T:Admonish.ValidationResult
+  fullName: Admonish.ValidationResult
+  nameWithType: ValidationResult
+- uid: Admonish.ValidationResult.AddError(System.String)
+  name: AddError(String)
+  href: api/Admonish.ValidationResult.html#Admonish_ValidationResult_AddError_System_String_
+  commentId: M:Admonish.ValidationResult.AddError(System.String)
+  fullName: Admonish.ValidationResult.AddError(System.String)
+  nameWithType: ValidationResult.AddError(String)
+- uid: Admonish.ValidationResult.AddError(System.String,System.String)
+  name: AddError(String, String)
+  href: api/Admonish.ValidationResult.html#Admonish_ValidationResult_AddError_System_String_System_String_
+  commentId: M:Admonish.ValidationResult.AddError(System.String,System.String)
+  fullName: Admonish.ValidationResult.AddError(System.String, System.String)
+  nameWithType: ValidationResult.AddError(String, String)
+- uid: Admonish.ValidationResult.AddError*
+  name: AddError
+  href: api/Admonish.ValidationResult.html#Admonish_ValidationResult_AddError_
+  commentId: Overload:Admonish.ValidationResult.AddError
+  isSpec: "True"
+  fullName: Admonish.ValidationResult.AddError
+  nameWithType: ValidationResult.AddError
+- uid: Admonish.ValidationResult.NoKey
+  name: NoKey
+  href: api/Admonish.ValidationResult.html#Admonish_ValidationResult_NoKey
+  commentId: F:Admonish.ValidationResult.NoKey
+  fullName: Admonish.ValidationResult.NoKey
+  nameWithType: ValidationResult.NoKey
+- uid: Admonish.ValidationResult.Success
+  name: Success
+  href: api/Admonish.ValidationResult.html#Admonish_ValidationResult_Success
+  commentId: P:Admonish.ValidationResult.Success
+  fullName: Admonish.ValidationResult.Success
+  nameWithType: ValidationResult.Success
+- uid: Admonish.ValidationResult.Success*
+  name: Success
+  href: api/Admonish.ValidationResult.html#Admonish_ValidationResult_Success_
+  commentId: Overload:Admonish.ValidationResult.Success
+  isSpec: "True"
+  fullName: Admonish.ValidationResult.Success
+  nameWithType: ValidationResult.Success
+- uid: Admonish.ValidationResult.ThrowIfInvalid
+  name: ThrowIfInvalid()
+  href: api/Admonish.ValidationResult.html#Admonish_ValidationResult_ThrowIfInvalid
+  commentId: M:Admonish.ValidationResult.ThrowIfInvalid
+  fullName: Admonish.ValidationResult.ThrowIfInvalid()
+  nameWithType: ValidationResult.ThrowIfInvalid()
+- uid: Admonish.ValidationResult.ThrowIfInvalid*
+  name: ThrowIfInvalid
+  href: api/Admonish.ValidationResult.html#Admonish_ValidationResult_ThrowIfInvalid_
+  commentId: Overload:Admonish.ValidationResult.ThrowIfInvalid
+  isSpec: "True"
+  fullName: Admonish.ValidationResult.ThrowIfInvalid
+  nameWithType: ValidationResult.ThrowIfInvalid
+- uid: Admonish.ValidationResult.ToDictionary
+  name: ToDictionary()
+  href: api/Admonish.ValidationResult.html#Admonish_ValidationResult_ToDictionary
+  commentId: M:Admonish.ValidationResult.ToDictionary
+  fullName: Admonish.ValidationResult.ToDictionary()
+  nameWithType: ValidationResult.ToDictionary()
+- uid: Admonish.ValidationResult.ToDictionary*
+  name: ToDictionary
+  href: api/Admonish.ValidationResult.html#Admonish_ValidationResult_ToDictionary_
+  commentId: Overload:Admonish.ValidationResult.ToDictionary
+  isSpec: "True"
+  fullName: Admonish.ValidationResult.ToDictionary
+  nameWithType: ValidationResult.ToDictionary
+- uid: Admonish.ValidationResult.ToString
+  name: ToString()
+  href: api/Admonish.ValidationResult.html#Admonish_ValidationResult_ToString
+  commentId: M:Admonish.ValidationResult.ToString
+  fullName: Admonish.ValidationResult.ToString()
+  nameWithType: ValidationResult.ToString()
+- uid: Admonish.ValidationResult.ToString*
+  name: ToString
+  href: api/Admonish.ValidationResult.html#Admonish_ValidationResult_ToString_
+  commentId: Overload:Admonish.ValidationResult.ToString
+  isSpec: "True"
+  fullName: Admonish.ValidationResult.ToString
+  nameWithType: ValidationResult.ToString
+- uid: Admonish.Validator
+  name: Validator
+  href: api/Admonish.Validator.html
+  commentId: T:Admonish.Validator
+  fullName: Admonish.Validator
+  nameWithType: Validator
+- uid: Admonish.Validator.Create
+  name: Create()
+  href: api/Admonish.Validator.html#Admonish_Validator_Create
+  commentId: M:Admonish.Validator.Create
+  fullName: Admonish.Validator.Create()
+  nameWithType: Validator.Create()
+- uid: Admonish.Validator.Create*
+  name: Create
+  href: api/Admonish.Validator.html#Admonish_Validator_Create_
+  commentId: Overload:Admonish.Validator.Create
+  isSpec: "True"
+  fullName: Admonish.Validator.Create
+  nameWithType: Validator.Create
+- uid: Admonish.Validator.UnsafeConfigureException(System.Func{Admonish.ValidationResult,System.Exception})
+  name: UnsafeConfigureException(Func<ValidationResult, Exception>)
+  href: api/Admonish.Validator.html#Admonish_Validator_UnsafeConfigureException_System_Func_Admonish_ValidationResult_System_Exception__
+  commentId: M:Admonish.Validator.UnsafeConfigureException(System.Func{Admonish.ValidationResult,System.Exception})
+  name.vb: UnsafeConfigureException(Func(Of ValidationResult, Exception))
+  fullName: Admonish.Validator.UnsafeConfigureException(System.Func<Admonish.ValidationResult, System.Exception>)
+  fullName.vb: Admonish.Validator.UnsafeConfigureException(System.Func(Of Admonish.ValidationResult, System.Exception))
+  nameWithType: Validator.UnsafeConfigureException(Func<ValidationResult, Exception>)
+  nameWithType.vb: Validator.UnsafeConfigureException(Func(Of ValidationResult, Exception))
+- uid: Admonish.Validator.UnsafeConfigureException*
+  name: UnsafeConfigureException
+  href: api/Admonish.Validator.html#Admonish_Validator_UnsafeConfigureException_
+  commentId: Overload:Admonish.Validator.UnsafeConfigureException
+  isSpec: "True"
+  fullName: Admonish.Validator.UnsafeConfigureException
+  nameWithType: Validator.UnsafeConfigureException
