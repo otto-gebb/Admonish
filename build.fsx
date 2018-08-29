@@ -70,6 +70,7 @@ Target.create "ProjectVersion" (fun _ ->
         Xml.pokeInnerText project
             "Project/PropertyGroup/Version" release.NugetVersion
     srcProjects
+    -- "src/Sample/**/*.*proj"
     |> Seq.iter setProjectVersion
 )
 

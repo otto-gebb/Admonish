@@ -1,0 +1,32 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Admonish;
+using Domain;
+using WebApplication.Dtos;
+
+namespace WebApplication
+{
+    public class AppService
+    {
+        private static Dictionary<string, Entity> _db =
+            new Dictionary<string, Entity>();
+
+        public void AddEntity(int age, string name)
+        {
+            
+        }
+
+        internal void AddEntity(CreateEntityDto dto)
+        {
+            Validator
+                .Create()
+                .Check(!_db.ContainsKey(dto.Name ?? ""), "An entity with this name already exists.")
+                .ThrowIfInvalid();
+
+            var e = new Entity(dto.Age, dto.Name);
+            _db.Add(e.Name, e);
+        }
+    }
+}
