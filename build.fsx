@@ -133,27 +133,46 @@ Target.create "PublishNuget" (fun _ ->
   |> Seq.iter push
 )
 
+Target.create "PublishDocs" (fun _ ->
+  Shell.cleanDir "temp-docs"
+  let url = sprintf "https://github.com/%s/%s.git" gitOwner product
+  Git.Repository.cloneSingleBranch "" url "gh-pages" "temp-docs"
+  Git.Repository.fullclean "temp-docs"
+
+  let result =
+    Process.execSimple (fun info ->
+      { info with
+          FileName = "docfx"
+          WorkingDirectory = "doc"})
+      (TimeSpan.FromMinutes 1.0)
+  if result <> 0 then failwithf "docfx failed"
+
+  Shell.copyRecursive "doc/_site" "temp-docs" true |> printfn "%A"
+  Git.Staging.stageAll "temp-docs"
+  Git.Commit.exec "temp-docs" (sprintf "Update generated documentation %s" release.NugetVersion)
+  Git.Branches.pushBranch "temp-docs" url "gh-pages"
+)
+
 Target.create "Release" (fun _ ->
-    // To run this target create a file named "release.cmd" with the following contents:
-    // SET GITHUB_TOKEN=<your_github_token>
-    // fake.cmd build -t Release
+  // To run this target create a file named "release.cmd" with the following contents:
+  // SET GITHUB_TOKEN=<your_github_token>
+  // fake.cmd build -t Release
+  let token = Environment.environVarOrFail "GITHUB_TOKEN"
+  let v = release.NugetVersion
+  let isPreRelease = release.SemVer.PreRelease.IsSome
 
-    let gitName = product
-    let v = release.NugetVersion
-    let isPreRelease = release.SemVer.PreRelease.IsSome
+  Git.Staging.stageAll ""
+  Git.Commit.exec "" (sprintf "Bump version to %O" v)
+  Git.Branches.push ""
 
-    Git.Staging.stageAll ""
-    Git.Commit.exec "" (sprintf "Bump version to %O" v)
-    Git.Branches.push ""
+  Git.Branches.tag "" v
+  Git.Branches.pushTag "" "origin" v
 
-    Git.Branches.tag "" v
-    Git.Branches.pushTag "" "origin" v
-
-    Environment.environVar "GITHUB_TOKEN"
-    |> GitHub.createClientWithToken
-    |> GitHub.draftNewRelease gitOwner gitName v isPreRelease release.Notes
-    |> GitHub.publishDraft
-    |> Async.RunSynchronously
+  token
+  |> GitHub.createClientWithToken
+  |> GitHub.draftNewRelease gitOwner product v isPreRelease release.Notes
+  |> GitHub.publishDraft
+  |> Async.RunSynchronously
 )
 
 Target.create "All" ignore
@@ -169,6 +188,7 @@ Target.create "All" ignore
 
 "BuildPackage"
 //  ==> "PublishNuget" AppVeyor will publish on tag.
+  ==> "PublishDocs"
   ==> "Release"
 
 Target.runOrDefault "All"
