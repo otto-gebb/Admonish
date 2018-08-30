@@ -9,7 +9,7 @@ entity already exists in the database, you do it like this:
 
 [!code-csharp[Startup](~/../src/Sample/WebApplication/AppService.cs?range=12-29&highlight=19-24)]
 
-Imagine you have a custom validatin exception (defined e.g. in your `WebApiUtils` library)
+Imagine you have a custom validation exception (defined e.g. in your `WebApiUtils` library)
 which you handle with a special middleware.
 You can configure Admonish to throw the needed excepton type, so that validation errors from
 domain and application modules are still handled by your middleware
