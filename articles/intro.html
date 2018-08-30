@@ -70,14 +70,13 @@
 <h1 id="introduction">Introduction</h1>
 
 <p>How to validate parameters of entity methods:</p>
-<pre><code class="lang-csharp" name="Startup" highlight-lines="13-20">using System;
+<pre><code class="lang-csharp" name="Startup" highlight-lines="12-19">using System;
 using System.Collections.Generic;
 using System.Text;
 using Admonish;
 
 namespace Domain
 {
-    // NB. Fix documentation (intro.md) if you change this class.
     public class Entity
     {
         public Entity(int age, string name)
@@ -121,7 +120,7 @@ entity already exists in the database, you do it like this:</p>
     }
 }
 </code></pre>
-<p>Imagine you have a custom validatin exception (defined e.g. in your <code>WebApiUtils</code> library)
+<p>Imagine you have a custom validation exception (defined e.g. in your <code>WebApiUtils</code> library)
 which you handle with a special middleware.
 You can configure Admonish to throw the needed excepton type, so that validation errors from
 domain and application modules are still handled by your middleware
