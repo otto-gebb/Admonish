@@ -122,43 +122,8 @@ entity already exists in the database, you do it like this:</p>
 }
 </code></pre>
 <p>Imagine you have a custom validatin exception (defined e.g. in your <code>WebApiUtils</code> library)
-which you handle with a special middleware</p>
-<pre><code class="lang-csharp" name="Startup">public class ErrorHandlerMiddleware
-{
-    private readonly RequestDelegate _next;
-    private static readonly RouteData EmptyRouteData = new RouteData();
-    private static readonly ActionDescriptor EmptyActionDescriptor = new ActionDescriptor();
-
-    public ErrorHandlerMiddleware(RequestDelegate next)
-    {
-        _next = next;
-    }
-
-    public async Task InvokeAsync(HttpContext context)
-    {
-        try
-        {
-            await _next(context);
-        }
-        catch (CustomValidationException ve)
-        {
-            await WriteError(context, ve.Errors);
-        }
-    }
-
-    private Task WriteError(HttpContext context, object error)
-    {
-        RouteData routeData = context.GetRouteData() ?? EmptyRouteData;
-        var actionContext = new ActionContext(context, routeData, EmptyActionDescriptor);
-        var result = new ObjectResult(error)
-        {
-            StatusCode = (int)HttpStatusCode.BadRequest
-        };
-        return result.ExecuteResultAsync(actionContext);
-    }
-}
-</code></pre>
-<p>You can configure Admonish to throw the needed excepton type, so that validation errors from
+which you handle with a special middleware.
+You can configure Admonish to throw the needed excepton type, so that validation errors from
 domain and application modules are still handled by your middleware
 without making any changes in it:</p>
 <pre><code class="lang-csharp" name="Startup">public class Startup
@@ -199,6 +164,42 @@ without making any changes in it:</p>
         app.UseMvc();
     }
 }
+</code></pre>
+<p>The middleware code could look like this.</p>
+<pre><code class="lang-csharp" name="Startup">public class ErrorHandlerMiddleware
+{
+    private readonly RequestDelegate _next;
+    private static readonly RouteData EmptyRouteData = new RouteData();
+    private static readonly ActionDescriptor EmptyActionDescriptor = new ActionDescriptor();
+
+    public ErrorHandlerMiddleware(RequestDelegate next)
+    {
+        _next = next;
+    }
+
+    public async Task InvokeAsync(HttpContext context)
+    {
+        try
+        {
+            await _next(context);
+        }
+        catch (CustomValidationException ve)
+        {
+            await WriteError(context, ve.Errors);
+        }
+    }
+
+    private Task WriteError(HttpContext context, object error)
+    {
+        RouteData routeData = context.GetRouteData() ?? EmptyRouteData;
+        var actionContext = new ActionContext(context, routeData, EmptyActionDescriptor);
+        var result = new ObjectResult(error)
+        {
+            StatusCode = (int)HttpStatusCode.BadRequest
+        };
+        return result.ExecuteResultAsync(actionContext);
+    }
+}
 </code></pre></article>
           </div>
           
@@ -207,7 +208,7 @@ without making any changes in it:</p>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/otto-gebb/Admonish/blob/develop/doc/articles/intro.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/otto-gebb/Admonish/blob/master/doc/articles/intro.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
