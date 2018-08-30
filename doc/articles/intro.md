@@ -2,7 +2,7 @@
 
 How to validate parameters of entity methods:
 
-[!code-csharp[Startup](~/../src/Sample/Domain/Entity.cs?highlight=13-20)]
+[!code-csharp[Startup](~/../src/Sample/Domain/Entity.cs?highlight=12-19)]
 
 If you need additional validation in an app service, for example, you need to check if such an
 entity already exists in the database, you do it like this:

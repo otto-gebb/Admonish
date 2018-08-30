@@ -5,7 +5,6 @@ using Admonish;
 
 namespace Domain
 {
-    // NB. Fix documentation (intro.md) if you change this class.
     public class Entity
     {
         public Entity(int age, string name)
