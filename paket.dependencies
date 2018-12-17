@@ -1,11 +1,8 @@
+version 5.193.0
 framework: auto-detect
 
 source https://nuget.org/api/v2
 
-
-nuget Expecto.BenchmarkDotNet
-nuget Expecto.FsCheck
-nuget Expecto.VisualStudio.TestAdapter version_in_path: true
 
 group FakeBuild
     source https://api.nuget.org/v3/index.json

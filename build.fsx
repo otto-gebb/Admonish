@@ -17,7 +17,8 @@ open Fake.DotNet.Testing
 open Fake.Tools
 
 Environment.CurrentDirectory <- __SOURCE_DIRECTORY__
-let configuration = Environment.environVarOrDefault "Configuration" "Release"
+let configuration =
+  DotNet.BuildConfiguration.fromEnvironVarOrDefault "Configuration" DotNet.Release
 let product = "Admonish"
 let description = "Simple validation library for app services and domain entities"
 let tags = "validation domain entity app-service"
@@ -52,41 +53,44 @@ Target.create "Clean" (fun _ ->
 )
 
 let build project =
-    DotNet.build (fun p ->
-    { p with
-        Configuration = DotNet.BuildConfiguration.Custom configuration
-        Common = p.Common
-                 |> DotNet.Options.withCustomParams (Some "--no-dependencies")
-    }) project
+  let opts (p: DotNet.BuildOptions) =
+    { p with Configuration = configuration }
+    |> DotNet.Options.withAdditionalArgs ["--no-dependencies"]
+  DotNet.build opts project
 
 Target.create "Build" (fun _ ->
     srcProjects
     |> Seq.iter build
 )
 
-
 Target.create "ProjectVersion" (fun _ ->
-    let setProjectVersion project =
-        Xml.pokeInnerText project
-            "Project/PropertyGroup/Version" release.NugetVersion
-    srcProjects
-    -- "src/Sample/**/*.*proj"
-    |> Seq.iter setProjectVersion
+  let setProjectVersion project =
+    Xml.pokeInnerText project
+      "Project/PropertyGroup/Version" release.NugetVersion
+  srcProjects
+  -- "src/Sample/**/*.*proj"
+  |> Seq.iter setProjectVersion
 )
 
 Target.create "BuildTest" (fun _ ->
-    testProjects
-    |> Seq.iter build
+  testProjects
+  |> Seq.iter build
 )
 
 Target.create "RunTest" (fun _ ->
-    let runTest project =
-        let (projName, projDir) = getProjectInfo project
-        let dll = projDir </> "bin" </> configuration </> "netcoreapp2.1" </> projName + ".dll"
-        DotNet.exec id dll ""
-        |> fun r -> if r.ExitCode<>0 then projName+".dll failed" |> failwith
-    testProjects
-    |> Seq.iter runTest
+  let runTest project =
+    let (projName, projDir) = getProjectInfo project
+    let opts =
+      DotNet.Options.withWorkingDirectory projDir
+      >> DotNet.Options.withAdditionalArgs [
+        "--no-build"
+        "--configuration"
+        sprintf "%A" configuration
+      ]
+    DotNet.exec opts "run" ""
+    |> fun r -> if r.ExitCode<>0 then projName+".dll failed" |> failwith
+  testProjects
+  |> Seq.iter runTest
 )
 
 Target.create "BuildPackage" (fun _ ->
@@ -94,7 +98,7 @@ Target.create "BuildPackage" (fun _ ->
     let (projName, _) = getProjectInfo project
     let packParameters =
       [
-        sprintf "-c %s" configuration
+        sprintf "-c %A" configuration
         sprintf "-o \"%s\"" "../../nugetpkg"
         "--no-build"
         "--no-restore"
@@ -140,13 +144,11 @@ Target.create "PublishDocs" (fun _ ->
   Git.Repository.cloneSingleBranch "" url "gh-pages" "temp-docs"
   Git.Repository.fullclean "temp-docs"
 
-  let result =
-    Process.execSimple (fun info ->
-      { info with
-          FileName = "docfx"
-          WorkingDirectory = "doc"})
-      (TimeSpan.FromMinutes 1.0)
-  if result <> 0 then failwithf "docfx failed"
+  CreateProcess.fromRawCommand "docfx" []
+  |> CreateProcess.withTimeout (TimeSpan.FromMinutes 1.0)
+  |> CreateProcess.ensureExitCodeWithMessage "docfx failed."
+  |> Proc.run
+  |> ignore
 
   Shell.copyRecursive "doc/_site" "temp-docs" true |> printfn "%A"
   Git.Staging.stageAll "temp-docs"
