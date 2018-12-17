@@ -72,7 +72,7 @@ namespace Admonish
             string key,
             string value,
             Regex regex,
-            string message = null)
+            string? message = null)
         {
             if (value == null || !regex.IsMatch(value))
             {

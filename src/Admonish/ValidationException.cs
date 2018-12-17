@@ -38,6 +38,6 @@ namespace Admonish
         /// <summary>
         /// The dictionary containing error messages corresponding to parameter names.
         /// </summary>
-        public IDictionary<string, string[]> Errors { get; }
+        public IDictionary<string, string[]> Errors { get; } = new Dictionary<string, string[]>();
     }
 }
