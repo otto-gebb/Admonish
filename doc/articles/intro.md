@@ -18,4 +18,4 @@ without making any changes in it:
 [!code-csharp[Startup](~/../src/Sample/WebApplication/Startup.cs?start=17&end=54)]
 
 The middleware code could look like this.
-[!code-csharp[Startup](~/../src/Sample/WebApiUtils/ErrorHandlerMiddleware.cs?start=12&end=45)]
+[!code-csharp[Startup](~/../src/Sample/WebApiUtils/ErrorHandlerMiddleware.cs?start=10&end=47)]

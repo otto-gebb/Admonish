@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Net;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Abstractions;
@@ -28,7 +26,11 @@ namespace WebApiUtils
             }
             catch (CustomValidationException ve)
             {
-                await WriteError(context, ve.Errors);
+                var details = new ValidationProblemDetails(ve.Errors)
+                {
+                    Type = "urn:acme-corp:validation-error"
+                };
+                await WriteError(context, details);
             }
         }
 
@@ -38,7 +40,7 @@ namespace WebApiUtils
             var actionContext = new ActionContext(context, routeData, EmptyActionDescriptor);
             var result = new ObjectResult(error)
             {
-                StatusCode = (int)HttpStatusCode.BadRequest
+                StatusCode = StatusCodes.Status400BadRequest
             };
             return result.ExecuteResultAsync(actionContext);
         }
