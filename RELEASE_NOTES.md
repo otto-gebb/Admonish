@@ -1,4 +1,4 @@
-### 0.2.0 – 2018-12-18
+### 0.2.1 – 2018-12-18
 
 - Add some date validation helpers.
 
