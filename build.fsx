@@ -145,6 +145,7 @@ Target.create "PublishDocs" (fun _ ->
   Git.Repository.fullclean "temp-docs"
 
   CreateProcess.fromRawCommand "docfx" []
+  |> CreateProcess.withWorkingDirectory "doc"
   |> CreateProcess.withTimeout (TimeSpan.FromMinutes 1.0)
   |> CreateProcess.ensureExitCodeWithMessage "docfx failed."
   |> Proc.run
