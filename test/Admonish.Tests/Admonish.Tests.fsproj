@@ -10,6 +10,7 @@
   <ItemGroup>
     <Compile Include="Utils.fs" />
     <Compile Include="NumericExtensionTests.fs" />
+    <Compile Include="DateExtensionTests.fs" />
     <Compile Include="StringExtensionTests.fs" />
     <Compile Include="ObjectExtensionTests.fs" />
     <Compile Include="ExtensionTests.fs" />
@@ -18,7 +19,7 @@
     <Compile Include="Program.fs" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Expecto" Version="8.6.4" />
+    <PackageReference Include="Expecto" Version="8.6.0" />
     <PackageReference Include="FSharp.Core" Version="4.5.4" />
     <PackageReference Include="YoloDev.Expecto.TestSdk" Version="0.6.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.9.0" />

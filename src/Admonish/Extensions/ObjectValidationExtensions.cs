@@ -17,7 +17,7 @@ namespace Admonish
         public static ValidationResult NonNull<T>(
             this ValidationResult r,
             string key,
-            T value) where T: class
+            T? value) where T: class
         {
             if (value == null)
             {

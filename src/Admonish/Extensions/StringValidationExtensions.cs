@@ -19,7 +19,7 @@ namespace Admonish
         public static ValidationResult NonNullOrEmpty(
             this ValidationResult r,
             string key,
-            string value)
+            string? value)
         {
             if (string.IsNullOrEmpty(value))
             {
@@ -42,7 +42,7 @@ namespace Admonish
         public static ValidationResult NonNullOrWhiteSpace(
             this ValidationResult r,
             string key,
-            string value)
+            string? value)
         {
             if (string.IsNullOrWhiteSpace(value))
             {
@@ -70,7 +70,7 @@ namespace Admonish
         public static ValidationResult Matches(
             this ValidationResult r,
             string key,
-            string value,
+            string? value,
             Regex regex,
             string? message = null)
         {
@@ -99,7 +99,7 @@ namespace Admonish
         public static ValidationResult LengthBetween(
             this ValidationResult r,
             string key,
-            string value,
+            string? value,
             int minLength,
             int maxLength)
         {
