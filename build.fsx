@@ -29,11 +29,12 @@ let gitOwner = "otto-gebb"
 let gitHome = "https://github.com/" + gitOwner
 
 let projectUrl = sprintf "https://github.com/%s/%s" gitOwner product
-let licenceUrl = sprintf "https://github.com/%s/%s/blob/master/LICENSE" gitOwner product
 let copyright = "Copyright 2018"
 
 let srcProjects = !! "src/**/*.*proj"
 let testProjects = !! "test/**/*Tests.*proj"
+
+let nugetpkg = Environment.CurrentDirectory </> "nugetpkg"
 
 // Read additional information from the release notes document
 let release = ReleaseNotes.load "RELEASE_NOTES.md"
@@ -80,14 +81,8 @@ Target.create "BuildTest" (fun _ ->
 Target.create "RunTest" (fun _ ->
   let runTest project =
     let (projName, projDir) = getProjectInfo project
-    let opts =
-      DotNet.Options.withWorkingDirectory projDir
-      >> DotNet.Options.withAdditionalArgs [
-        "--no-build"
-        "--configuration"
-        sprintf "%A" configuration
-      ]
-    DotNet.exec opts "run" ""
+    let opts = DotNet.Options.withWorkingDirectory projDir
+    DotNet.exec opts "run" (sprintf "--no-build --configuration %A" configuration)
     |> fun r -> if r.ExitCode<>0 then projName+".dll failed" |> failwith
   testProjects
   |> Seq.iter runTest
@@ -96,29 +91,30 @@ Target.create "RunTest" (fun _ ->
 Target.create "BuildPackage" (fun _ ->
   let pack project =
     let (projName, _) = getProjectInfo project
-    let packParameters =
+    let msbuildProps =
       [
-        sprintf "-c %A" configuration
-        sprintf "-o \"%s\"" "../../nugetpkg"
-        "--no-build"
-        "--no-restore"
-        sprintf "/p:Title=\"%s\"" projName
-        "/p:PackageVersion=" + release.NugetVersion
-        sprintf "/p:Authors=\"%s\"" authors
-        sprintf "/p:Owners=\"%s\"" owners
-        "/p:PackageRequireLicenseAcceptance=false"
-        sprintf "/p:Description=\"%s\"" description
-        sprintf "/p:PackageReleaseNotes=\"%O\""
-          ((String.toLines release.Notes).Replace(",",""))
-        sprintf "/p:Copyright=\"%s\"" copyright
-        sprintf "/p:PackageTags=\"%s\"" tags
-        sprintf "/p:PackageProjectUrl=\"%s\"" projectUrl
-        //sprintf "/p:PackageIconUrl=\"%s\"" iconUrl
-        sprintf "/p:PackageLicenseUrl=\"%s\"" licenceUrl
-      ] |> String.concat " "
-    "pack " + project + " " + packParameters
-    |> DotNet.exec id <| ""
-    |> ignore
+        "Title", projName
+        "PackageVersion", release.NugetVersion
+        "Authors", authors
+        "Owners", owners
+        "PackageRequireLicenseAcceptance", "false"
+        "Description", description
+        "PackageReleaseNotes", ((String.toLines release.Notes).Replace(",",""))
+        "Copyright", copyright
+        "PackageTags", tags
+        "PackageProjectUrl", projectUrl
+        // "PackageIconUrl", iconUrl
+        "PackageLicenseExpression", "MIT"
+      ]
+    let conf (p: DotNet.PackOptions) =
+      {p with
+        NoBuild = true
+        Configuration = configuration
+        OutputPath = Some nugetpkg
+        MSBuildParams = {p.MSBuildParams with Properties = msbuildProps}
+      }
+    DotNet.pack conf project
+
   !! ("src/**/" + product + ".*proj")
   |> Seq.iter pack
 )
