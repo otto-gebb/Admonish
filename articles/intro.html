@@ -8,7 +8,7 @@
     <title>Introduction | Admonish validation library </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Introduction | Admonish validation library ">
-    <meta name="generator" content="docfx 2.38.1.0">
+    <meta name="generator" content="docfx 2.40.5.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -184,7 +184,11 @@ without making any changes in it:</p>
         }
         catch (CustomValidationException ve)
         {
-            await WriteError(context, ve.Errors);
+            var details = new ValidationProblemDetails(ve.Errors)
+            {
+                Type = &quot;urn:acme-corp:validation-error&quot;
+            };
+            await WriteError(context, details);
         }
     }
 
@@ -194,7 +198,7 @@ without making any changes in it:</p>
         var actionContext = new ActionContext(context, routeData, EmptyActionDescriptor);
         var result = new ObjectResult(error)
         {
-            StatusCode = (int)HttpStatusCode.BadRequest
+            StatusCode = StatusCodes.Status400BadRequest
         };
         return result.ExecuteResultAsync(actionContext);
     }

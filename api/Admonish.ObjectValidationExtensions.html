@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class ObjectValidationExtensions
    | Admonish validation library ">
-    <meta name="generator" content="docfx 2.38.1.0">
+    <meta name="generator" content="docfx 2.40.5.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -115,13 +115,13 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/otto-gebb/Admonish/new/develop/apiSpec/new?filename=Admonish_ObjectValidationExtensions_NonNull__1_Admonish_ValidationResult_System_String___0_.md&amp;value=---%0Auid%3A%20Admonish.ObjectValidationExtensions.NonNull%60%601(Admonish.ValidationResult%2CSystem.String%2C%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/otto-gebb/Admonish/new/master/apiSpec/new?filename=Admonish_ObjectValidationExtensions_NonNull__1_Admonish_ValidationResult_System_String_System_Nullable___0__.md&amp;value=---%0Auid%3A%20Admonish.ObjectValidationExtensions.NonNull%60%601(Admonish.ValidationResult%2CSystem.String%2CSystem.Nullable%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/otto-gebb/Admonish/blob/develop/src/Admonish/Extensions/ObjectValidationExtensions.cs/#L17">View Source</a>
+    <a href="https://github.com/otto-gebb/Admonish/blob/master/src/Admonish/Extensions/ObjectValidationExtensions.cs/#L39">View Source</a>
   </span>
   <a id="Admonish_ObjectValidationExtensions_NonNull_" data-uid="Admonish.ObjectValidationExtensions.NonNull*"></a>
-  <h4 id="Admonish_ObjectValidationExtensions_NonNull__1_Admonish_ValidationResult_System_String___0_" data-uid="Admonish.ObjectValidationExtensions.NonNull``1(Admonish.ValidationResult,System.String,``0)">NonNull&lt;T&gt;(ValidationResult, String, T)</h4>
+  <h4 id="Admonish_ObjectValidationExtensions_NonNull__1_Admonish_ValidationResult_System_String_System_Nullable___0__" data-uid="Admonish.ObjectValidationExtensions.NonNull``1(Admonish.ValidationResult,System.String,System.Nullable{``0})">NonNull&lt;T&gt;(ValidationResult, String, Nullable&lt;T&gt;)</h4>
   <div class="markdown level1 summary"><p>Checks whether the specified object is not null.
 When it is, adds an error message to the
 <a class="xref" href="Admonish.ValidationResult.html">ValidationResult</a> and associates it with the specified key.</p>
@@ -129,9 +129,8 @@ When it is, adds an error message to the
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static ValidationResult NonNull&lt;T&gt;(this ValidationResult r, string key, T value)
-
-    where T : class</code></pre>
+    <pre><code class="lang-csharp hljs">public static ValidationResult NonNull&lt;T&gt;(this ValidationResult r, string key, T? value)
+    where T : struct</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -156,7 +155,7 @@ When it is, adds an error message to the
 </td>
       </tr>
       <tr>
-        <td><span class="xref">T</span></td>
+        <td><span class="xref">System.Nullable</span>&lt;T&gt;</td>
         <td><span class="parametername">value</span></td>
         <td><p>The object to check.</p>
 </td>
@@ -196,10 +195,10 @@ When it is, adds an error message to the
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/otto-gebb/Admonish/new/develop/apiSpec/new?filename=Admonish_ObjectValidationExtensions_NonNull__1_Admonish_ValidationResult_System_String_System_Nullable___0__.md&amp;value=---%0Auid%3A%20Admonish.ObjectValidationExtensions.NonNull%60%601(Admonish.ValidationResult%2CSystem.String%2CSystem.Nullable%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/otto-gebb/Admonish/new/master/apiSpec/new?filename=Admonish_ObjectValidationExtensions_NonNull__1_Admonish_ValidationResult_System_String_System_Nullable___0__.md&amp;value=---%0Auid%3A%20Admonish.ObjectValidationExtensions.NonNull%60%601(Admonish.ValidationResult%2CSystem.String%2CSystem.Nullable%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/otto-gebb/Admonish/blob/develop/src/Admonish/Extensions/ObjectValidationExtensions.cs/#L39">View Source</a>
+    <a href="https://github.com/otto-gebb/Admonish/blob/master/src/Admonish/Extensions/ObjectValidationExtensions.cs/#L39">View Source</a>
   </span>
   <a id="Admonish_ObjectValidationExtensions_NonNull_" data-uid="Admonish.ObjectValidationExtensions.NonNull*"></a>
   <h4 id="Admonish_ObjectValidationExtensions_NonNull__1_Admonish_ValidationResult_System_String_System_Nullable___0__" data-uid="Admonish.ObjectValidationExtensions.NonNull``1(Admonish.ValidationResult,System.String,System.Nullable{``0})">NonNull&lt;T&gt;(ValidationResult, String, Nullable&lt;T&gt;)</h4>
@@ -211,7 +210,6 @@ When it is, adds an error message to the
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static ValidationResult NonNull&lt;T&gt;(this ValidationResult r, string key, T? value)
-
     where T : struct</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -283,10 +281,10 @@ When it is, adds an error message to the
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/otto-gebb/Admonish/new/develop/apiSpec/new?filename=Admonish_ObjectValidationExtensions.md&amp;value=---%0Auid%3A%20Admonish.ObjectValidationExtensions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/otto-gebb/Admonish/new/master/apiSpec/new?filename=Admonish_ObjectValidationExtensions.md&amp;value=---%0Auid%3A%20Admonish.ObjectValidationExtensions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/otto-gebb/Admonish/blob/develop/src/Admonish/Extensions/ObjectValidationExtensions.cs/#L6" class="contribution-link">View Source</a>
+                    <a href="https://github.com/otto-gebb/Admonish/blob/master/src/Admonish/Extensions/ObjectValidationExtensions.cs/#L6" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
