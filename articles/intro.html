@@ -118,6 +118,11 @@ entity already exists in the database, you do it like this:</p>
         var e = new Entity(dto.Age, dto.Name);
         _db.Add(e.Name, e);
     }
+
+    internal int GetCount(int minAge)
+    {
+        return _db.Values.Where(x =&gt; x.Age &gt;= minAge).Count();
+    }
 }
 </code></pre>
 <p>Imagine you have a custom validation exception (defined e.g. in your <code>WebApiUtils</code> library)
@@ -136,7 +141,7 @@ without making any changes in it:</p>
 
     public void ConfigureServices(IServiceCollection services)
     {
-        services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+        services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         services.AddTransient&lt;AppService&gt;();
 
         // Throw a custom exception on validation

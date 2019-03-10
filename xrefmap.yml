@@ -332,6 +332,22 @@ references:
   commentId: T:Admonish.ValidationResult
   fullName: Admonish.ValidationResult
   nameWithType: ValidationResult
+- uid: Admonish.ValidationResult.#ctor(System.Func{Admonish.ValidationResult,System.Exception})
+  name: ValidationResult(Func<ValidationResult, Exception>)
+  href: api/Admonish.ValidationResult.html#Admonish_ValidationResult__ctor_System_Func_Admonish_ValidationResult_System_Exception__
+  commentId: M:Admonish.ValidationResult.#ctor(System.Func{Admonish.ValidationResult,System.Exception})
+  name.vb: ValidationResult(Func(Of ValidationResult, Exception))
+  fullName: Admonish.ValidationResult.ValidationResult(System.Func<Admonish.ValidationResult, System.Exception>)
+  fullName.vb: Admonish.ValidationResult.ValidationResult(System.Func(Of Admonish.ValidationResult, System.Exception))
+  nameWithType: ValidationResult.ValidationResult(Func<ValidationResult, Exception>)
+  nameWithType.vb: ValidationResult.ValidationResult(Func(Of ValidationResult, Exception))
+- uid: Admonish.ValidationResult.#ctor*
+  name: ValidationResult
+  href: api/Admonish.ValidationResult.html#Admonish_ValidationResult__ctor_
+  commentId: Overload:Admonish.ValidationResult.#ctor
+  isSpec: "True"
+  fullName: Admonish.ValidationResult.ValidationResult
+  nameWithType: ValidationResult.ValidationResult
 - uid: Admonish.ValidationResult.AddError(System.String)
   name: AddError(String)
   href: api/Admonish.ValidationResult.html#Admonish_ValidationResult_AddError_System_String_
