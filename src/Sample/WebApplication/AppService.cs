@@ -26,5 +26,10 @@ namespace WebApplication
             var e = new Entity(dto.Age, dto.Name);
             _db.Add(e.Name, e);
         }
+
+        internal int GetCount(int minAge)
+        {
+            return _db.Values.Where(x => x.Age >= minAge).Count();
+        }
     }
 }

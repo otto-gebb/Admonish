@@ -11,6 +11,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using WebApiUtils;
 
+[assembly: ApiController]
 namespace WebApplication
 {
     // NB. Fix documentation (intro.md) if you change this class.
@@ -25,7 +26,7 @@ namespace WebApplication
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             services.AddTransient<AppService>();
 
             // Throw a custom exception on validation

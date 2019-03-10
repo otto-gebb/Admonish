@@ -1,10 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using WebApplication.Dtos;
+using System.ComponentModel.DataAnnotations;
 
 namespace WebApplication.Controllers
 {
     [Route("api/[controller]")]
-    [ApiController]
     public class EntitiesController : ControllerBase
     {
         private AppService _service;
@@ -12,6 +12,13 @@ namespace WebApplication.Controllers
         public EntitiesController(AppService service)
         {
             _service = service;
+        }
+
+        [Route("count")]
+        [HttpGet]
+        public int GetCount([Required]int minAge)
+        {
+            return _service.GetCount(minAge);
         }
 
         [HttpPost]

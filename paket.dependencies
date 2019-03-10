@@ -1,10 +1,11 @@
-version 5.193.0
+version 5.198.0
 framework: auto-detect
 
-source https://nuget.org/api/v2
+// If you change something here, delete packet.lock file.
 
-
+// [ FAKE GROUP ]
 group FakeBuild
+    storage: none
     source https://api.nuget.org/v3/index.json
 
     nuget Fake.Api.GitHub
