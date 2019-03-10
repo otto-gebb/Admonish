@@ -1,11 +1,17 @@
 module ValidationResultTests
 
+open System
 open Expecto
 open Admonish
 
 [<Tests>]
 let tests =
   testList "ValidationResult" [
+    testCase "Ctor: exception factory is required" <| fun _ ->
+      let act () = ValidationResult(null) |> ignore
+
+      Expect.throwsT<ArgumentNullException> act "Did not throw the expected exception"
+
     vtest "Created is empty" <| fun vr ->
       Expect.isEmpty (vr.ToDictionary()) "New result contained errors"
 
@@ -20,8 +26,6 @@ let tests =
 
       let act () = vr.ThrowIfInvalid() |> ignore
 
-      // TODO: Remove this when Expect.throwsT is fixed.
-      Expect.throws act "Did not throw"
       Expect.throwsT<ValidationException> act "Did not throw the expected exception"
 
     vtest "Is failed after adding an error" <| fun vr ->

@@ -17,8 +17,20 @@ namespace Admonish
         private Dictionary<string, List<string>> _errors = new Dictionary<string, List<string>>();
         private Stack<Func<string, string>> _adorners = new Stack<Func<string, string>>();
 
-        internal ValidationResult(Func<ValidationResult, Exception> exceptionFactory)
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ValidationResult" /> class
+        /// with the specified validation exception factory.
+        /// </summary>
+        /// <param name="exceptionFactory">
+        /// When called, creates an exception to throw when a validation error occurs.
+        /// </param>
+        public ValidationResult(Func<ValidationResult, Exception> exceptionFactory)
         {
+            if (exceptionFactory == null)
+            {
+                throw new ArgumentNullException(nameof(exceptionFactory));
+            }
+
             Success = true;
             _exceptionFactory = exceptionFactory;
         }
