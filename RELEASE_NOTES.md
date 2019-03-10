@@ -1,3 +1,7 @@
+### 0.2.2 – 2019-03-10
+
+- Expose the constructor of `ValidationResult`.
+
 ### 0.2.1 – 2018-12-18
 
 - Add some date validation helpers.
