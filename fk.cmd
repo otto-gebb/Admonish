@@ -8,4 +8,5 @@ IF ERRORLEVEL 1 (
    EXIT /b %errorlevel%
 )
 
+SET FAKE_DETAILED_ERRORS=true
 fake.exe %*
