@@ -9,7 +9,19 @@
       "output": {
         ".html": {
           "relative_path": "api/Admonish.DateTimeValidationExtensions.html",
-          "hash": "zf52C7nfnEbWxF7VVMzebA=="
+          "hash": "D/21ZLGHR5CF25AYYqD8fA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Admonish.EnumValidationExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Admonish.EnumValidationExtensions.html",
+          "hash": "OoJsjPJkVuOGwYV2FIgQ2A=="
         }
       },
       "is_incremental": true,
@@ -21,7 +33,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Admonish.NumericValidationExtensions.html",
-          "hash": "gBEuuhfpJbJrZqxEsJQEGw=="
+          "hash": "bEiebNoKQVqBN8bt71JV/w=="
         }
       },
       "is_incremental": true,
@@ -33,7 +45,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Admonish.ObjectValidationExtensions.html",
-          "hash": "vFjw0Hy0iBFprybzbouYsQ=="
+          "hash": "L6UeRlf/5h9T0gZlo/N2bw=="
         }
       },
       "is_incremental": true,
@@ -45,7 +57,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Admonish.StringValidationExtensions.html",
-          "hash": "PF2qLNsiN1Xo+O/Op3VDkg=="
+          "hash": "TaPn5DothqbQKJGLXxvGpg=="
         }
       },
       "is_incremental": true,
@@ -57,7 +69,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Admonish.ValidationException.html",
-          "hash": "TdMpwMCvBdfI2zUb+Hr00g=="
+          "hash": "r3oIQwUBXlI2DpfxVKO3DQ=="
         }
       },
       "is_incremental": true,
@@ -69,7 +81,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Admonish.ValidationExtensions.html",
-          "hash": "vuucJI1t0W3Bi6Ipf7BbpA=="
+          "hash": "Pv79YNKyKWsTxjxSzKgQiA=="
         }
       },
       "is_incremental": true,
@@ -81,7 +93,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Admonish.ValidationResult.html",
-          "hash": "Bdq41UAUJMm5GkgjgFDZ1Q=="
+          "hash": "VmMEIfAwIX58gXBdYpcEMQ=="
         }
       },
       "is_incremental": true,
@@ -93,7 +105,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Admonish.Validator.html",
-          "hash": "3Ppci2PUAKox8tHMJZ8Gxw=="
+          "hash": "kS1h2T6sxb7LqapHANdnUA=="
         }
       },
       "is_incremental": true,
@@ -105,7 +117,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Admonish.html",
-          "hash": "ZFYrE8ubvkVYALGERQxaww=="
+          "hash": "U8GMo4cH2vc6rH4lr6T7IA=="
         }
       },
       "is_incremental": true,
@@ -117,7 +129,7 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "ok4KIKyEyOFNjRcrCmZMqA=="
+          "hash": "CuF3cji+fR+We0auYzzTlw=="
         }
       },
       "is_incremental": true,
@@ -129,7 +141,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "PGY2xIzLc+SioFh3rnoaxQ=="
+          "hash": "3y/qhktm1mTjdeYsSRxmXg=="
         }
       },
       "is_incremental": false,
@@ -141,7 +153,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/intro.html",
-          "hash": "Kj884i24uxi1SSjzygJ8Vw=="
+          "hash": "ybn4OGm8YJfG74LWLGxgPQ=="
         }
       },
       "is_incremental": true,
@@ -176,7 +188,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "IT7Lo8w6XzdznzcS6xaQFA=="
+          "hash": "OF9cykFGxCaEeb9R5VTeFg=="
         }
       },
       "is_incremental": true,
@@ -199,26 +211,36 @@
     {
       "status": {
         "can_incremental": true,
-        "incrementalPhase": "build"
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0
       },
       "processors": {
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": true,
-          "incrementalPhase": "build"
-        },
-        "ConceptualDocumentProcessor": {
-          "can_incremental": true,
-          "incrementalPhase": "build"
-        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 3,
+          "skipped_file_count": 3
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 10,
+          "skipped_file_count": 10
         }
       }
     },
@@ -226,7 +248,9 @@
       "status": {
         "can_incremental": true,
         "details": "Can support incremental post processing.",
-        "incrementalPhase": "postProcessing"
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
       },
       "processors": {}
     }

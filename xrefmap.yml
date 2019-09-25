@@ -70,6 +70,28 @@ references:
   isSpec: "True"
   fullName: Admonish.DateTimeValidationExtensions.Min
   nameWithType: DateTimeValidationExtensions.Min
+- uid: Admonish.EnumValidationExtensions
+  name: EnumValidationExtensions
+  href: api/Admonish.EnumValidationExtensions.html
+  commentId: T:Admonish.EnumValidationExtensions
+  fullName: Admonish.EnumValidationExtensions
+  nameWithType: EnumValidationExtensions
+- uid: Admonish.EnumValidationExtensions.IsDefined*
+  name: IsDefined
+  href: api/Admonish.EnumValidationExtensions.html#Admonish_EnumValidationExtensions_IsDefined_
+  commentId: Overload:Admonish.EnumValidationExtensions.IsDefined
+  isSpec: "True"
+  fullName: Admonish.EnumValidationExtensions.IsDefined
+  nameWithType: EnumValidationExtensions.IsDefined
+- uid: Admonish.EnumValidationExtensions.IsDefined``1(Admonish.ValidationResult,System.String,``0,System.Nullable{System.String})
+  name: IsDefined<TEnum>(ValidationResult, String, TEnum, Nullable<String>)
+  href: api/Admonish.EnumValidationExtensions.html#Admonish_EnumValidationExtensions_IsDefined__1_Admonish_ValidationResult_System_String___0_System_Nullable_System_String__
+  commentId: M:Admonish.EnumValidationExtensions.IsDefined``1(Admonish.ValidationResult,System.String,``0,System.Nullable{System.String})
+  name.vb: IsDefined(Of TEnum)(ValidationResult, String, TEnum, Nullable(Of String))
+  fullName: Admonish.EnumValidationExtensions.IsDefined<TEnum>(Admonish.ValidationResult, System.String, TEnum, System.Nullable<System.String>)
+  fullName.vb: Admonish.EnumValidationExtensions.IsDefined(Of TEnum)(Admonish.ValidationResult, System.String, TEnum, System.Nullable(Of System.String))
+  nameWithType: EnumValidationExtensions.IsDefined<TEnum>(ValidationResult, String, TEnum, Nullable<String>)
+  nameWithType.vb: EnumValidationExtensions.IsDefined(Of TEnum)(ValidationResult, String, TEnum, Nullable(Of String))
 - uid: Admonish.NumericValidationExtensions
   name: NumericValidationExtensions
   href: api/Admonish.NumericValidationExtensions.html

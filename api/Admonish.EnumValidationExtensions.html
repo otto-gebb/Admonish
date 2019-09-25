@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class Validator
+    <title>Class EnumValidationExtensions
    | Admonish validation library </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class Validator
+    <meta name="title" content="Class EnumValidationExtensions
    | Admonish validation library ">
     <meta name="generator" content="docfx 2.45.1.0">
     
@@ -68,18 +68,18 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Admonish.Validator">
+            <article class="content wrap" id="_content" data-uid="Admonish.EnumValidationExtensions">
   
   
-  <h1 id="Admonish_Validator" data-uid="Admonish.Validator" class="text-break">Class Validator
+  <h1 id="Admonish_EnumValidationExtensions" data-uid="Admonish.EnumValidationExtensions" class="text-break">Class EnumValidationExtensions
   </h1>
-  <div class="markdown level0 summary"><p>Creates <a class="xref" href="Admonish.ValidationResult.html">ValidationResult</a> objects.</p>
+  <div class="markdown level0 summary"><p>Contains enum-related validation extension methods of <a class="xref" href="Admonish.ValidationResult.html">ValidationResult</a>.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">Validator</span></div>
+    <div class="level1"><span class="xref">EnumValidationExtensions</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -107,60 +107,31 @@
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Admonish.html">Admonish</a></h6>
   <h6><strong>Assembly</strong>: Admonish.dll</h6>
-  <h5 id="Admonish_Validator_syntax">Syntax</h5>
+  <h5 id="Admonish_EnumValidationExtensions_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class Validator</code></pre>
+    <pre><code class="lang-csharp hljs">public static class EnumValidationExtensions</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/otto-gebb/Admonish/new/master/apiSpec/new?filename=Admonish_Validator_Create.md&amp;value=---%0Auid%3A%20Admonish.Validator.Create%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/otto-gebb/Admonish/new/master/apiSpec/new?filename=Admonish_EnumValidationExtensions_IsDefined__1_Admonish_ValidationResult_System_String___0_System_Nullable_System_String__.md&amp;value=---%0Auid%3A%20Admonish.EnumValidationExtensions.IsDefined%60%601(Admonish.ValidationResult%2CSystem.String%2C%60%600%2CSystem.Nullable%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/otto-gebb/Admonish/blob/master/src/Admonish/Validator.cs/#L17">View Source</a>
+    <a href="https://github.com/otto-gebb/Admonish/blob/master/src/Admonish/Extensions/EnumValidationExtensions.cs/#L22">View Source</a>
   </span>
-  <a id="Admonish_Validator_Create_" data-uid="Admonish.Validator.Create*"></a>
-  <h4 id="Admonish_Validator_Create" data-uid="Admonish.Validator.Create">Create()</h4>
-  <div class="markdown level1 summary"><p>Creates an object that allows to perform validation via a fluent interface.</p>
+  <a id="Admonish_EnumValidationExtensions_IsDefined_" data-uid="Admonish.EnumValidationExtensions.IsDefined*"></a>
+  <h4 id="Admonish_EnumValidationExtensions_IsDefined__1_Admonish_ValidationResult_System_String___0_System_Nullable_System_String__" data-uid="Admonish.EnumValidationExtensions.IsDefined``1(Admonish.ValidationResult,System.String,``0,System.Nullable{System.String})">IsDefined&lt;TEnum&gt;(ValidationResult, String, TEnum, Nullable&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Checks whether the specified value is defined in the specified enum type.
+When the check fails, adds an error message to the
+<a class="xref" href="Admonish.ValidationResult.html">ValidationResult</a> and associates it with the specified key.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static ValidationResult Create()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Admonish.ValidationResult.html">ValidationResult</a></td>
-        <td><p>The created <a class="xref" href="Admonish.ValidationResult.html">ValidationResult</a>.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/otto-gebb/Admonish/new/master/apiSpec/new?filename=Admonish_Validator_UnsafeConfigureException_System_Func_Admonish_ValidationResult_System_Exception__.md&amp;value=---%0Auid%3A%20Admonish.Validator.UnsafeConfigureException(System.Func%7BAdmonish.ValidationResult%2CSystem.Exception%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/otto-gebb/Admonish/blob/master/src/Admonish/Validator.cs/#L30">View Source</a>
-  </span>
-  <a id="Admonish_Validator_UnsafeConfigureException_" data-uid="Admonish.Validator.UnsafeConfigureException*"></a>
-  <h4 id="Admonish_Validator_UnsafeConfigureException_System_Func_Admonish_ValidationResult_System_Exception__" data-uid="Admonish.Validator.UnsafeConfigureException(System.Func{Admonish.ValidationResult,System.Exception})">UnsafeConfigureException(Func&lt;ValidationResult, Exception&gt;)</h4>
-  <div class="markdown level1 summary"><p>Call this once at the application start
-to throw a custom exception for validation errors.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void UnsafeConfigureException(Func&lt;ValidationResult, Exception&gt; exceptionFactory)</code></pre>
+    <pre><code class="lang-csharp hljs">public static ValidationResult IsDefined&lt;TEnum&gt;(this ValidationResult r, string key, TEnum value, string? message = default(string? ))
+
+    where TEnum : Enum</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -173,11 +144,59 @@ to throw a custom exception for validation errors.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Func</span>&lt;<a class="xref" href="Admonish.ValidationResult.html">ValidationResult</a>, <span class="xref">System.Exception</span>&gt;</td>
-        <td><span class="parametername">exceptionFactory</span></td>
-        <td><p>A callback that takes a <a class="xref" href="Admonish.ValidationResult.html">ValidationResult</a>
-as a parameter and creates a custom validation excepton.</p>
+        <td><a class="xref" href="Admonish.ValidationResult.html">ValidationResult</a></td>
+        <td><span class="parametername">r</span></td>
+        <td><p>The validation result.</p>
 </td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The key to associate the error with.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TEnum</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value to check.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">message</span></td>
+        <td><p>The optional error message. If not specified, the default one is used.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Admonish.ValidationResult.html">ValidationResult</a></td>
+        <td><p>The validation result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TEnum</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -189,10 +208,10 @@ as a parameter and creates a custom validation excepton.</p>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/otto-gebb/Admonish/new/master/apiSpec/new?filename=Admonish_Validator.md&amp;value=---%0Auid%3A%20Admonish.Validator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/otto-gebb/Admonish/new/master/apiSpec/new?filename=Admonish_EnumValidationExtensions.md&amp;value=---%0Auid%3A%20Admonish.EnumValidationExtensions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/otto-gebb/Admonish/blob/master/src/Admonish/Validator.cs/#L8" class="contribution-link">View Source</a>
+                    <a href="https://github.com/otto-gebb/Admonish/blob/master/src/Admonish/Extensions/EnumValidationExtensions.cs/#L8" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
