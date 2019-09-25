@@ -28,7 +28,7 @@ let gitOwner = "otto-gebb"
 let gitHome = "https://github.com/" + gitOwner
 
 let projectUrl = sprintf "https://github.com/%s/%s" gitOwner product
-let copyright = "Copyright 2018"
+let copyright = "Copyright 2019"
 
 let srcProjects = !! "src/**/*.*proj"
 let testProjects = !! "test/**/*Tests.*proj"
@@ -49,7 +49,7 @@ Target.create "Clean" (fun _ ->
     ++ "test/**/bin"
     ++ "test/**/obj"
     ++ "nugetpkg"
-    |> Shell.cleanDirs 
+    |> Shell.cleanDirs
 )
 
 let build project =

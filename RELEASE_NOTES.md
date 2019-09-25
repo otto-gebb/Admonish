@@ -1,4 +1,4 @@
-### 0.3.0 - Unreleased
+### 0.3.0 - 2019-09-25
 
 - Add `IsDefined<TEnum>` helper.
 
