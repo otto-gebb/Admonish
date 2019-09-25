@@ -1,7 +1,8 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <LangVersion>preview</LangVersion>
     <GenerateProgramFile>false</GenerateProgramFile>
   </PropertyGroup>
   <ItemGroup>
@@ -10,6 +11,7 @@
   <ItemGroup>
     <Compile Include="Utils.fs" />
     <Compile Include="NumericExtensionTests.fs" />
+    <Compile Include="EnumExtensionTests.fs" />
     <Compile Include="DateExtensionTests.fs" />
     <Compile Include="StringExtensionTests.fs" />
     <Compile Include="ObjectExtensionTests.fs" />
@@ -19,9 +21,9 @@
     <Compile Include="Program.fs" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Expecto" Version="8.9.1" />
-    <PackageReference Include="FSharp.Core" Version="4.5.4" />
-    <PackageReference Include="YoloDev.Expecto.TestSdk" Version="0.6.0" />
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.9.0" />
+    <PackageReference Include="Expecto" Version="8.12.0" />
+    <PackageReference Include="FSharp.Core" Version="4.7.0" />
+    <PackageReference Include="YoloDev.Expecto.TestSdk" Version="0.8.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.3.0" />
   </ItemGroup>
 </Project>

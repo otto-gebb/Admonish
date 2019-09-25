@@ -1,3 +1,7 @@
+### 0.3.0 - Unreleased
+
+- Add `IsDefined<TEnum>` helper.
+
 ### 0.2.2 – 2019-03-10
 
 - Expose the constructor of `ValidationResult`.
