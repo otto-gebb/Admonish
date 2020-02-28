@@ -15,15 +15,18 @@ namespace Admonish
         /// <param name="r">The validation result.</param>
         /// <param name="key">The key to associate the error with.</param>
         /// <param name="value">The string to check.</param>
+        /// <param name="message">An optional error message.</param>
         /// <returns>The validation result.</returns>
         public static ValidationResult NonNullOrEmpty(
             this ValidationResult r,
             string key,
-            string? value)
+            string? value,
+            string? message = null)
         {
             if (string.IsNullOrEmpty(value))
             {
-                r.AddError(key, "The value must not be null or empty.");
+                message ??= "The value must not be null or empty.";
+                r.AddError(key, message);
             }
 
             return r;
@@ -38,17 +41,19 @@ namespace Admonish
         /// <param name="r">The validation result.</param>
         /// <param name="key">The key to associate the error with.</param>
         /// <param name="value">The string to check.</param>
+        /// <param name="message">An optional error message.</param>
         /// <returns>The validation result.</returns>
         public static ValidationResult NonNullOrWhiteSpace(
             this ValidationResult r,
             string key,
-            string? value)
+            string? value,
+            string? message = null)
         {
             if (string.IsNullOrWhiteSpace(value))
             {
-                r.AddError(
-                    key,
-                    "The value must not be null or empty or consist of whitespace characters only.");
+                message ??=
+                    "The value must not be null or empty or consist of whitespace characters only.";
+                r.AddError(key, message);
             }
 
             return r;
@@ -76,7 +81,8 @@ namespace Admonish
         {
             if (value == null || !regex.IsMatch(value))
             {
-                r.AddError(key, message ?? $"The value must match the regular expression {regex}.");
+                message ??= $"The value must match the regular expression {regex}.";
+                r.AddError(key, message);
             }
 
             return r;
@@ -95,20 +101,21 @@ namespace Admonish
         /// The minimum allowed length.
         /// </param>
         /// <param name="maxLength">The maximum allowed length.</param>
+        /// <param name="message">An optional error message.</param>
         /// <returns>The validation result.</returns>
         public static ValidationResult LengthBetween(
             this ValidationResult r,
             string key,
             string? value,
             int minLength,
-            int maxLength)
+            int maxLength,
+            string? message = null)
         {
             if (value == null || value.Length < minLength || value.Length > maxLength)
             {
-                r.AddError(
-                    key,
-                    "The length of the string must be between"
-                        + $" {minLength} and {maxLength} (inclusive).");
+                message ??= "The length of the string must be between"
+                    + $" {minLength} and {maxLength} (inclusive).";
+                r.AddError(key, message);
             }
 
             return r;

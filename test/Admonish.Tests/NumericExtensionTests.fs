@@ -26,6 +26,16 @@ let minTests =
         .Min("decimal", 2m, 1m) |> ignore
 
       expectSuccess vr
+
+    vtest "int: Should override the message" <| fun vr ->
+      vr.Min("int", 0, 1, "msg") |> ignore
+
+      expectErrorMessage vr "msg"
+
+    vtest "decimal: Should override the message" <| fun vr ->
+      vr.Min("decimal", 0m, 1m, "msg") |> ignore
+
+      expectErrorMessage vr "msg"
   ]
 
 [<Tests>]
@@ -51,6 +61,16 @@ let maxTests =
         .Max("decimal", 0m, 1m) |> ignore
 
       expectSuccess vr
+
+    vtest "int: Should override the message" <| fun vr ->
+      vr.Max("int", 2, 1, "msg") |> ignore
+
+      expectErrorMessage vr "msg"
+
+    vtest "decimal: Should override the message" <| fun vr ->
+      vr.Max("decimal", 2m, 1m, "msg") |> ignore
+
+      expectErrorMessage vr "msg"
   ]
 
 [<Tests>]
@@ -85,4 +105,14 @@ let betweenTests =
         .Between("decimal", 5m, 1m, 10m) |> ignore
 
       expectSuccess vr
+
+    vtest "int: Should override the message" <| fun vr ->
+      vr.Between("int", 11, 1, 10, "msg") |> ignore
+
+      expectErrorMessage vr "msg"
+
+    vtest "decimal: Should override the message" <| fun vr ->
+      vr.Between("decimal", 11m, 1m, 10m, "msg") |> ignore
+
+      expectErrorMessage vr "msg"
   ]

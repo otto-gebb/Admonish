@@ -19,6 +19,11 @@ let nonNullOrEmpty =
         .NonNullOrEmpty("key", "valid") |> ignore
 
       expectSuccess vr
+
+    vtest "Should override the message" <| fun vr ->
+      vr.NonNullOrEmpty("null", null, "msg") |> ignore
+
+      expectErrorMessage vr "msg"
   ]
 
 [<Tests>]
@@ -36,6 +41,11 @@ let nonNullOrWhiteSpace =
       vr.NonNullOrEmpty("key", "valid") |> ignore
 
       expectSuccess vr
+
+    vtest "Should override the message" <| fun vr ->
+      vr.NonNullOrWhiteSpace("empty", "", "msg") |> ignore
+
+      expectErrorMessage vr "msg"
   ]
 
 [<Tests>]
@@ -60,6 +70,11 @@ let matches =
       vr.Matches("nonmatcn", "aa", reg) |> ignore
 
       expectSuccess vr
+
+    vtest "Should override the message" <| fun vr ->
+      vr.Matches("null", null, reg, "msg") |> ignore
+
+      expectErrorMessage vr "msg"
   ]
 
 [<Tests>]
@@ -77,4 +92,9 @@ let lengthBetween =
       vr.LengthBetween("length", "123", 3, 4) |> ignore
 
       expectSuccess vr
+
+    vtest "Should override the message" <| fun vr ->
+      vr.LengthBetween("null", null, 3, 4, "msg") |> ignore
+
+      expectErrorMessage vr "msg"
   ]

@@ -15,9 +15,7 @@ namespace Admonish
         /// <param name="r">The validation result.</param>
         /// <param name="key">The key to associate the error with.</param>
         /// <param name="value">The value to check.</param>
-        /// <param name="message">
-        /// The optional error message. If not specified, the default one is used.
-        /// </param>
+        /// <param name="message">An optional error message.</param>
         /// <returns>The validation result.</returns>
         public static ValidationResult IsDefined<TEnum>(
             this ValidationResult r,
@@ -28,9 +26,8 @@ namespace Admonish
             Type enumType = typeof(TEnum);
             if (!Enum.IsDefined(enumType, value))
             {
-                string err =
-                    message ?? $"The value {value} is not defined in the enum '{enumType.Name}'.";
-                r.AddError(key, err);
+                message ??= $"The value {value} is not defined in the enum '{enumType.Name}'.";
+                r.AddError(key, message);
             }
 
             return r;

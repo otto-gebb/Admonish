@@ -16,16 +16,19 @@ namespace Admonish
         /// <param name="key">The key to associate the error with.</param>
         /// <param name="value">The number to check.</param>
         /// <param name="minValue">The minimum allowed value.</param>
+        /// <param name="message">An optional error message.</param>
         /// <returns>The validation result.</returns>
         public static ValidationResult Min(
             this ValidationResult r,
             string key,
             int value,
-            int minValue)
+            int minValue,
+            string? message = null)
         {
             if (value < minValue)
             {
-                r.AddError(key, $"The value must be greater than or equal to {minValue}.");
+                message ??= $"The value must be greater than or equal to {minValue}.";
+                r.AddError(key, message);
             }
 
             return r;
@@ -40,16 +43,19 @@ namespace Admonish
         /// <param name="key">The key to associate the error with.</param>
         /// <param name="value">The number to check.</param>
         /// <param name="minValue">The minimum allowed value.</param>
+        /// <param name="message">An optional error message.</param>
         /// <returns>The validation result.</returns>
         public static ValidationResult Min(
             this ValidationResult r,
             string key,
             decimal value,
-            decimal minValue)
+            decimal minValue,
+            string? message = null)
         {
             if (value < minValue)
             {
-                r.AddError(key, $"The value must be greater than or equal to {minValue}.");
+                message ??= $"The value must be greater than or equal to {minValue}.";
+                r.AddError(key, message);
             }
 
             return r;
@@ -64,16 +70,19 @@ namespace Admonish
         /// <param name="key">The key to associate the error with.</param>
         /// <param name="value">The number to check.</param>
         /// <param name="maxValue">The maximum allowed value.</param>
+        /// <param name="message">An optional error message.</param>
         /// <returns>The validation result.</returns>
         public static ValidationResult Max(
             this ValidationResult r,
             string key,
             int value,
-            int maxValue)
+            int maxValue,
+            string? message = null)
         {
             if (value > maxValue)
             {
-                r.AddError(key, $"The value must be less than or equal to {maxValue}.");
+                message ??= $"The value must be less than or equal to {maxValue}.";
+                r.AddError(key, message);
             }
 
             return r;
@@ -88,16 +97,19 @@ namespace Admonish
         /// <param name="key">The key to associate the error with.</param>
         /// <param name="value">The number to check.</param>
         /// <param name="maxValue">The maximum allowed value.</param>
+        /// <param name="message">An optional error message.</param>
         /// <returns>The validation result.</returns>
         public static ValidationResult Max(
             this ValidationResult r,
             string key,
             decimal value,
-            decimal maxValue)
+            decimal maxValue,
+            string? message = null)
         {
             if (value > maxValue)
             {
-                r.AddError(key, $"The value must be less than or equal to {maxValue}.");
+                message ??= $"The value must be less than or equal to {maxValue}.";
+                r.AddError(key, message);
             }
 
             return r;
@@ -113,13 +125,15 @@ namespace Admonish
         /// <param name="value">The number to check.</param>
         /// <param name="minValue">The minimum allowed value.</param>
         /// <param name="maxValue">The maximum allowed value.</param>
+        /// <param name="message">An optional error message.</param>
         /// <returns>The validation result.</returns>
         public static ValidationResult Between(
             this ValidationResult r,
             string key,
             int value,
             int minValue,
-            int maxValue)
+            int maxValue,
+            string? message = null)
         {
             if (minValue > maxValue)
             {
@@ -130,7 +144,8 @@ namespace Admonish
 
             if (value < minValue || value > maxValue)
             {
-                r.AddError(key, $"The value must be between {minValue} and {maxValue} (inclusive).");
+                message ??= $"The value must be between {minValue} and {maxValue} (inclusive).";
+                r.AddError(key, message);
             }
 
             return r;
@@ -146,13 +161,15 @@ namespace Admonish
         /// <param name="value">The number to check.</param>
         /// <param name="minValue">The minimum allowed value.</param>
         /// <param name="maxValue">The maximum allowed value.</param>
+        /// <param name="message">An optional error message.</param>
         /// <returns>The validation result.</returns>
         public static ValidationResult Between(
             this ValidationResult r,
             string key,
             decimal value,
             decimal minValue,
-            decimal maxValue)
+            decimal maxValue,
+            string? message = null)
         {
             if (minValue > maxValue)
             {
@@ -163,7 +180,8 @@ namespace Admonish
 
             if (value < minValue || value > maxValue)
             {
-                r.AddError(key, $"The value must be between {minValue} and {maxValue} (inclusive).");
+                message ??= $"The value must be between {minValue} and {maxValue} (inclusive).";
+                r.AddError(key, message);
             }
 
             return r;

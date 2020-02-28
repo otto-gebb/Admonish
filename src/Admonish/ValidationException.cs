@@ -24,7 +24,8 @@ namespace Admonish
         /// with a specified validation result.
         /// </summary>
         /// <param name="result">The object containing error messages.</param>
-        public ValidationException(ValidationResult result) : base("Validation error.")
+        public ValidationException(ValidationResult result)
+            : base("Validation error. " + result.ToString())
         {
             Errors = result.ToDictionary();
         }
