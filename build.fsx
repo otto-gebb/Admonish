@@ -191,7 +191,7 @@ Target.create "All" ignore
 
 "BuildPackage"
 //  ==> "PublishNuget" AppVeyor will publish on tag.
-  ==> "PublishDocs"
+//  ==> "PublishDocs"
   ==> "Release"
 
 Target.runOrDefault "All"

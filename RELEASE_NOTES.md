@@ -1,3 +1,12 @@
+### 1.0.0 - 2020-02-28
+
+- Add optional custom error message to all validation helpers.
+- Add new methods:
+  - Null
+  - Equal
+  - NotEqual
+
+
 ### 0.3.0 - 2019-09-25
 
 - Add `IsDefined<TEnum>` helper.
