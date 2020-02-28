@@ -36,6 +36,11 @@ let minTests =
         .Min("DateTimeOffset", dto, dto -. 1) |> ignore
 
       expectSuccess vr
+
+    vtest "Should override the message" <| fun vr ->
+      vr.Min("DateTime", dt, dt +. 1, "msg") |> ignore
+
+      expectErrorMessage vr "msg"
   ]
 
 [<Tests>]
@@ -61,6 +66,11 @@ let maxTests =
         .Max("DateTimeOffset", dto, dto +. 1) |> ignore
 
       expectSuccess vr
+
+    vtest "Should override the message" <| fun vr ->
+      vr.Max("DateTime", dt, dt -. 1, "msg") |> ignore
+
+      expectErrorMessage vr "msg"
   ]
 
 [<Tests>]
@@ -95,4 +105,9 @@ let betweenTests =
         .Between("DateTimeOffset", dto, dto -. 1, dto +. 1) |> ignore
 
       expectSuccess vr
+
+    vtest "Should override the message" <| fun vr ->
+      vr.Between("DateTime", dt, dt -. 2, dt -. 1, "msg") |> ignore
+
+      expectErrorMessage vr "msg"
   ]

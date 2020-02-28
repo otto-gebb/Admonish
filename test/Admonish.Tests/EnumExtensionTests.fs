@@ -20,9 +20,7 @@ let minTests =
       Expect.stringContains message (nameof MyEnum) "Default message did not contain enum name"
 
     vtest "Should override the message" <| fun vr ->
-      let expected = "custom message"
-      vr.IsDefined<MyEnum>("enum", badValue, expected) |> ignore
+      vr.IsDefined<MyEnum>("enum", badValue, "msg") |> ignore
 
-      let message = vr.ToDictionary().["enum"] |> Array.head
-      Expect.equal message expected "Invalid message"
+      expectErrorMessage vr "msg"
   ]

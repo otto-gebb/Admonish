@@ -175,14 +175,19 @@ Target.create "Release" (fun _ ->
 
 Target.create "All" ignore
 
+"Build"
+  ?=> "BuildTest"
+  ==> "RunTest"
+
 "Clean"
   ==> "ProjectVersion"
   ==> "Build"
-  ==> "BuildTest"
-  ==> "RunTest"
   ==> "All"
   ==> "BuildPackage"
   ==> "PublishNuget"
+
+"RunTest"
+  ==> "All"
 
 "BuildPackage"
 //  ==> "PublishNuget" AppVeyor will publish on tag.

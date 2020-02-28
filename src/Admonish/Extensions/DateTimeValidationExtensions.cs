@@ -17,16 +17,19 @@ namespace Admonish
         /// <param name="key">The key to associate the error with.</param>
         /// <param name="value">The date to check.</param>
         /// <param name="minValue">The minimum allowed value.</param>
+        /// <param name="message">An optional error message.</param>
         /// <returns>The validation result.</returns>
         public static ValidationResult Min(
             this ValidationResult r,
             string key,
             DateTime value,
-            DateTime minValue)
+            DateTime minValue,
+            string? message = null)
         {
             if (value < minValue)
             {
-                r.AddError(key, $"The value must be greater than or equal to '{minValue:s}'.");
+                message ??= $"The value must be greater than or equal to '{minValue:s}'.";
+                r.AddError(key, message);
             }
 
             return r;
@@ -41,16 +44,19 @@ namespace Admonish
         /// <param name="key">The key to associate the error with.</param>
         /// <param name="value">The date to check.</param>
         /// <param name="minValue">The minimum allowed value.</param>
+        /// <param name="message">An optional error message.</param>
         /// <returns>The validation result.</returns>
         public static ValidationResult Min(
             this ValidationResult r,
             string key,
             DateTimeOffset value,
-            DateTimeOffset minValue)
+            DateTimeOffset minValue,
+            string? message = null)
         {
             if (value < minValue)
             {
-                r.AddError(key, $"The value must be greater than or equal to '{minValue:o}'.");
+                message ??= $"The value must be greater than or equal to '{minValue:o}'.";
+                r.AddError(key, message);
             }
 
             return r;
@@ -65,16 +71,19 @@ namespace Admonish
         /// <param name="key">The key to associate the error with.</param>
         /// <param name="value">The date to check.</param>
         /// <param name="maxValue">The maximum allowed value.</param>
+        /// <param name="message">An optional error message.</param>
         /// <returns>The validation result.</returns>
         public static ValidationResult Max(
             this ValidationResult r,
             string key,
             DateTime value,
-            DateTime maxValue)
+            DateTime maxValue,
+            string? message = null)
         {
             if (value > maxValue)
             {
-                r.AddError(key, $"The value must be less than or equal to '{maxValue:s}'.");
+                message ??= $"The value must be less than or equal to '{maxValue:s}'.";
+                r.AddError(key, message);
             }
 
             return r;
@@ -89,16 +98,19 @@ namespace Admonish
         /// <param name="key">The key to associate the error with.</param>
         /// <param name="value">The date to check.</param>
         /// <param name="maxValue">The maximum allowed value.</param>
+        /// <param name="message">An optional error message.</param>
         /// <returns>The validation result.</returns>
         public static ValidationResult Max(
             this ValidationResult r,
             string key,
             DateTimeOffset value,
-            DateTimeOffset maxValue)
+            DateTimeOffset maxValue,
+            string? message = null)
         {
             if (value > maxValue)
             {
-                r.AddError(key, $"The value must be less than or equal to '{maxValue:o}'.");
+                message ??= $"The value must be less than or equal to '{maxValue:o}'.";
+                r.AddError(key, message);
             }
 
             return r;
@@ -114,13 +126,15 @@ namespace Admonish
         /// <param name="value">The date to check.</param>
         /// <param name="minValue">The minimum allowed value.</param>
         /// <param name="maxValue">The maximum allowed value.</param>
+        /// <param name="message">An optional error message.</param>
         /// <returns>The validation result.</returns>
         public static ValidationResult Between(
             this ValidationResult r,
             string key,
             DateTime value,
             DateTime minValue,
-            DateTime maxValue)
+            DateTime maxValue,
+            string? message = null)
         {
             if (minValue > maxValue)
             {
@@ -131,9 +145,9 @@ namespace Admonish
 
             if (value < minValue || value > maxValue)
             {
-                r.AddError(
-                    key,
-                    $"The value must be between '{minValue:s}' and '{maxValue:s}' (inclusive).");
+                message ??=
+                    $"The value must be between '{minValue:s}' and '{maxValue:s}' (inclusive).";
+                r.AddError(key, message);
             }
 
             return r;
@@ -149,13 +163,15 @@ namespace Admonish
         /// <param name="value">The date to check.</param>
         /// <param name="minValue">The minimum allowed value.</param>
         /// <param name="maxValue">The maximum allowed value.</param>
+        /// <param name="message">An optional error message.</param>
         /// <returns>The validation result.</returns>
         public static ValidationResult Between(
             this ValidationResult r,
             string key,
             DateTimeOffset value,
             DateTimeOffset minValue,
-            DateTimeOffset maxValue)
+            DateTimeOffset maxValue,
+            string? message = null)
         {
             if (minValue > maxValue)
             {
@@ -166,9 +182,9 @@ namespace Admonish
 
             if (value < minValue || value > maxValue)
             {
-                r.AddError(
-                    key,
-                    $"The value must be between '{minValue:o}' and '{maxValue:o}' (inclusive).");
+                message ??=
+                    $"The value must be between '{minValue:o}' and '{maxValue:o}' (inclusive).";
+                r.AddError(key, message);
             }
 
             return r;
