@@ -49,7 +49,7 @@ Target.create "Clean" (fun _ ->
     ++ "test/**/bin"
     ++ "test/**/obj"
     ++ "nugetpkg"
-    |> Shell.cleanDirs
+    |> Shell.deleteDirs
 )
 
 let build project =
@@ -138,6 +138,8 @@ Target.create "PublishDocs" (fun _ ->
   Git.Repository.cloneSingleBranch "" url "gh-pages" "temp-docs"
   Git.Repository.fullclean "temp-docs"
 
+  // If building docs fails, try setting
+  // $env:MSBUILD_EXE_PATH="c:\Program Files\dotnet\sdk\3.1.101\MSBuild.dll"
   CreateProcess.fromRawCommand "docfx" []
   |> CreateProcess.withWorkingDirectory "doc"
   |> CreateProcess.withTimeout (TimeSpan.FromMinutes 1.0)
@@ -191,7 +193,7 @@ Target.create "All" ignore
 
 "BuildPackage"
 //  ==> "PublishNuget" AppVeyor will publish on tag.
-//  ==> "PublishDocs"
+  ==> "PublishDocs"
   ==> "Release"
 
 Target.runOrDefault "All"

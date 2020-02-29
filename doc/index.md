@@ -4,6 +4,10 @@ A simple validation library for app services and domain entities.
 
 [Github repository](https://github.com/otto-gebb/Admonish)
 
+## Usage
+
+See [introduction](articles/intro.md).
+
 ## Motivation
 
 Sometimes validation logic is duplicated

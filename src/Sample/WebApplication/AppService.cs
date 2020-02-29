@@ -19,6 +19,7 @@ namespace WebApplication
             Validator
                 .Create()
                 .Check(
+                    nameof(dto.Name),
                     !_db.ContainsKey(dto.Name ?? ""),
                     "An entity with this name already exists.")
                 .ThrowIfInvalid();

@@ -8,7 +8,7 @@ namespace Admonish
     public static class StringValidationExtensions
     {
         /// <summary>
-        /// Checks whether the specified string is not null or empty.
+        /// Ensures that the specified string is not null or empty.
         /// When it is, adds an error message to the
         /// <see cref="ValidationResult" /> and associates it with the specified key.
         /// </summary>
@@ -33,7 +33,7 @@ namespace Admonish
         }
 
         /// <summary>
-        /// Checks whether the specified string is not null or empty or consists
+        /// Ensures that the specified string is not null or empty or consists
         /// of whitespace characters only.
         /// When the check fails, adds an error message to the
         /// <see cref="ValidationResult" /> and associates it with the specified key.
@@ -60,7 +60,7 @@ namespace Admonish
         }
 
         /// <summary>
-        /// Checks whether the specified string matches the specified regular expression.
+        /// Ensures that the specified string matches the specified regular expression.
         /// When the check fails, adds an error message to the
         /// <see cref="ValidationResult" /> and associates it with the specified key.
         /// </summary>
@@ -89,7 +89,7 @@ namespace Admonish
         }
 
         /// <summary>
-        /// Checks whether the length of the specified string is within the specified range
+        /// Ensures that the length of the specified string is within the specified range
         /// (inclusive).
         /// When the check fails, adds an error message to the
         /// <see cref="ValidationResult" /> and associates it with the specified key.

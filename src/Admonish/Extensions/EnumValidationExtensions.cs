@@ -8,7 +8,7 @@ namespace Admonish
     public static class EnumValidationExtensions
     {
         /// <summary>
-        /// Checks whether the specified value is defined in the specified enum type.
+        /// Ensures that the specified value is defined in the specified enum type.
         /// When the check fails, adds an error message to the
         /// <see cref="ValidationResult" /> and associates it with the specified key.
         /// </summary>

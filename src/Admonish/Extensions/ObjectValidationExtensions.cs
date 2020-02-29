@@ -8,7 +8,7 @@ namespace Admonish
     public static class ObjectValidationExtensions
     {
         /// <summary>
-        /// Checks whether the specified object is not null.
+        /// Ensures that the specified object is not null.
         /// When it is, adds an error message to the
         /// <see cref="ValidationResult" /> and associates it with the specified key.
         /// </summary>
@@ -33,7 +33,7 @@ namespace Admonish
         }
 
         /// <summary>
-        /// Checks whether the specified object is not null.
+        /// Ensures that the specified object is not null.
         /// When it is, adds an error message to the
         /// <see cref="ValidationResult" /> and associates it with the specified key.
         /// </summary>
@@ -58,7 +58,7 @@ namespace Admonish
         }
 
         /// <summary>
-        /// Checks whether the specified object is null.
+        /// Ensures that the specified object is null.
         /// When it is not, adds an error message to the
         /// <see cref="ValidationResult" /> and associates it with the specified key.
         /// </summary>
@@ -83,7 +83,7 @@ namespace Admonish
         }
 
         /// <summary>
-        /// Checks whether the specified object is null.
+        /// Ensures that the specified object is null.
         /// When it is not, adds an error message to the
         /// <see cref="ValidationResult" /> and associates it with the specified key.
         /// </summary>
@@ -108,7 +108,7 @@ namespace Admonish
         }
 
         /// <summary>
-        /// Checks whether the specified object is equal to the expected one.
+        /// Ensures that the specified object is equal to the expected one.
         /// When it is not equal, adds an error message to the
         /// <see cref="ValidationResult" /> and associates it with the specified key.
         /// </summary>
@@ -141,7 +141,7 @@ namespace Admonish
         }
 
         /// <summary>
-        /// Checks whether the specified object is not equal to the forbidden one.
+        /// Ensures that the specified object is not equal to the forbidden one.
         /// When it is equal, adds an error message to the
         /// <see cref="ValidationResult" /> and associates it with the specified key.
         /// </summary>

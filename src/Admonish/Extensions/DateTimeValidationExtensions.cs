@@ -9,7 +9,7 @@ namespace Admonish
     public static class DateTimeValidationExtensions
     {
         /// <summary>
-        /// Checks whether the specified date is greater than or equal to the specified value.
+        /// Ensures that the specified date is greater than or equal to the specified value.
         /// When the check fails, adds an error message to the
         /// <see cref="ValidationResult" /> and associates it with the specified key.
         /// </summary>
@@ -36,7 +36,7 @@ namespace Admonish
         }
 
         /// <summary>
-        /// Checks whether the specified date is greater than or equal to the specified value.
+        /// Ensures that the specified date is greater than or equal to the specified value.
         /// When the check fails, adds an error message to the
         /// <see cref="ValidationResult" /> and associates it with the specified key.
         /// </summary>
@@ -63,7 +63,7 @@ namespace Admonish
         }
 
         /// <summary>
-        /// Checks whether the specified date is less than or equal to the specified value.
+        /// Ensures that the specified date is less than or equal to the specified value.
         /// When the check fails, adds an error message to the
         /// <see cref="ValidationResult" /> and associates it with the specified key.
         /// </summary>
@@ -90,7 +90,7 @@ namespace Admonish
         }
 
         /// <summary>
-        /// Checks whether the specified date is less than or equal to the specified value.
+        /// Ensures that the specified date is less than or equal to the specified value.
         /// When the check fails, adds an error message to the
         /// <see cref="ValidationResult" /> and associates it with the specified key.
         /// </summary>
@@ -117,7 +117,7 @@ namespace Admonish
         }
 
         /// <summary>
-        /// Checks whether the specified date is within the specified range (inclusive).
+        /// Ensures that the specified date is within the specified range (inclusive).
         /// When the check fails, adds an error message to the
         /// <see cref="ValidationResult" /> and associates it with the specified key.
         /// </summary>
@@ -154,7 +154,7 @@ namespace Admonish
         }
 
         /// <summary>
-        /// Checks whether the specified date is within the specified range (inclusive).
+        /// Ensures that the specified date is within the specified range (inclusive).
         /// When the check fails, adds an error message to the
         /// <see cref="ValidationResult" /> and associates it with the specified key.
         /// </summary>

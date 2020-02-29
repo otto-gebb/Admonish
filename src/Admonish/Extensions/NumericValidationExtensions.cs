@@ -8,7 +8,7 @@ namespace Admonish
     public static class NumericValidationExtensions
     {
         /// <summary>
-        /// Checks whether the specified number is greater than or equal to the specified value.
+        /// Ensures that the specified number is greater than or equal to the specified value.
         /// When the check fails, adds an error message to the
         /// <see cref="ValidationResult" /> and associates it with the specified key.
         /// </summary>
@@ -35,7 +35,7 @@ namespace Admonish
         }
 
         /// <summary>
-        /// Checks whether the specified number is greater than or equal to the specified value.
+        /// Ensures that the specified number is greater than or equal to the specified value.
         /// When the check fails, adds an error message to the
         /// <see cref="ValidationResult" /> and associates it with the specified key.
         /// </summary>
@@ -62,7 +62,7 @@ namespace Admonish
         }
 
         /// <summary>
-        /// Checks whether the specified number is less than or equal to the specified value.
+        /// Ensures that the specified number is less than or equal to the specified value.
         /// When the check fails, adds an error message to the
         /// <see cref="ValidationResult" /> and associates it with the specified key.
         /// </summary>
@@ -89,7 +89,7 @@ namespace Admonish
         }
 
         /// <summary>
-        /// Checks whether the specified number is less than or equal to the specified value.
+        /// Ensures that the specified number is less than or equal to the specified value.
         /// When the check fails, adds an error message to the
         /// <see cref="ValidationResult" /> and associates it with the specified key.
         /// </summary>
@@ -116,7 +116,7 @@ namespace Admonish
         }
 
         /// <summary>
-        /// Checks whether the specified number is within the specified range (inclusive).
+        /// Ensures that the specified number is within the specified range (inclusive).
         /// When the check fails, adds an error message to the
         /// <see cref="ValidationResult" /> and associates it with the specified key.
         /// </summary>
@@ -152,7 +152,7 @@ namespace Admonish
         }
 
         /// <summary>
-        /// Checks whether the specified number is within the specified range (inclusive).
+        /// Ensures that the specified number is within the specified range (inclusive).
         /// When the check fails, adds an error message to the
         /// <see cref="ValidationResult" /> and associates it with the specified key.
         /// </summary>

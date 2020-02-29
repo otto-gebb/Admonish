@@ -9,7 +9,7 @@ namespace Admonish
     public static class ValidationExtensions
     {
         /// <summary>
-        /// Checks whether the specified condition is true.
+        /// Ensures that the specified condition is true.
         /// When it is flase, adds the specified error message to the
         /// <see cref="ValidationResult" /> and associates it with the specified key.
         /// </summary>
@@ -33,7 +33,7 @@ namespace Admonish
         }
 
         /// <summary>
-        /// Checks whether the specified condition is true.
+        /// Ensures that the specified condition is true.
         /// When it is flase, adds the specified error message to the
         /// <see cref="ValidationResult" />.
         /// </summary>
