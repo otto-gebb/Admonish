@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class ValidationResult
    | Admonish validation library ">
-    <meta name="generator" content="docfx 2.45.1.0">
+    <meta name="generator" content="docfx 2.49.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -81,44 +81,23 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">ValidationResult</span></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Admonish.html">Admonish</a></h6>
   <h6><strong>Assembly</strong>: Admonish.dll</h6>
   <h5 id="Admonish_ValidationResult_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class ValidationResult</code></pre>
+    <pre><code class="lang-csharp hljs">public class ValidationResult : object</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/otto-gebb/Admonish/new/master/apiSpec/new?filename=Admonish_ValidationResult__ctor_System_Func_Admonish_ValidationResult_System_Exception__.md&amp;value=---%0Auid%3A%20Admonish.ValidationResult.%23ctor(System.Func%7BAdmonish.ValidationResult%2CSystem.Exception%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/otto-gebb/Admonish/new/master/apiSpec/new?filename=Admonish_ValidationResult__ctor_Func_Admonish_ValidationResult_Exception__.md&amp;value=---%0Auid%3A%20Admonish.ValidationResult.%23ctor(Func%7BAdmonish.ValidationResult%2CException%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/otto-gebb/Admonish/blob/master/src/Admonish/ValidationResult.cs/#L27">View Source</a>
   </span>
   <a id="Admonish_ValidationResult__ctor_" data-uid="Admonish.ValidationResult.#ctor*"></a>
-  <h4 id="Admonish_ValidationResult__ctor_System_Func_Admonish_ValidationResult_System_Exception__" data-uid="Admonish.ValidationResult.#ctor(System.Func{Admonish.ValidationResult,System.Exception})">ValidationResult(Func&lt;ValidationResult, Exception&gt;)</h4>
+  <h4 id="Admonish_ValidationResult__ctor_Func_Admonish_ValidationResult_Exception__" data-uid="Admonish.ValidationResult.#ctor(Func{Admonish.ValidationResult,Exception})">ValidationResult(Func&lt;ValidationResult, Exception&gt;)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Admonish.ValidationResult.html">ValidationResult</a> class
 with the specified validation exception factory.</p>
 </div>
@@ -138,7 +117,7 @@ with the specified validation exception factory.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Func</span>&lt;<a class="xref" href="Admonish.ValidationResult.html">ValidationResult</a>, <span class="xref">System.Exception</span>&gt;</td>
+        <td><span class="xref">Func</span>&lt;<a class="xref" href="Admonish.ValidationResult.html">ValidationResult</a>, <span class="xref">Exception</span>&gt;</td>
         <td><span class="parametername">exceptionFactory</span></td>
         <td><p>When called, creates an exception to throw when a validation error occurs.</p>
 </td>
@@ -160,7 +139,7 @@ with the specified validation exception factory.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string NoKey = &quot;_&quot;</code></pre>
+    <pre><code class="lang-csharp hljs">public const string NoKey = null</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -377,7 +356,7 @@ associates it with the specified key.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IDictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>[]&gt;</td>
+        <td><span class="xref">IDictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>[]&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -412,65 +391,75 @@ associates it with the specified key.</p>
       </tr>
     </tbody>
   </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">System.Object.ToString()</span></div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="Admonish.DateTimeValidationExtensions.html#Admonish_DateTimeValidationExtensions_Min_Admonish_ValidationResult_System_String_System_DateTime_System_DateTime_">DateTimeValidationExtensions.Min(ValidationResult, String, DateTime, DateTime)</a>
+      <a class="xref" href="Admonish.DateTimeValidationExtensions.html#Admonish_DateTimeValidationExtensions_Min_Admonish_ValidationResult_System_String_DateTime_DateTime_System_Nullable_System_String__">DateTimeValidationExtensions.Min(ValidationResult, String, DateTime, DateTime, Nullable&lt;String&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="Admonish.DateTimeValidationExtensions.html#Admonish_DateTimeValidationExtensions_Min_Admonish_ValidationResult_System_String_System_DateTimeOffset_System_DateTimeOffset_">DateTimeValidationExtensions.Min(ValidationResult, String, DateTimeOffset, DateTimeOffset)</a>
+      <a class="xref" href="Admonish.DateTimeValidationExtensions.html#Admonish_DateTimeValidationExtensions_Min_Admonish_ValidationResult_System_String_DateTimeOffset_DateTimeOffset_System_Nullable_System_String__">DateTimeValidationExtensions.Min(ValidationResult, String, DateTimeOffset, DateTimeOffset, Nullable&lt;String&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="Admonish.DateTimeValidationExtensions.html#Admonish_DateTimeValidationExtensions_Max_Admonish_ValidationResult_System_String_System_DateTime_System_DateTime_">DateTimeValidationExtensions.Max(ValidationResult, String, DateTime, DateTime)</a>
+      <a class="xref" href="Admonish.DateTimeValidationExtensions.html#Admonish_DateTimeValidationExtensions_Max_Admonish_ValidationResult_System_String_DateTime_DateTime_System_Nullable_System_String__">DateTimeValidationExtensions.Max(ValidationResult, String, DateTime, DateTime, Nullable&lt;String&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="Admonish.DateTimeValidationExtensions.html#Admonish_DateTimeValidationExtensions_Max_Admonish_ValidationResult_System_String_System_DateTimeOffset_System_DateTimeOffset_">DateTimeValidationExtensions.Max(ValidationResult, String, DateTimeOffset, DateTimeOffset)</a>
+      <a class="xref" href="Admonish.DateTimeValidationExtensions.html#Admonish_DateTimeValidationExtensions_Max_Admonish_ValidationResult_System_String_DateTimeOffset_DateTimeOffset_System_Nullable_System_String__">DateTimeValidationExtensions.Max(ValidationResult, String, DateTimeOffset, DateTimeOffset, Nullable&lt;String&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="Admonish.DateTimeValidationExtensions.html#Admonish_DateTimeValidationExtensions_Between_Admonish_ValidationResult_System_String_System_DateTime_System_DateTime_System_DateTime_">DateTimeValidationExtensions.Between(ValidationResult, String, DateTime, DateTime, DateTime)</a>
+      <a class="xref" href="Admonish.DateTimeValidationExtensions.html#Admonish_DateTimeValidationExtensions_Between_Admonish_ValidationResult_System_String_DateTime_DateTime_DateTime_System_Nullable_System_String__">DateTimeValidationExtensions.Between(ValidationResult, String, DateTime, DateTime, DateTime, Nullable&lt;String&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="Admonish.DateTimeValidationExtensions.html#Admonish_DateTimeValidationExtensions_Between_Admonish_ValidationResult_System_String_System_DateTimeOffset_System_DateTimeOffset_System_DateTimeOffset_">DateTimeValidationExtensions.Between(ValidationResult, String, DateTimeOffset, DateTimeOffset, DateTimeOffset)</a>
+      <a class="xref" href="Admonish.DateTimeValidationExtensions.html#Admonish_DateTimeValidationExtensions_Between_Admonish_ValidationResult_System_String_DateTimeOffset_DateTimeOffset_DateTimeOffset_System_Nullable_System_String__">DateTimeValidationExtensions.Between(ValidationResult, String, DateTimeOffset, DateTimeOffset, DateTimeOffset, Nullable&lt;String&gt;)</a>
   </div>
   <div>
       <a class="xref" href="Admonish.EnumValidationExtensions.html#Admonish_EnumValidationExtensions_IsDefined__1_Admonish_ValidationResult_System_String___0_System_Nullable_System_String__">EnumValidationExtensions.IsDefined&lt;TEnum&gt;(ValidationResult, String, TEnum, Nullable&lt;String&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="Admonish.NumericValidationExtensions.html#Admonish_NumericValidationExtensions_Min_Admonish_ValidationResult_System_String_System_Int32_System_Int32_">NumericValidationExtensions.Min(ValidationResult, String, Int32, Int32)</a>
+      <a class="xref" href="Admonish.NumericValidationExtensions.html#Admonish_NumericValidationExtensions_Min_Admonish_ValidationResult_System_String_System_Int32_System_Int32_System_Nullable_System_String__">NumericValidationExtensions.Min(ValidationResult, String, Int32, Int32, Nullable&lt;String&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="Admonish.NumericValidationExtensions.html#Admonish_NumericValidationExtensions_Min_Admonish_ValidationResult_System_String_System_Decimal_System_Decimal_">NumericValidationExtensions.Min(ValidationResult, String, Decimal, Decimal)</a>
+      <a class="xref" href="Admonish.NumericValidationExtensions.html#Admonish_NumericValidationExtensions_Min_Admonish_ValidationResult_System_String_System_Decimal_System_Decimal_System_Nullable_System_String__">NumericValidationExtensions.Min(ValidationResult, String, Decimal, Decimal, Nullable&lt;String&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="Admonish.NumericValidationExtensions.html#Admonish_NumericValidationExtensions_Max_Admonish_ValidationResult_System_String_System_Int32_System_Int32_">NumericValidationExtensions.Max(ValidationResult, String, Int32, Int32)</a>
+      <a class="xref" href="Admonish.NumericValidationExtensions.html#Admonish_NumericValidationExtensions_Max_Admonish_ValidationResult_System_String_System_Int32_System_Int32_System_Nullable_System_String__">NumericValidationExtensions.Max(ValidationResult, String, Int32, Int32, Nullable&lt;String&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="Admonish.NumericValidationExtensions.html#Admonish_NumericValidationExtensions_Max_Admonish_ValidationResult_System_String_System_Decimal_System_Decimal_">NumericValidationExtensions.Max(ValidationResult, String, Decimal, Decimal)</a>
+      <a class="xref" href="Admonish.NumericValidationExtensions.html#Admonish_NumericValidationExtensions_Max_Admonish_ValidationResult_System_String_System_Decimal_System_Decimal_System_Nullable_System_String__">NumericValidationExtensions.Max(ValidationResult, String, Decimal, Decimal, Nullable&lt;String&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="Admonish.NumericValidationExtensions.html#Admonish_NumericValidationExtensions_Between_Admonish_ValidationResult_System_String_System_Int32_System_Int32_System_Int32_">NumericValidationExtensions.Between(ValidationResult, String, Int32, Int32, Int32)</a>
+      <a class="xref" href="Admonish.NumericValidationExtensions.html#Admonish_NumericValidationExtensions_Between_Admonish_ValidationResult_System_String_System_Int32_System_Int32_System_Int32_System_Nullable_System_String__">NumericValidationExtensions.Between(ValidationResult, String, Int32, Int32, Int32, Nullable&lt;String&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="Admonish.NumericValidationExtensions.html#Admonish_NumericValidationExtensions_Between_Admonish_ValidationResult_System_String_System_Decimal_System_Decimal_System_Decimal_">NumericValidationExtensions.Between(ValidationResult, String, Decimal, Decimal, Decimal)</a>
+      <a class="xref" href="Admonish.NumericValidationExtensions.html#Admonish_NumericValidationExtensions_Between_Admonish_ValidationResult_System_String_System_Decimal_System_Decimal_System_Decimal_System_Nullable_System_String__">NumericValidationExtensions.Between(ValidationResult, String, Decimal, Decimal, Decimal, Nullable&lt;String&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="Admonish.ObjectValidationExtensions.html#Admonish_ObjectValidationExtensions_NonNull__1_Admonish_ValidationResult_System_String_System_Nullable___0__">ObjectValidationExtensions.NonNull&lt;T&gt;(ValidationResult, String, Nullable&lt;T&gt;)</a>
+      <a class="xref" href="Admonish.ObjectValidationExtensions.html#Admonish_ObjectValidationExtensions_NonNull__1_Admonish_ValidationResult_System_String___0_System_Nullable_System_String__">ObjectValidationExtensions.NonNull&lt;T&gt;(ValidationResult, String, T, Nullable&lt;String&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="Admonish.ObjectValidationExtensions.html#Admonish_ObjectValidationExtensions_NonNull__1_Admonish_ValidationResult_System_String_System_Nullable___0__">ObjectValidationExtensions.NonNull&lt;T&gt;(ValidationResult, String, Nullable&lt;T&gt;)</a>
+      <a class="xref" href="Admonish.ObjectValidationExtensions.html#Admonish_ObjectValidationExtensions_NonNull__1_Admonish_ValidationResult_System_String_System_Nullable___0__System_Nullable_System_String__">ObjectValidationExtensions.NonNull&lt;T&gt;(ValidationResult, String, Nullable&lt;T&gt;, Nullable&lt;String&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="Admonish.StringValidationExtensions.html#Admonish_StringValidationExtensions_NonNullOrEmpty_Admonish_ValidationResult_System_String_System_Nullable_System_String__">StringValidationExtensions.NonNullOrEmpty(ValidationResult, String, Nullable&lt;String&gt;)</a>
+      <a class="xref" href="Admonish.ObjectValidationExtensions.html#Admonish_ObjectValidationExtensions_Null__1_Admonish_ValidationResult_System_String___0_System_Nullable_System_String__">ObjectValidationExtensions.Null&lt;T&gt;(ValidationResult, String, T, Nullable&lt;String&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="Admonish.StringValidationExtensions.html#Admonish_StringValidationExtensions_NonNullOrWhiteSpace_Admonish_ValidationResult_System_String_System_Nullable_System_String__">StringValidationExtensions.NonNullOrWhiteSpace(ValidationResult, String, Nullable&lt;String&gt;)</a>
+      <a class="xref" href="Admonish.ObjectValidationExtensions.html#Admonish_ObjectValidationExtensions_Null__1_Admonish_ValidationResult_System_String_System_Nullable___0__System_Nullable_System_String__">ObjectValidationExtensions.Null&lt;T&gt;(ValidationResult, String, Nullable&lt;T&gt;, Nullable&lt;String&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="Admonish.StringValidationExtensions.html#Admonish_StringValidationExtensions_Matches_Admonish_ValidationResult_System_String_System_Nullable_System_String__System_Text_RegularExpressions_Regex_System_Nullable_System_String__">StringValidationExtensions.Matches(ValidationResult, String, Nullable&lt;String&gt;, Regex, Nullable&lt;String&gt;)</a>
+      <a class="xref" href="Admonish.ObjectValidationExtensions.html#Admonish_ObjectValidationExtensions_Equal__1_Admonish_ValidationResult_System_String___0___0_System_Nullable_System_String__">ObjectValidationExtensions.Equal&lt;T&gt;(ValidationResult, String, T, T, Nullable&lt;String&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="Admonish.StringValidationExtensions.html#Admonish_StringValidationExtensions_LengthBetween_Admonish_ValidationResult_System_String_System_Nullable_System_String__System_Int32_System_Int32_">StringValidationExtensions.LengthBetween(ValidationResult, String, Nullable&lt;String&gt;, Int32, Int32)</a>
+      <a class="xref" href="Admonish.ObjectValidationExtensions.html#Admonish_ObjectValidationExtensions_NotEqual__1_Admonish_ValidationResult_System_String___0___0_System_Nullable_System_String__">ObjectValidationExtensions.NotEqual&lt;T&gt;(ValidationResult, String, T, T, Nullable&lt;String&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Admonish.StringValidationExtensions.html#Admonish_StringValidationExtensions_NonNullOrEmpty_Admonish_ValidationResult_System_String_System_Nullable_System_String__System_Nullable_System_String__">StringValidationExtensions.NonNullOrEmpty(ValidationResult, String, Nullable&lt;String&gt;, Nullable&lt;String&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Admonish.StringValidationExtensions.html#Admonish_StringValidationExtensions_NonNullOrWhiteSpace_Admonish_ValidationResult_System_String_System_Nullable_System_String__System_Nullable_System_String__">StringValidationExtensions.NonNullOrWhiteSpace(ValidationResult, String, Nullable&lt;String&gt;, Nullable&lt;String&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Admonish.StringValidationExtensions.html#Admonish_StringValidationExtensions_Matches_Admonish_ValidationResult_System_String_System_Nullable_System_String__Regex_System_Nullable_System_String__">StringValidationExtensions.Matches(ValidationResult, String, Nullable&lt;String&gt;, Regex, Nullable&lt;String&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Admonish.StringValidationExtensions.html#Admonish_StringValidationExtensions_LengthBetween_Admonish_ValidationResult_System_String_System_Nullable_System_String__System_Int32_System_Int32_System_Nullable_System_String__">StringValidationExtensions.LengthBetween(ValidationResult, String, Nullable&lt;String&gt;, Int32, Int32, Nullable&lt;String&gt;)</a>
   </div>
   <div>
       <a class="xref" href="Admonish.ValidationExtensions.html#Admonish_ValidationExtensions_Check_Admonish_ValidationResult_System_String_System_Boolean_System_String_">ValidationExtensions.Check(ValidationResult, String, Boolean, String)</a>
@@ -479,10 +468,10 @@ associates it with the specified key.</p>
       <a class="xref" href="Admonish.ValidationExtensions.html#Admonish_ValidationExtensions_Check_Admonish_ValidationResult_System_Boolean_System_String_">ValidationExtensions.Check(ValidationResult, Boolean, String)</a>
   </div>
   <div>
-      <a class="xref" href="Admonish.ValidationExtensions.html#Admonish_ValidationExtensions_WithKey_Admonish_ValidationResult_System_String_System_Func_Admonish_ValidationResult_Admonish_ValidationResult__">ValidationExtensions.WithKey(ValidationResult, String, Func&lt;ValidationResult, ValidationResult&gt;)</a>
+      <a class="xref" href="Admonish.ValidationExtensions.html#Admonish_ValidationExtensions_WithKey_Admonish_ValidationResult_System_String_Func_Admonish_ValidationResult_Admonish_ValidationResult__">ValidationExtensions.WithKey(ValidationResult, String, Func&lt;ValidationResult, ValidationResult&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="Admonish.ValidationExtensions.html#Admonish_ValidationExtensions_Collection__1_Admonish_ValidationResult_System_String_System_Collections_Generic_IEnumerable___0__System_Func_Admonish_ValidationResult___0_Admonish_ValidationResult__">ValidationExtensions.Collection&lt;T&gt;(ValidationResult, String, IEnumerable&lt;T&gt;, Func&lt;ValidationResult, T, ValidationResult&gt;)</a>
+      <a class="xref" href="Admonish.ValidationExtensions.html#Admonish_ValidationExtensions_Collection__1_Admonish_ValidationResult_System_String_IEnumerable___0__Func_Admonish_ValidationResult___0_Admonish_ValidationResult__">ValidationExtensions.Collection&lt;T&gt;(ValidationResult, String, IEnumerable&lt;T&gt;, Func&lt;ValidationResult, T, ValidationResult&gt;)</a>
   </div>
 </article>
           </div>

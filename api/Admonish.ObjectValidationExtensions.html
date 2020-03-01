@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class ObjectValidationExtensions
    | Admonish validation library ">
-    <meta name="generator" content="docfx 2.45.1.0">
+    <meta name="generator" content="docfx 2.49.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -81,57 +81,31 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">ObjectValidationExtensions</span></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Admonish.html">Admonish</a></h6>
   <h6><strong>Assembly</strong>: Admonish.dll</h6>
   <h5 id="Admonish_ObjectValidationExtensions_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class ObjectValidationExtensions</code></pre>
+    <pre><code class="lang-csharp hljs">public static class ObjectValidationExtensions : object</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/otto-gebb/Admonish/new/master/apiSpec/new?filename=Admonish_ObjectValidationExtensions_NonNull__1_Admonish_ValidationResult_System_String_System_Nullable___0__.md&amp;value=---%0Auid%3A%20Admonish.ObjectValidationExtensions.NonNull%60%601(Admonish.ValidationResult%2CSystem.String%2CSystem.Nullable%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/otto-gebb/Admonish/new/master/apiSpec/new?filename=Admonish_ObjectValidationExtensions_Equal__1_Admonish_ValidationResult_System_String___0___0_System_Nullable_System_String__.md&amp;value=---%0Auid%3A%20Admonish.ObjectValidationExtensions.Equal%60%601(Admonish.ValidationResult%2CSystem.String%2C%60%600%2C%60%600%2CSystem.Nullable%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/otto-gebb/Admonish/blob/master/src/Admonish/Extensions/ObjectValidationExtensions.cs/#L39">View Source</a>
+    <a href="https://github.com/otto-gebb/Admonish/blob/master/src/Admonish/Extensions/ObjectValidationExtensions.cs/#L126">View Source</a>
   </span>
-  <a id="Admonish_ObjectValidationExtensions_NonNull_" data-uid="Admonish.ObjectValidationExtensions.NonNull*"></a>
-  <h4 id="Admonish_ObjectValidationExtensions_NonNull__1_Admonish_ValidationResult_System_String_System_Nullable___0__" data-uid="Admonish.ObjectValidationExtensions.NonNull``1(Admonish.ValidationResult,System.String,System.Nullable{``0})">NonNull&lt;T&gt;(ValidationResult, String, Nullable&lt;T&gt;)</h4>
-  <div class="markdown level1 summary"><p>Checks whether the specified object is not null.
-When it is, adds an error message to the
+  <a id="Admonish_ObjectValidationExtensions_Equal_" data-uid="Admonish.ObjectValidationExtensions.Equal*"></a>
+  <h4 id="Admonish_ObjectValidationExtensions_Equal__1_Admonish_ValidationResult_System_String___0___0_System_Nullable_System_String__" data-uid="Admonish.ObjectValidationExtensions.Equal``1(Admonish.ValidationResult,System.String,``0,``0,System.Nullable{System.String})">Equal&lt;T&gt;(ValidationResult, String, T, T, Nullable&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Ensures that the specified object is equal to the expected one.
+When it is not equal, adds an error message to the
 <a class="xref" href="Admonish.ValidationResult.html">ValidationResult</a> and associates it with the specified key.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static ValidationResult NonNull&lt;T&gt;(this ValidationResult r, string key, T? value)
-
-    where T : struct</code></pre>
+    <pre><code class="lang-csharp hljs">public static ValidationResult Equal&lt;T&gt;(this ValidationResult r, string key, T expected, T value, string? message = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -156,9 +130,112 @@ When it is, adds an error message to the
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;T&gt;</td>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">expected</span></td>
+        <td><p>The expected value for the object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
         <td><span class="parametername">value</span></td>
         <td><p>The object to check.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">message</span></td>
+        <td><p>An optional error message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Admonish.ValidationResult.html">ValidationResult</a></td>
+        <td><p>The validation result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Admonish_ObjectValidationExtensions_Equal__1_Admonish_ValidationResult_System_String___0___0_System_Nullable_System_String___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>It is recommended to specify a custom error message via
+the <code data-dev-comment-type="paramref" class="paramref">message</code> parameter, because the default one
+contains neither the expected value nor the checked one.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/otto-gebb/Admonish/new/master/apiSpec/new?filename=Admonish_ObjectValidationExtensions_NonNull__1_Admonish_ValidationResult_System_String___0_System_Nullable_System_String__.md&amp;value=---%0Auid%3A%20Admonish.ObjectValidationExtensions.NonNull%60%601(Admonish.ValidationResult%2CSystem.String%2C%60%600%2CSystem.Nullable%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/otto-gebb/Admonish/blob/master/src/Admonish/Extensions/ObjectValidationExtensions.cs/#L20">View Source</a>
+  </span>
+  <a id="Admonish_ObjectValidationExtensions_NonNull_" data-uid="Admonish.ObjectValidationExtensions.NonNull*"></a>
+  <h4 id="Admonish_ObjectValidationExtensions_NonNull__1_Admonish_ValidationResult_System_String___0_System_Nullable_System_String__" data-uid="Admonish.ObjectValidationExtensions.NonNull``1(Admonish.ValidationResult,System.String,``0,System.Nullable{System.String})">NonNull&lt;T&gt;(ValidationResult, String, T, Nullable&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Ensures that the specified object is not null.
+When it is, adds an error message to the
+<a class="xref" href="Admonish.ValidationResult.html">ValidationResult</a> and associates it with the specified key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ValidationResult NonNull&lt;T&gt;(this ValidationResult r, string key, T value, string? message = null)
+    where T : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Admonish.ValidationResult.html">ValidationResult</a></td>
+        <td><span class="parametername">r</span></td>
+        <td><p>The validation result.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The key to associate the error with.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The object to check.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">message</span></td>
+        <td><p>An optional error message.</p>
 </td>
       </tr>
     </tbody>
@@ -196,22 +273,21 @@ When it is, adds an error message to the
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/otto-gebb/Admonish/new/master/apiSpec/new?filename=Admonish_ObjectValidationExtensions_NonNull__1_Admonish_ValidationResult_System_String_System_Nullable___0__.md&amp;value=---%0Auid%3A%20Admonish.ObjectValidationExtensions.NonNull%60%601(Admonish.ValidationResult%2CSystem.String%2CSystem.Nullable%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/otto-gebb/Admonish/new/master/apiSpec/new?filename=Admonish_ObjectValidationExtensions_NonNull__1_Admonish_ValidationResult_System_String_System_Nullable___0__System_Nullable_System_String__.md&amp;value=---%0Auid%3A%20Admonish.ObjectValidationExtensions.NonNull%60%601(Admonish.ValidationResult%2CSystem.String%2CSystem.Nullable%7B%60%600%7D%2CSystem.Nullable%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/otto-gebb/Admonish/blob/master/src/Admonish/Extensions/ObjectValidationExtensions.cs/#L39">View Source</a>
+    <a href="https://github.com/otto-gebb/Admonish/blob/master/src/Admonish/Extensions/ObjectValidationExtensions.cs/#L45">View Source</a>
   </span>
   <a id="Admonish_ObjectValidationExtensions_NonNull_" data-uid="Admonish.ObjectValidationExtensions.NonNull*"></a>
-  <h4 id="Admonish_ObjectValidationExtensions_NonNull__1_Admonish_ValidationResult_System_String_System_Nullable___0__" data-uid="Admonish.ObjectValidationExtensions.NonNull``1(Admonish.ValidationResult,System.String,System.Nullable{``0})">NonNull&lt;T&gt;(ValidationResult, String, Nullable&lt;T&gt;)</h4>
-  <div class="markdown level1 summary"><p>Checks whether the specified object is not null.
+  <h4 id="Admonish_ObjectValidationExtensions_NonNull__1_Admonish_ValidationResult_System_String_System_Nullable___0__System_Nullable_System_String__" data-uid="Admonish.ObjectValidationExtensions.NonNull``1(Admonish.ValidationResult,System.String,System.Nullable{``0},System.Nullable{System.String})">NonNull&lt;T&gt;(ValidationResult, String, Nullable&lt;T&gt;, Nullable&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Ensures that the specified object is not null.
 When it is, adds an error message to the
 <a class="xref" href="Admonish.ValidationResult.html">ValidationResult</a> and associates it with the specified key.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static ValidationResult NonNull&lt;T&gt;(this ValidationResult r, string key, T? value)
-
+    <pre><code class="lang-csharp hljs">public static ValidationResult NonNull&lt;T&gt;(this ValidationResult r, string key, T? value, string? message = null)
     where T : struct</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -240,6 +316,280 @@ When it is, adds an error message to the
         <td><span class="xref">System.Nullable</span>&lt;T&gt;</td>
         <td><span class="parametername">value</span></td>
         <td><p>The object to check.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">message</span></td>
+        <td><p>An optional error message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Admonish.ValidationResult.html">ValidationResult</a></td>
+        <td><p>The validation result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/otto-gebb/Admonish/new/master/apiSpec/new?filename=Admonish_ObjectValidationExtensions_NotEqual__1_Admonish_ValidationResult_System_String___0___0_System_Nullable_System_String__.md&amp;value=---%0Auid%3A%20Admonish.ObjectValidationExtensions.NotEqual%60%601(Admonish.ValidationResult%2CSystem.String%2C%60%600%2C%60%600%2CSystem.Nullable%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/otto-gebb/Admonish/blob/master/src/Admonish/Extensions/ObjectValidationExtensions.cs/#L159">View Source</a>
+  </span>
+  <a id="Admonish_ObjectValidationExtensions_NotEqual_" data-uid="Admonish.ObjectValidationExtensions.NotEqual*"></a>
+  <h4 id="Admonish_ObjectValidationExtensions_NotEqual__1_Admonish_ValidationResult_System_String___0___0_System_Nullable_System_String__" data-uid="Admonish.ObjectValidationExtensions.NotEqual``1(Admonish.ValidationResult,System.String,``0,``0,System.Nullable{System.String})">NotEqual&lt;T&gt;(ValidationResult, String, T, T, Nullable&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Ensures that the specified object is not equal to the forbidden one.
+When it is equal, adds an error message to the
+<a class="xref" href="Admonish.ValidationResult.html">ValidationResult</a> and associates it with the specified key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ValidationResult NotEqual&lt;T&gt;(this ValidationResult r, string key, T forbidden, T value, string? message = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Admonish.ValidationResult.html">ValidationResult</a></td>
+        <td><span class="parametername">r</span></td>
+        <td><p>The validation result.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The key to associate the error with.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">forbidden</span></td>
+        <td><p>The forbidden value for the object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The object to check.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">message</span></td>
+        <td><p>An optional error message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Admonish.ValidationResult.html">ValidationResult</a></td>
+        <td><p>The validation result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Admonish_ObjectValidationExtensions_NotEqual__1_Admonish_ValidationResult_System_String___0___0_System_Nullable_System_String___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>It is recommended to specify a custom error message via
+the <code data-dev-comment-type="paramref" class="paramref">message</code> parameter, because the default one
+does not contain the forbidden value.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/otto-gebb/Admonish/new/master/apiSpec/new?filename=Admonish_ObjectValidationExtensions_Null__1_Admonish_ValidationResult_System_String___0_System_Nullable_System_String__.md&amp;value=---%0Auid%3A%20Admonish.ObjectValidationExtensions.Null%60%601(Admonish.ValidationResult%2CSystem.String%2C%60%600%2CSystem.Nullable%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/otto-gebb/Admonish/blob/master/src/Admonish/Extensions/ObjectValidationExtensions.cs/#L70">View Source</a>
+  </span>
+  <a id="Admonish_ObjectValidationExtensions_Null_" data-uid="Admonish.ObjectValidationExtensions.Null*"></a>
+  <h4 id="Admonish_ObjectValidationExtensions_Null__1_Admonish_ValidationResult_System_String___0_System_Nullable_System_String__" data-uid="Admonish.ObjectValidationExtensions.Null``1(Admonish.ValidationResult,System.String,``0,System.Nullable{System.String})">Null&lt;T&gt;(ValidationResult, String, T, Nullable&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Ensures that the specified object is null.
+When it is not, adds an error message to the
+<a class="xref" href="Admonish.ValidationResult.html">ValidationResult</a> and associates it with the specified key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ValidationResult Null&lt;T&gt;(this ValidationResult r, string key, T value, string? message = null)
+    where T : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Admonish.ValidationResult.html">ValidationResult</a></td>
+        <td><span class="parametername">r</span></td>
+        <td><p>The validation result.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The key to associate the error with.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The object to check.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">message</span></td>
+        <td><p>An optional error message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Admonish.ValidationResult.html">ValidationResult</a></td>
+        <td><p>The validation result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/otto-gebb/Admonish/new/master/apiSpec/new?filename=Admonish_ObjectValidationExtensions_Null__1_Admonish_ValidationResult_System_String_System_Nullable___0__System_Nullable_System_String__.md&amp;value=---%0Auid%3A%20Admonish.ObjectValidationExtensions.Null%60%601(Admonish.ValidationResult%2CSystem.String%2CSystem.Nullable%7B%60%600%7D%2CSystem.Nullable%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/otto-gebb/Admonish/blob/master/src/Admonish/Extensions/ObjectValidationExtensions.cs/#L95">View Source</a>
+  </span>
+  <a id="Admonish_ObjectValidationExtensions_Null_" data-uid="Admonish.ObjectValidationExtensions.Null*"></a>
+  <h4 id="Admonish_ObjectValidationExtensions_Null__1_Admonish_ValidationResult_System_String_System_Nullable___0__System_Nullable_System_String__" data-uid="Admonish.ObjectValidationExtensions.Null``1(Admonish.ValidationResult,System.String,System.Nullable{``0},System.Nullable{System.String})">Null&lt;T&gt;(ValidationResult, String, Nullable&lt;T&gt;, Nullable&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Ensures that the specified object is null.
+When it is not, adds an error message to the
+<a class="xref" href="Admonish.ValidationResult.html">ValidationResult</a> and associates it with the specified key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ValidationResult Null&lt;T&gt;(this ValidationResult r, string key, T? value, string? message = null)
+    where T : struct</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Admonish.ValidationResult.html">ValidationResult</a></td>
+        <td><span class="parametername">r</span></td>
+        <td><p>The validation result.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The key to associate the error with.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;T&gt;</td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The object to check.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">message</span></td>
+        <td><p>An optional error message.</p>
 </td>
       </tr>
     </tbody>
@@ -286,7 +636,7 @@ When it is, adds an error message to the
                     <a href="https://github.com/otto-gebb/Admonish/new/master/apiSpec/new?filename=Admonish_ObjectValidationExtensions.md&amp;value=---%0Auid%3A%20Admonish.ObjectValidationExtensions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/otto-gebb/Admonish/blob/master/src/Admonish/Extensions/ObjectValidationExtensions.cs/#L6" class="contribution-link">View Source</a>
+                    <a href="https://github.com/otto-gebb/Admonish/blob/master/src/Admonish/Extensions/ObjectValidationExtensions.cs/#L8" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

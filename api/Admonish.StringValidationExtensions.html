@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class StringValidationExtensions
    | Admonish validation library ">
-    <meta name="generator" content="docfx 2.45.1.0">
+    <meta name="generator" content="docfx 2.49.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -81,48 +81,24 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">StringValidationExtensions</span></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Admonish.html">Admonish</a></h6>
   <h6><strong>Assembly</strong>: Admonish.dll</h6>
   <h5 id="Admonish_StringValidationExtensions_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class StringValidationExtensions</code></pre>
+    <pre><code class="lang-csharp hljs">public static class StringValidationExtensions : object</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/otto-gebb/Admonish/new/master/apiSpec/new?filename=Admonish_StringValidationExtensions_LengthBetween_Admonish_ValidationResult_System_String_System_Nullable_System_String__System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Admonish.StringValidationExtensions.LengthBetween(Admonish.ValidationResult%2CSystem.String%2CSystem.Nullable%7BSystem.String%7D%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/otto-gebb/Admonish/new/master/apiSpec/new?filename=Admonish_StringValidationExtensions_LengthBetween_Admonish_ValidationResult_System_String_System_Nullable_System_String__System_Int32_System_Int32_System_Nullable_System_String__.md&amp;value=---%0Auid%3A%20Admonish.StringValidationExtensions.LengthBetween(Admonish.ValidationResult%2CSystem.String%2CSystem.Nullable%7BSystem.String%7D%2CSystem.Int32%2CSystem.Int32%2CSystem.Nullable%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/otto-gebb/Admonish/blob/master/src/Admonish/Extensions/StringValidationExtensions.cs/#L99">View Source</a>
+    <a href="https://github.com/otto-gebb/Admonish/blob/master/src/Admonish/Extensions/StringValidationExtensions.cs/#L106">View Source</a>
   </span>
   <a id="Admonish_StringValidationExtensions_LengthBetween_" data-uid="Admonish.StringValidationExtensions.LengthBetween*"></a>
-  <h4 id="Admonish_StringValidationExtensions_LengthBetween_Admonish_ValidationResult_System_String_System_Nullable_System_String__System_Int32_System_Int32_" data-uid="Admonish.StringValidationExtensions.LengthBetween(Admonish.ValidationResult,System.String,System.Nullable{System.String},System.Int32,System.Int32)">LengthBetween(ValidationResult, String, Nullable&lt;String&gt;, Int32, Int32)</h4>
-  <div class="markdown level1 summary"><p>Checks whether the length of the specified string is within the specified range
+  <h4 id="Admonish_StringValidationExtensions_LengthBetween_Admonish_ValidationResult_System_String_System_Nullable_System_String__System_Int32_System_Int32_System_Nullable_System_String__" data-uid="Admonish.StringValidationExtensions.LengthBetween(Admonish.ValidationResult,System.String,System.Nullable{System.String},System.Int32,System.Int32,System.Nullable{System.String})">LengthBetween(ValidationResult, String, Nullable&lt;String&gt;, Int32, Int32, Nullable&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Ensures that the length of the specified string is within the specified range
 (inclusive).
 When the check fails, adds an error message to the
 <a class="xref" href="Admonish.ValidationResult.html">ValidationResult</a> and associates it with the specified key.</p>
@@ -130,7 +106,7 @@ When the check fails, adds an error message to the
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static ValidationResult LengthBetween(this ValidationResult r, string key, string? value, int minLength, int maxLength)</code></pre>
+    <pre><code class="lang-csharp hljs">public static ValidationResult LengthBetween(this ValidationResult r, string key, string? value, int minLength, int maxLength, string? message = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -172,6 +148,12 @@ When the check fails, adds an error message to the
         <td><p>The maximum allowed length.</p>
 </td>
       </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">message</span></td>
+        <td><p>An optional error message.</p>
+</td>
+      </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
@@ -192,21 +174,21 @@ When the check fails, adds an error message to the
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/otto-gebb/Admonish/new/master/apiSpec/new?filename=Admonish_StringValidationExtensions_Matches_Admonish_ValidationResult_System_String_System_Nullable_System_String__System_Text_RegularExpressions_Regex_System_Nullable_System_String__.md&amp;value=---%0Auid%3A%20Admonish.StringValidationExtensions.Matches(Admonish.ValidationResult%2CSystem.String%2CSystem.Nullable%7BSystem.String%7D%2CSystem.Text.RegularExpressions.Regex%2CSystem.Nullable%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/otto-gebb/Admonish/new/master/apiSpec/new?filename=Admonish_StringValidationExtensions_Matches_Admonish_ValidationResult_System_String_System_Nullable_System_String__Regex_System_Nullable_System_String__.md&amp;value=---%0Auid%3A%20Admonish.StringValidationExtensions.Matches(Admonish.ValidationResult%2CSystem.String%2CSystem.Nullable%7BSystem.String%7D%2CRegex%2CSystem.Nullable%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/otto-gebb/Admonish/blob/master/src/Admonish/Extensions/StringValidationExtensions.cs/#L70">View Source</a>
+    <a href="https://github.com/otto-gebb/Admonish/blob/master/src/Admonish/Extensions/StringValidationExtensions.cs/#L75">View Source</a>
   </span>
   <a id="Admonish_StringValidationExtensions_Matches_" data-uid="Admonish.StringValidationExtensions.Matches*"></a>
-  <h4 id="Admonish_StringValidationExtensions_Matches_Admonish_ValidationResult_System_String_System_Nullable_System_String__System_Text_RegularExpressions_Regex_System_Nullable_System_String__" data-uid="Admonish.StringValidationExtensions.Matches(Admonish.ValidationResult,System.String,System.Nullable{System.String},System.Text.RegularExpressions.Regex,System.Nullable{System.String})">Matches(ValidationResult, String, Nullable&lt;String&gt;, Regex, Nullable&lt;String&gt;)</h4>
-  <div class="markdown level1 summary"><p>Checks whether the specified string matches the specified regular expression.
+  <h4 id="Admonish_StringValidationExtensions_Matches_Admonish_ValidationResult_System_String_System_Nullable_System_String__Regex_System_Nullable_System_String__" data-uid="Admonish.StringValidationExtensions.Matches(Admonish.ValidationResult,System.String,System.Nullable{System.String},Regex,System.Nullable{System.String})">Matches(ValidationResult, String, Nullable&lt;String&gt;, Regex, Nullable&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Ensures that the specified string matches the specified regular expression.
 When the check fails, adds an error message to the
 <a class="xref" href="Admonish.ValidationResult.html">ValidationResult</a> and associates it with the specified key.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static ValidationResult Matches(this ValidationResult r, string key, string? value, Regex regex, string? message = default(string? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public static ValidationResult Matches(this ValidationResult r, string key, string? value, Regex regex, string? message = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -237,7 +219,7 @@ When the check fails, adds an error message to the
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Text.RegularExpressions.Regex</span></td>
+        <td><span class="xref">Regex</span></td>
         <td><span class="parametername">regex</span></td>
         <td><p>The regular expression the value must match to pass validation.</p>
 </td>
@@ -268,21 +250,21 @@ When the check fails, adds an error message to the
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/otto-gebb/Admonish/new/master/apiSpec/new?filename=Admonish_StringValidationExtensions_NonNullOrEmpty_Admonish_ValidationResult_System_String_System_Nullable_System_String__.md&amp;value=---%0Auid%3A%20Admonish.StringValidationExtensions.NonNullOrEmpty(Admonish.ValidationResult%2CSystem.String%2CSystem.Nullable%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/otto-gebb/Admonish/new/master/apiSpec/new?filename=Admonish_StringValidationExtensions_NonNullOrEmpty_Admonish_ValidationResult_System_String_System_Nullable_System_String__System_Nullable_System_String__.md&amp;value=---%0Auid%3A%20Admonish.StringValidationExtensions.NonNullOrEmpty(Admonish.ValidationResult%2CSystem.String%2CSystem.Nullable%7BSystem.String%7D%2CSystem.Nullable%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/otto-gebb/Admonish/blob/master/src/Admonish/Extensions/StringValidationExtensions.cs/#L19">View Source</a>
+    <a href="https://github.com/otto-gebb/Admonish/blob/master/src/Admonish/Extensions/StringValidationExtensions.cs/#L20">View Source</a>
   </span>
   <a id="Admonish_StringValidationExtensions_NonNullOrEmpty_" data-uid="Admonish.StringValidationExtensions.NonNullOrEmpty*"></a>
-  <h4 id="Admonish_StringValidationExtensions_NonNullOrEmpty_Admonish_ValidationResult_System_String_System_Nullable_System_String__" data-uid="Admonish.StringValidationExtensions.NonNullOrEmpty(Admonish.ValidationResult,System.String,System.Nullable{System.String})">NonNullOrEmpty(ValidationResult, String, Nullable&lt;String&gt;)</h4>
-  <div class="markdown level1 summary"><p>Checks whether the specified string is not null or empty.
+  <h4 id="Admonish_StringValidationExtensions_NonNullOrEmpty_Admonish_ValidationResult_System_String_System_Nullable_System_String__System_Nullable_System_String__" data-uid="Admonish.StringValidationExtensions.NonNullOrEmpty(Admonish.ValidationResult,System.String,System.Nullable{System.String},System.Nullable{System.String})">NonNullOrEmpty(ValidationResult, String, Nullable&lt;String&gt;, Nullable&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Ensures that the specified string is not null or empty.
 When it is, adds an error message to the
 <a class="xref" href="Admonish.ValidationResult.html">ValidationResult</a> and associates it with the specified key.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static ValidationResult NonNullOrEmpty(this ValidationResult r, string key, string? value)</code></pre>
+    <pre><code class="lang-csharp hljs">public static ValidationResult NonNullOrEmpty(this ValidationResult r, string key, string? value, string? message = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -310,6 +292,12 @@ When it is, adds an error message to the
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td><span class="parametername">value</span></td>
         <td><p>The string to check.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">message</span></td>
+        <td><p>An optional error message.</p>
 </td>
       </tr>
     </tbody>
@@ -332,14 +320,14 @@ When it is, adds an error message to the
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/otto-gebb/Admonish/new/master/apiSpec/new?filename=Admonish_StringValidationExtensions_NonNullOrWhiteSpace_Admonish_ValidationResult_System_String_System_Nullable_System_String__.md&amp;value=---%0Auid%3A%20Admonish.StringValidationExtensions.NonNullOrWhiteSpace(Admonish.ValidationResult%2CSystem.String%2CSystem.Nullable%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/otto-gebb/Admonish/new/master/apiSpec/new?filename=Admonish_StringValidationExtensions_NonNullOrWhiteSpace_Admonish_ValidationResult_System_String_System_Nullable_System_String__System_Nullable_System_String__.md&amp;value=---%0Auid%3A%20Admonish.StringValidationExtensions.NonNullOrWhiteSpace(Admonish.ValidationResult%2CSystem.String%2CSystem.Nullable%7BSystem.String%7D%2CSystem.Nullable%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/otto-gebb/Admonish/blob/master/src/Admonish/Extensions/StringValidationExtensions.cs/#L42">View Source</a>
+    <a href="https://github.com/otto-gebb/Admonish/blob/master/src/Admonish/Extensions/StringValidationExtensions.cs/#L46">View Source</a>
   </span>
   <a id="Admonish_StringValidationExtensions_NonNullOrWhiteSpace_" data-uid="Admonish.StringValidationExtensions.NonNullOrWhiteSpace*"></a>
-  <h4 id="Admonish_StringValidationExtensions_NonNullOrWhiteSpace_Admonish_ValidationResult_System_String_System_Nullable_System_String__" data-uid="Admonish.StringValidationExtensions.NonNullOrWhiteSpace(Admonish.ValidationResult,System.String,System.Nullable{System.String})">NonNullOrWhiteSpace(ValidationResult, String, Nullable&lt;String&gt;)</h4>
-  <div class="markdown level1 summary"><p>Checks whether the specified string is not null or empty or consists
+  <h4 id="Admonish_StringValidationExtensions_NonNullOrWhiteSpace_Admonish_ValidationResult_System_String_System_Nullable_System_String__System_Nullable_System_String__" data-uid="Admonish.StringValidationExtensions.NonNullOrWhiteSpace(Admonish.ValidationResult,System.String,System.Nullable{System.String},System.Nullable{System.String})">NonNullOrWhiteSpace(ValidationResult, String, Nullable&lt;String&gt;, Nullable&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Ensures that the specified string is not null or empty or consists
 of whitespace characters only.
 When the check fails, adds an error message to the
 <a class="xref" href="Admonish.ValidationResult.html">ValidationResult</a> and associates it with the specified key.</p>
@@ -347,7 +335,7 @@ When the check fails, adds an error message to the
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static ValidationResult NonNullOrWhiteSpace(this ValidationResult r, string key, string? value)</code></pre>
+    <pre><code class="lang-csharp hljs">public static ValidationResult NonNullOrWhiteSpace(this ValidationResult r, string key, string? value, string? message = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -375,6 +363,12 @@ When the check fails, adds an error message to the
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td><span class="parametername">value</span></td>
         <td><p>The string to check.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">message</span></td>
+        <td><p>An optional error message.</p>
 </td>
       </tr>
     </tbody>

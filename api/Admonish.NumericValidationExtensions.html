@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class NumericValidationExtensions
    | Admonish validation library ">
-    <meta name="generator" content="docfx 2.45.1.0">
+    <meta name="generator" content="docfx 2.49.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -81,55 +81,31 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">NumericValidationExtensions</span></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Admonish.html">Admonish</a></h6>
   <h6><strong>Assembly</strong>: Admonish.dll</h6>
   <h5 id="Admonish_NumericValidationExtensions_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class NumericValidationExtensions</code></pre>
+    <pre><code class="lang-csharp hljs">public static class NumericValidationExtensions : object</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/otto-gebb/Admonish/new/master/apiSpec/new?filename=Admonish_NumericValidationExtensions_Between_Admonish_ValidationResult_System_String_System_Decimal_System_Decimal_System_Decimal_.md&amp;value=---%0Auid%3A%20Admonish.NumericValidationExtensions.Between(Admonish.ValidationResult%2CSystem.String%2CSystem.Decimal%2CSystem.Decimal%2CSystem.Decimal)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/otto-gebb/Admonish/new/master/apiSpec/new?filename=Admonish_NumericValidationExtensions_Between_Admonish_ValidationResult_System_String_System_Decimal_System_Decimal_System_Decimal_System_Nullable_System_String__.md&amp;value=---%0Auid%3A%20Admonish.NumericValidationExtensions.Between(Admonish.ValidationResult%2CSystem.String%2CSystem.Decimal%2CSystem.Decimal%2CSystem.Decimal%2CSystem.Nullable%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/otto-gebb/Admonish/blob/master/src/Admonish/Extensions/NumericValidationExtensions.cs/#L150">View Source</a>
+    <a href="https://github.com/otto-gebb/Admonish/blob/master/src/Admonish/Extensions/NumericValidationExtensions.cs/#L166">View Source</a>
   </span>
   <a id="Admonish_NumericValidationExtensions_Between_" data-uid="Admonish.NumericValidationExtensions.Between*"></a>
-  <h4 id="Admonish_NumericValidationExtensions_Between_Admonish_ValidationResult_System_String_System_Decimal_System_Decimal_System_Decimal_" data-uid="Admonish.NumericValidationExtensions.Between(Admonish.ValidationResult,System.String,System.Decimal,System.Decimal,System.Decimal)">Between(ValidationResult, String, Decimal, Decimal, Decimal)</h4>
-  <div class="markdown level1 summary"><p>Checks whether the specified number is within the specified range (inclusive).
+  <h4 id="Admonish_NumericValidationExtensions_Between_Admonish_ValidationResult_System_String_System_Decimal_System_Decimal_System_Decimal_System_Nullable_System_String__" data-uid="Admonish.NumericValidationExtensions.Between(Admonish.ValidationResult,System.String,System.Decimal,System.Decimal,System.Decimal,System.Nullable{System.String})">Between(ValidationResult, String, Decimal, Decimal, Decimal, Nullable&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Ensures that the specified number is within the specified range (inclusive).
 When the check fails, adds an error message to the
 <a class="xref" href="Admonish.ValidationResult.html">ValidationResult</a> and associates it with the specified key.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static ValidationResult Between(this ValidationResult r, string key, decimal value, decimal minValue, decimal maxValue)</code></pre>
+    <pre><code class="lang-csharp hljs">public static ValidationResult Between(this ValidationResult r, string key, decimal value, decimal minValue, decimal maxValue, string? message = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -171,6 +147,12 @@ When the check fails, adds an error message to the
         <td><p>The maximum allowed value.</p>
 </td>
       </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">message</span></td>
+        <td><p>An optional error message.</p>
+</td>
+      </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
@@ -191,21 +173,21 @@ When the check fails, adds an error message to the
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/otto-gebb/Admonish/new/master/apiSpec/new?filename=Admonish_NumericValidationExtensions_Between_Admonish_ValidationResult_System_String_System_Int32_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Admonish.NumericValidationExtensions.Between(Admonish.ValidationResult%2CSystem.String%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/otto-gebb/Admonish/new/master/apiSpec/new?filename=Admonish_NumericValidationExtensions_Between_Admonish_ValidationResult_System_String_System_Int32_System_Int32_System_Int32_System_Nullable_System_String__.md&amp;value=---%0Auid%3A%20Admonish.NumericValidationExtensions.Between(Admonish.ValidationResult%2CSystem.String%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Nullable%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/otto-gebb/Admonish/blob/master/src/Admonish/Extensions/NumericValidationExtensions.cs/#L117">View Source</a>
+    <a href="https://github.com/otto-gebb/Admonish/blob/master/src/Admonish/Extensions/NumericValidationExtensions.cs/#L130">View Source</a>
   </span>
   <a id="Admonish_NumericValidationExtensions_Between_" data-uid="Admonish.NumericValidationExtensions.Between*"></a>
-  <h4 id="Admonish_NumericValidationExtensions_Between_Admonish_ValidationResult_System_String_System_Int32_System_Int32_System_Int32_" data-uid="Admonish.NumericValidationExtensions.Between(Admonish.ValidationResult,System.String,System.Int32,System.Int32,System.Int32)">Between(ValidationResult, String, Int32, Int32, Int32)</h4>
-  <div class="markdown level1 summary"><p>Checks whether the specified number is within the specified range (inclusive).
+  <h4 id="Admonish_NumericValidationExtensions_Between_Admonish_ValidationResult_System_String_System_Int32_System_Int32_System_Int32_System_Nullable_System_String__" data-uid="Admonish.NumericValidationExtensions.Between(Admonish.ValidationResult,System.String,System.Int32,System.Int32,System.Int32,System.Nullable{System.String})">Between(ValidationResult, String, Int32, Int32, Int32, Nullable&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Ensures that the specified number is within the specified range (inclusive).
 When the check fails, adds an error message to the
 <a class="xref" href="Admonish.ValidationResult.html">ValidationResult</a> and associates it with the specified key.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static ValidationResult Between(this ValidationResult r, string key, int value, int minValue, int maxValue)</code></pre>
+    <pre><code class="lang-csharp hljs">public static ValidationResult Between(this ValidationResult r, string key, int value, int minValue, int maxValue, string? message = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -247,6 +229,12 @@ When the check fails, adds an error message to the
         <td><p>The maximum allowed value.</p>
 </td>
       </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">message</span></td>
+        <td><p>An optional error message.</p>
+</td>
+      </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
@@ -267,21 +255,21 @@ When the check fails, adds an error message to the
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/otto-gebb/Admonish/new/master/apiSpec/new?filename=Admonish_NumericValidationExtensions_Max_Admonish_ValidationResult_System_String_System_Decimal_System_Decimal_.md&amp;value=---%0Auid%3A%20Admonish.NumericValidationExtensions.Max(Admonish.ValidationResult%2CSystem.String%2CSystem.Decimal%2CSystem.Decimal)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/otto-gebb/Admonish/new/master/apiSpec/new?filename=Admonish_NumericValidationExtensions_Max_Admonish_ValidationResult_System_String_System_Decimal_System_Decimal_System_Nullable_System_String__.md&amp;value=---%0Auid%3A%20Admonish.NumericValidationExtensions.Max(Admonish.ValidationResult%2CSystem.String%2CSystem.Decimal%2CSystem.Decimal%2CSystem.Nullable%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/otto-gebb/Admonish/blob/master/src/Admonish/Extensions/NumericValidationExtensions.cs/#L92">View Source</a>
+    <a href="https://github.com/otto-gebb/Admonish/blob/master/src/Admonish/Extensions/NumericValidationExtensions.cs/#L102">View Source</a>
   </span>
   <a id="Admonish_NumericValidationExtensions_Max_" data-uid="Admonish.NumericValidationExtensions.Max*"></a>
-  <h4 id="Admonish_NumericValidationExtensions_Max_Admonish_ValidationResult_System_String_System_Decimal_System_Decimal_" data-uid="Admonish.NumericValidationExtensions.Max(Admonish.ValidationResult,System.String,System.Decimal,System.Decimal)">Max(ValidationResult, String, Decimal, Decimal)</h4>
-  <div class="markdown level1 summary"><p>Checks whether the specified number is less than or equal to the specified value.
+  <h4 id="Admonish_NumericValidationExtensions_Max_Admonish_ValidationResult_System_String_System_Decimal_System_Decimal_System_Nullable_System_String__" data-uid="Admonish.NumericValidationExtensions.Max(Admonish.ValidationResult,System.String,System.Decimal,System.Decimal,System.Nullable{System.String})">Max(ValidationResult, String, Decimal, Decimal, Nullable&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Ensures that the specified number is less than or equal to the specified value.
 When the check fails, adds an error message to the
 <a class="xref" href="Admonish.ValidationResult.html">ValidationResult</a> and associates it with the specified key.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static ValidationResult Max(this ValidationResult r, string key, decimal value, decimal maxValue)</code></pre>
+    <pre><code class="lang-csharp hljs">public static ValidationResult Max(this ValidationResult r, string key, decimal value, decimal maxValue, string? message = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -317,6 +305,12 @@ When the check fails, adds an error message to the
         <td><p>The maximum allowed value.</p>
 </td>
       </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">message</span></td>
+        <td><p>An optional error message.</p>
+</td>
+      </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
@@ -337,21 +331,21 @@ When the check fails, adds an error message to the
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/otto-gebb/Admonish/new/master/apiSpec/new?filename=Admonish_NumericValidationExtensions_Max_Admonish_ValidationResult_System_String_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Admonish.NumericValidationExtensions.Max(Admonish.ValidationResult%2CSystem.String%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/otto-gebb/Admonish/new/master/apiSpec/new?filename=Admonish_NumericValidationExtensions_Max_Admonish_ValidationResult_System_String_System_Int32_System_Int32_System_Nullable_System_String__.md&amp;value=---%0Auid%3A%20Admonish.NumericValidationExtensions.Max(Admonish.ValidationResult%2CSystem.String%2CSystem.Int32%2CSystem.Int32%2CSystem.Nullable%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/otto-gebb/Admonish/blob/master/src/Admonish/Extensions/NumericValidationExtensions.cs/#L68">View Source</a>
+    <a href="https://github.com/otto-gebb/Admonish/blob/master/src/Admonish/Extensions/NumericValidationExtensions.cs/#L75">View Source</a>
   </span>
   <a id="Admonish_NumericValidationExtensions_Max_" data-uid="Admonish.NumericValidationExtensions.Max*"></a>
-  <h4 id="Admonish_NumericValidationExtensions_Max_Admonish_ValidationResult_System_String_System_Int32_System_Int32_" data-uid="Admonish.NumericValidationExtensions.Max(Admonish.ValidationResult,System.String,System.Int32,System.Int32)">Max(ValidationResult, String, Int32, Int32)</h4>
-  <div class="markdown level1 summary"><p>Checks whether the specified number is less than or equal to the specified value.
+  <h4 id="Admonish_NumericValidationExtensions_Max_Admonish_ValidationResult_System_String_System_Int32_System_Int32_System_Nullable_System_String__" data-uid="Admonish.NumericValidationExtensions.Max(Admonish.ValidationResult,System.String,System.Int32,System.Int32,System.Nullable{System.String})">Max(ValidationResult, String, Int32, Int32, Nullable&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Ensures that the specified number is less than or equal to the specified value.
 When the check fails, adds an error message to the
 <a class="xref" href="Admonish.ValidationResult.html">ValidationResult</a> and associates it with the specified key.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static ValidationResult Max(this ValidationResult r, string key, int value, int maxValue)</code></pre>
+    <pre><code class="lang-csharp hljs">public static ValidationResult Max(this ValidationResult r, string key, int value, int maxValue, string? message = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -387,6 +381,12 @@ When the check fails, adds an error message to the
         <td><p>The maximum allowed value.</p>
 </td>
       </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">message</span></td>
+        <td><p>An optional error message.</p>
+</td>
+      </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
@@ -407,21 +407,21 @@ When the check fails, adds an error message to the
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/otto-gebb/Admonish/new/master/apiSpec/new?filename=Admonish_NumericValidationExtensions_Min_Admonish_ValidationResult_System_String_System_Decimal_System_Decimal_.md&amp;value=---%0Auid%3A%20Admonish.NumericValidationExtensions.Min(Admonish.ValidationResult%2CSystem.String%2CSystem.Decimal%2CSystem.Decimal)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/otto-gebb/Admonish/new/master/apiSpec/new?filename=Admonish_NumericValidationExtensions_Min_Admonish_ValidationResult_System_String_System_Decimal_System_Decimal_System_Nullable_System_String__.md&amp;value=---%0Auid%3A%20Admonish.NumericValidationExtensions.Min(Admonish.ValidationResult%2CSystem.String%2CSystem.Decimal%2CSystem.Decimal%2CSystem.Nullable%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/otto-gebb/Admonish/blob/master/src/Admonish/Extensions/NumericValidationExtensions.cs/#L44">View Source</a>
+    <a href="https://github.com/otto-gebb/Admonish/blob/master/src/Admonish/Extensions/NumericValidationExtensions.cs/#L48">View Source</a>
   </span>
   <a id="Admonish_NumericValidationExtensions_Min_" data-uid="Admonish.NumericValidationExtensions.Min*"></a>
-  <h4 id="Admonish_NumericValidationExtensions_Min_Admonish_ValidationResult_System_String_System_Decimal_System_Decimal_" data-uid="Admonish.NumericValidationExtensions.Min(Admonish.ValidationResult,System.String,System.Decimal,System.Decimal)">Min(ValidationResult, String, Decimal, Decimal)</h4>
-  <div class="markdown level1 summary"><p>Checks whether the specified number is greater than or equal to the specified value.
+  <h4 id="Admonish_NumericValidationExtensions_Min_Admonish_ValidationResult_System_String_System_Decimal_System_Decimal_System_Nullable_System_String__" data-uid="Admonish.NumericValidationExtensions.Min(Admonish.ValidationResult,System.String,System.Decimal,System.Decimal,System.Nullable{System.String})">Min(ValidationResult, String, Decimal, Decimal, Nullable&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Ensures that the specified number is greater than or equal to the specified value.
 When the check fails, adds an error message to the
 <a class="xref" href="Admonish.ValidationResult.html">ValidationResult</a> and associates it with the specified key.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static ValidationResult Min(this ValidationResult r, string key, decimal value, decimal minValue)</code></pre>
+    <pre><code class="lang-csharp hljs">public static ValidationResult Min(this ValidationResult r, string key, decimal value, decimal minValue, string? message = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -457,6 +457,12 @@ When the check fails, adds an error message to the
         <td><p>The minimum allowed value.</p>
 </td>
       </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">message</span></td>
+        <td><p>An optional error message.</p>
+</td>
+      </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
@@ -477,21 +483,21 @@ When the check fails, adds an error message to the
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/otto-gebb/Admonish/new/master/apiSpec/new?filename=Admonish_NumericValidationExtensions_Min_Admonish_ValidationResult_System_String_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Admonish.NumericValidationExtensions.Min(Admonish.ValidationResult%2CSystem.String%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/otto-gebb/Admonish/new/master/apiSpec/new?filename=Admonish_NumericValidationExtensions_Min_Admonish_ValidationResult_System_String_System_Int32_System_Int32_System_Nullable_System_String__.md&amp;value=---%0Auid%3A%20Admonish.NumericValidationExtensions.Min(Admonish.ValidationResult%2CSystem.String%2CSystem.Int32%2CSystem.Int32%2CSystem.Nullable%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/otto-gebb/Admonish/blob/master/src/Admonish/Extensions/NumericValidationExtensions.cs/#L20">View Source</a>
+    <a href="https://github.com/otto-gebb/Admonish/blob/master/src/Admonish/Extensions/NumericValidationExtensions.cs/#L21">View Source</a>
   </span>
   <a id="Admonish_NumericValidationExtensions_Min_" data-uid="Admonish.NumericValidationExtensions.Min*"></a>
-  <h4 id="Admonish_NumericValidationExtensions_Min_Admonish_ValidationResult_System_String_System_Int32_System_Int32_" data-uid="Admonish.NumericValidationExtensions.Min(Admonish.ValidationResult,System.String,System.Int32,System.Int32)">Min(ValidationResult, String, Int32, Int32)</h4>
-  <div class="markdown level1 summary"><p>Checks whether the specified number is greater than or equal to the specified value.
+  <h4 id="Admonish_NumericValidationExtensions_Min_Admonish_ValidationResult_System_String_System_Int32_System_Int32_System_Nullable_System_String__" data-uid="Admonish.NumericValidationExtensions.Min(Admonish.ValidationResult,System.String,System.Int32,System.Int32,System.Nullable{System.String})">Min(ValidationResult, String, Int32, Int32, Nullable&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Ensures that the specified number is greater than or equal to the specified value.
 When the check fails, adds an error message to the
 <a class="xref" href="Admonish.ValidationResult.html">ValidationResult</a> and associates it with the specified key.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static ValidationResult Min(this ValidationResult r, string key, int value, int minValue)</code></pre>
+    <pre><code class="lang-csharp hljs">public static ValidationResult Min(this ValidationResult r, string key, int value, int minValue, string? message = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -525,6 +531,12 @@ When the check fails, adds an error message to the
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">minValue</span></td>
         <td><p>The minimum allowed value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">message</span></td>
+        <td><p>An optional error message.</p>
 </td>
       </tr>
     </tbody>

@@ -13,18 +13,24 @@ references:
   commentId: T:Admonish.DateTimeValidationExtensions
   fullName: Admonish.DateTimeValidationExtensions
   nameWithType: DateTimeValidationExtensions
-- uid: Admonish.DateTimeValidationExtensions.Between(Admonish.ValidationResult,System.String,System.DateTime,System.DateTime,System.DateTime)
-  name: Between(ValidationResult, String, DateTime, DateTime, DateTime)
-  href: api/Admonish.DateTimeValidationExtensions.html#Admonish_DateTimeValidationExtensions_Between_Admonish_ValidationResult_System_String_System_DateTime_System_DateTime_System_DateTime_
-  commentId: M:Admonish.DateTimeValidationExtensions.Between(Admonish.ValidationResult,System.String,System.DateTime,System.DateTime,System.DateTime)
-  fullName: Admonish.DateTimeValidationExtensions.Between(Admonish.ValidationResult, System.String, System.DateTime, System.DateTime, System.DateTime)
-  nameWithType: DateTimeValidationExtensions.Between(ValidationResult, String, DateTime, DateTime, DateTime)
-- uid: Admonish.DateTimeValidationExtensions.Between(Admonish.ValidationResult,System.String,System.DateTimeOffset,System.DateTimeOffset,System.DateTimeOffset)
-  name: Between(ValidationResult, String, DateTimeOffset, DateTimeOffset, DateTimeOffset)
-  href: api/Admonish.DateTimeValidationExtensions.html#Admonish_DateTimeValidationExtensions_Between_Admonish_ValidationResult_System_String_System_DateTimeOffset_System_DateTimeOffset_System_DateTimeOffset_
-  commentId: M:Admonish.DateTimeValidationExtensions.Between(Admonish.ValidationResult,System.String,System.DateTimeOffset,System.DateTimeOffset,System.DateTimeOffset)
-  fullName: Admonish.DateTimeValidationExtensions.Between(Admonish.ValidationResult, System.String, System.DateTimeOffset, System.DateTimeOffset, System.DateTimeOffset)
-  nameWithType: DateTimeValidationExtensions.Between(ValidationResult, String, DateTimeOffset, DateTimeOffset, DateTimeOffset)
+- uid: Admonish.DateTimeValidationExtensions.Between(Admonish.ValidationResult,System.String,DateTime,DateTime,DateTime,System.Nullable{System.String})
+  name: Between(ValidationResult, String, DateTime, DateTime, DateTime, Nullable<String>)
+  href: api/Admonish.DateTimeValidationExtensions.html#Admonish_DateTimeValidationExtensions_Between_Admonish_ValidationResult_System_String_DateTime_DateTime_DateTime_System_Nullable_System_String__
+  commentId: M:Admonish.DateTimeValidationExtensions.Between(Admonish.ValidationResult,System.String,DateTime,DateTime,DateTime,System.Nullable{System.String})
+  name.vb: Between(ValidationResult, String, DateTime, DateTime, DateTime, Nullable(Of String))
+  fullName: Admonish.DateTimeValidationExtensions.Between(Admonish.ValidationResult, System.String, DateTime, DateTime, DateTime, System.Nullable<System.String>)
+  fullName.vb: Admonish.DateTimeValidationExtensions.Between(Admonish.ValidationResult, System.String, DateTime, DateTime, DateTime, System.Nullable(Of System.String))
+  nameWithType: DateTimeValidationExtensions.Between(ValidationResult, String, DateTime, DateTime, DateTime, Nullable<String>)
+  nameWithType.vb: DateTimeValidationExtensions.Between(ValidationResult, String, DateTime, DateTime, DateTime, Nullable(Of String))
+- uid: Admonish.DateTimeValidationExtensions.Between(Admonish.ValidationResult,System.String,DateTimeOffset,DateTimeOffset,DateTimeOffset,System.Nullable{System.String})
+  name: Between(ValidationResult, String, DateTimeOffset, DateTimeOffset, DateTimeOffset, Nullable<String>)
+  href: api/Admonish.DateTimeValidationExtensions.html#Admonish_DateTimeValidationExtensions_Between_Admonish_ValidationResult_System_String_DateTimeOffset_DateTimeOffset_DateTimeOffset_System_Nullable_System_String__
+  commentId: M:Admonish.DateTimeValidationExtensions.Between(Admonish.ValidationResult,System.String,DateTimeOffset,DateTimeOffset,DateTimeOffset,System.Nullable{System.String})
+  name.vb: Between(ValidationResult, String, DateTimeOffset, DateTimeOffset, DateTimeOffset, Nullable(Of String))
+  fullName: Admonish.DateTimeValidationExtensions.Between(Admonish.ValidationResult, System.String, DateTimeOffset, DateTimeOffset, DateTimeOffset, System.Nullable<System.String>)
+  fullName.vb: Admonish.DateTimeValidationExtensions.Between(Admonish.ValidationResult, System.String, DateTimeOffset, DateTimeOffset, DateTimeOffset, System.Nullable(Of System.String))
+  nameWithType: DateTimeValidationExtensions.Between(ValidationResult, String, DateTimeOffset, DateTimeOffset, DateTimeOffset, Nullable<String>)
+  nameWithType.vb: DateTimeValidationExtensions.Between(ValidationResult, String, DateTimeOffset, DateTimeOffset, DateTimeOffset, Nullable(Of String))
 - uid: Admonish.DateTimeValidationExtensions.Between*
   name: Between
   href: api/Admonish.DateTimeValidationExtensions.html#Admonish_DateTimeValidationExtensions_Between_
@@ -32,18 +38,24 @@ references:
   isSpec: "True"
   fullName: Admonish.DateTimeValidationExtensions.Between
   nameWithType: DateTimeValidationExtensions.Between
-- uid: Admonish.DateTimeValidationExtensions.Max(Admonish.ValidationResult,System.String,System.DateTime,System.DateTime)
-  name: Max(ValidationResult, String, DateTime, DateTime)
-  href: api/Admonish.DateTimeValidationExtensions.html#Admonish_DateTimeValidationExtensions_Max_Admonish_ValidationResult_System_String_System_DateTime_System_DateTime_
-  commentId: M:Admonish.DateTimeValidationExtensions.Max(Admonish.ValidationResult,System.String,System.DateTime,System.DateTime)
-  fullName: Admonish.DateTimeValidationExtensions.Max(Admonish.ValidationResult, System.String, System.DateTime, System.DateTime)
-  nameWithType: DateTimeValidationExtensions.Max(ValidationResult, String, DateTime, DateTime)
-- uid: Admonish.DateTimeValidationExtensions.Max(Admonish.ValidationResult,System.String,System.DateTimeOffset,System.DateTimeOffset)
-  name: Max(ValidationResult, String, DateTimeOffset, DateTimeOffset)
-  href: api/Admonish.DateTimeValidationExtensions.html#Admonish_DateTimeValidationExtensions_Max_Admonish_ValidationResult_System_String_System_DateTimeOffset_System_DateTimeOffset_
-  commentId: M:Admonish.DateTimeValidationExtensions.Max(Admonish.ValidationResult,System.String,System.DateTimeOffset,System.DateTimeOffset)
-  fullName: Admonish.DateTimeValidationExtensions.Max(Admonish.ValidationResult, System.String, System.DateTimeOffset, System.DateTimeOffset)
-  nameWithType: DateTimeValidationExtensions.Max(ValidationResult, String, DateTimeOffset, DateTimeOffset)
+- uid: Admonish.DateTimeValidationExtensions.Max(Admonish.ValidationResult,System.String,DateTime,DateTime,System.Nullable{System.String})
+  name: Max(ValidationResult, String, DateTime, DateTime, Nullable<String>)
+  href: api/Admonish.DateTimeValidationExtensions.html#Admonish_DateTimeValidationExtensions_Max_Admonish_ValidationResult_System_String_DateTime_DateTime_System_Nullable_System_String__
+  commentId: M:Admonish.DateTimeValidationExtensions.Max(Admonish.ValidationResult,System.String,DateTime,DateTime,System.Nullable{System.String})
+  name.vb: Max(ValidationResult, String, DateTime, DateTime, Nullable(Of String))
+  fullName: Admonish.DateTimeValidationExtensions.Max(Admonish.ValidationResult, System.String, DateTime, DateTime, System.Nullable<System.String>)
+  fullName.vb: Admonish.DateTimeValidationExtensions.Max(Admonish.ValidationResult, System.String, DateTime, DateTime, System.Nullable(Of System.String))
+  nameWithType: DateTimeValidationExtensions.Max(ValidationResult, String, DateTime, DateTime, Nullable<String>)
+  nameWithType.vb: DateTimeValidationExtensions.Max(ValidationResult, String, DateTime, DateTime, Nullable(Of String))
+- uid: Admonish.DateTimeValidationExtensions.Max(Admonish.ValidationResult,System.String,DateTimeOffset,DateTimeOffset,System.Nullable{System.String})
+  name: Max(ValidationResult, String, DateTimeOffset, DateTimeOffset, Nullable<String>)
+  href: api/Admonish.DateTimeValidationExtensions.html#Admonish_DateTimeValidationExtensions_Max_Admonish_ValidationResult_System_String_DateTimeOffset_DateTimeOffset_System_Nullable_System_String__
+  commentId: M:Admonish.DateTimeValidationExtensions.Max(Admonish.ValidationResult,System.String,DateTimeOffset,DateTimeOffset,System.Nullable{System.String})
+  name.vb: Max(ValidationResult, String, DateTimeOffset, DateTimeOffset, Nullable(Of String))
+  fullName: Admonish.DateTimeValidationExtensions.Max(Admonish.ValidationResult, System.String, DateTimeOffset, DateTimeOffset, System.Nullable<System.String>)
+  fullName.vb: Admonish.DateTimeValidationExtensions.Max(Admonish.ValidationResult, System.String, DateTimeOffset, DateTimeOffset, System.Nullable(Of System.String))
+  nameWithType: DateTimeValidationExtensions.Max(ValidationResult, String, DateTimeOffset, DateTimeOffset, Nullable<String>)
+  nameWithType.vb: DateTimeValidationExtensions.Max(ValidationResult, String, DateTimeOffset, DateTimeOffset, Nullable(Of String))
 - uid: Admonish.DateTimeValidationExtensions.Max*
   name: Max
   href: api/Admonish.DateTimeValidationExtensions.html#Admonish_DateTimeValidationExtensions_Max_
@@ -51,18 +63,24 @@ references:
   isSpec: "True"
   fullName: Admonish.DateTimeValidationExtensions.Max
   nameWithType: DateTimeValidationExtensions.Max
-- uid: Admonish.DateTimeValidationExtensions.Min(Admonish.ValidationResult,System.String,System.DateTime,System.DateTime)
-  name: Min(ValidationResult, String, DateTime, DateTime)
-  href: api/Admonish.DateTimeValidationExtensions.html#Admonish_DateTimeValidationExtensions_Min_Admonish_ValidationResult_System_String_System_DateTime_System_DateTime_
-  commentId: M:Admonish.DateTimeValidationExtensions.Min(Admonish.ValidationResult,System.String,System.DateTime,System.DateTime)
-  fullName: Admonish.DateTimeValidationExtensions.Min(Admonish.ValidationResult, System.String, System.DateTime, System.DateTime)
-  nameWithType: DateTimeValidationExtensions.Min(ValidationResult, String, DateTime, DateTime)
-- uid: Admonish.DateTimeValidationExtensions.Min(Admonish.ValidationResult,System.String,System.DateTimeOffset,System.DateTimeOffset)
-  name: Min(ValidationResult, String, DateTimeOffset, DateTimeOffset)
-  href: api/Admonish.DateTimeValidationExtensions.html#Admonish_DateTimeValidationExtensions_Min_Admonish_ValidationResult_System_String_System_DateTimeOffset_System_DateTimeOffset_
-  commentId: M:Admonish.DateTimeValidationExtensions.Min(Admonish.ValidationResult,System.String,System.DateTimeOffset,System.DateTimeOffset)
-  fullName: Admonish.DateTimeValidationExtensions.Min(Admonish.ValidationResult, System.String, System.DateTimeOffset, System.DateTimeOffset)
-  nameWithType: DateTimeValidationExtensions.Min(ValidationResult, String, DateTimeOffset, DateTimeOffset)
+- uid: Admonish.DateTimeValidationExtensions.Min(Admonish.ValidationResult,System.String,DateTime,DateTime,System.Nullable{System.String})
+  name: Min(ValidationResult, String, DateTime, DateTime, Nullable<String>)
+  href: api/Admonish.DateTimeValidationExtensions.html#Admonish_DateTimeValidationExtensions_Min_Admonish_ValidationResult_System_String_DateTime_DateTime_System_Nullable_System_String__
+  commentId: M:Admonish.DateTimeValidationExtensions.Min(Admonish.ValidationResult,System.String,DateTime,DateTime,System.Nullable{System.String})
+  name.vb: Min(ValidationResult, String, DateTime, DateTime, Nullable(Of String))
+  fullName: Admonish.DateTimeValidationExtensions.Min(Admonish.ValidationResult, System.String, DateTime, DateTime, System.Nullable<System.String>)
+  fullName.vb: Admonish.DateTimeValidationExtensions.Min(Admonish.ValidationResult, System.String, DateTime, DateTime, System.Nullable(Of System.String))
+  nameWithType: DateTimeValidationExtensions.Min(ValidationResult, String, DateTime, DateTime, Nullable<String>)
+  nameWithType.vb: DateTimeValidationExtensions.Min(ValidationResult, String, DateTime, DateTime, Nullable(Of String))
+- uid: Admonish.DateTimeValidationExtensions.Min(Admonish.ValidationResult,System.String,DateTimeOffset,DateTimeOffset,System.Nullable{System.String})
+  name: Min(ValidationResult, String, DateTimeOffset, DateTimeOffset, Nullable<String>)
+  href: api/Admonish.DateTimeValidationExtensions.html#Admonish_DateTimeValidationExtensions_Min_Admonish_ValidationResult_System_String_DateTimeOffset_DateTimeOffset_System_Nullable_System_String__
+  commentId: M:Admonish.DateTimeValidationExtensions.Min(Admonish.ValidationResult,System.String,DateTimeOffset,DateTimeOffset,System.Nullable{System.String})
+  name.vb: Min(ValidationResult, String, DateTimeOffset, DateTimeOffset, Nullable(Of String))
+  fullName: Admonish.DateTimeValidationExtensions.Min(Admonish.ValidationResult, System.String, DateTimeOffset, DateTimeOffset, System.Nullable<System.String>)
+  fullName.vb: Admonish.DateTimeValidationExtensions.Min(Admonish.ValidationResult, System.String, DateTimeOffset, DateTimeOffset, System.Nullable(Of System.String))
+  nameWithType: DateTimeValidationExtensions.Min(ValidationResult, String, DateTimeOffset, DateTimeOffset, Nullable<String>)
+  nameWithType.vb: DateTimeValidationExtensions.Min(ValidationResult, String, DateTimeOffset, DateTimeOffset, Nullable(Of String))
 - uid: Admonish.DateTimeValidationExtensions.Min*
   name: Min
   href: api/Admonish.DateTimeValidationExtensions.html#Admonish_DateTimeValidationExtensions_Min_
@@ -98,18 +116,24 @@ references:
   commentId: T:Admonish.NumericValidationExtensions
   fullName: Admonish.NumericValidationExtensions
   nameWithType: NumericValidationExtensions
-- uid: Admonish.NumericValidationExtensions.Between(Admonish.ValidationResult,System.String,System.Decimal,System.Decimal,System.Decimal)
-  name: Between(ValidationResult, String, Decimal, Decimal, Decimal)
-  href: api/Admonish.NumericValidationExtensions.html#Admonish_NumericValidationExtensions_Between_Admonish_ValidationResult_System_String_System_Decimal_System_Decimal_System_Decimal_
-  commentId: M:Admonish.NumericValidationExtensions.Between(Admonish.ValidationResult,System.String,System.Decimal,System.Decimal,System.Decimal)
-  fullName: Admonish.NumericValidationExtensions.Between(Admonish.ValidationResult, System.String, System.Decimal, System.Decimal, System.Decimal)
-  nameWithType: NumericValidationExtensions.Between(ValidationResult, String, Decimal, Decimal, Decimal)
-- uid: Admonish.NumericValidationExtensions.Between(Admonish.ValidationResult,System.String,System.Int32,System.Int32,System.Int32)
-  name: Between(ValidationResult, String, Int32, Int32, Int32)
-  href: api/Admonish.NumericValidationExtensions.html#Admonish_NumericValidationExtensions_Between_Admonish_ValidationResult_System_String_System_Int32_System_Int32_System_Int32_
-  commentId: M:Admonish.NumericValidationExtensions.Between(Admonish.ValidationResult,System.String,System.Int32,System.Int32,System.Int32)
-  fullName: Admonish.NumericValidationExtensions.Between(Admonish.ValidationResult, System.String, System.Int32, System.Int32, System.Int32)
-  nameWithType: NumericValidationExtensions.Between(ValidationResult, String, Int32, Int32, Int32)
+- uid: Admonish.NumericValidationExtensions.Between(Admonish.ValidationResult,System.String,System.Decimal,System.Decimal,System.Decimal,System.Nullable{System.String})
+  name: Between(ValidationResult, String, Decimal, Decimal, Decimal, Nullable<String>)
+  href: api/Admonish.NumericValidationExtensions.html#Admonish_NumericValidationExtensions_Between_Admonish_ValidationResult_System_String_System_Decimal_System_Decimal_System_Decimal_System_Nullable_System_String__
+  commentId: M:Admonish.NumericValidationExtensions.Between(Admonish.ValidationResult,System.String,System.Decimal,System.Decimal,System.Decimal,System.Nullable{System.String})
+  name.vb: Between(ValidationResult, String, Decimal, Decimal, Decimal, Nullable(Of String))
+  fullName: Admonish.NumericValidationExtensions.Between(Admonish.ValidationResult, System.String, System.Decimal, System.Decimal, System.Decimal, System.Nullable<System.String>)
+  fullName.vb: Admonish.NumericValidationExtensions.Between(Admonish.ValidationResult, System.String, System.Decimal, System.Decimal, System.Decimal, System.Nullable(Of System.String))
+  nameWithType: NumericValidationExtensions.Between(ValidationResult, String, Decimal, Decimal, Decimal, Nullable<String>)
+  nameWithType.vb: NumericValidationExtensions.Between(ValidationResult, String, Decimal, Decimal, Decimal, Nullable(Of String))
+- uid: Admonish.NumericValidationExtensions.Between(Admonish.ValidationResult,System.String,System.Int32,System.Int32,System.Int32,System.Nullable{System.String})
+  name: Between(ValidationResult, String, Int32, Int32, Int32, Nullable<String>)
+  href: api/Admonish.NumericValidationExtensions.html#Admonish_NumericValidationExtensions_Between_Admonish_ValidationResult_System_String_System_Int32_System_Int32_System_Int32_System_Nullable_System_String__
+  commentId: M:Admonish.NumericValidationExtensions.Between(Admonish.ValidationResult,System.String,System.Int32,System.Int32,System.Int32,System.Nullable{System.String})
+  name.vb: Between(ValidationResult, String, Int32, Int32, Int32, Nullable(Of String))
+  fullName: Admonish.NumericValidationExtensions.Between(Admonish.ValidationResult, System.String, System.Int32, System.Int32, System.Int32, System.Nullable<System.String>)
+  fullName.vb: Admonish.NumericValidationExtensions.Between(Admonish.ValidationResult, System.String, System.Int32, System.Int32, System.Int32, System.Nullable(Of System.String))
+  nameWithType: NumericValidationExtensions.Between(ValidationResult, String, Int32, Int32, Int32, Nullable<String>)
+  nameWithType.vb: NumericValidationExtensions.Between(ValidationResult, String, Int32, Int32, Int32, Nullable(Of String))
 - uid: Admonish.NumericValidationExtensions.Between*
   name: Between
   href: api/Admonish.NumericValidationExtensions.html#Admonish_NumericValidationExtensions_Between_
@@ -117,18 +141,24 @@ references:
   isSpec: "True"
   fullName: Admonish.NumericValidationExtensions.Between
   nameWithType: NumericValidationExtensions.Between
-- uid: Admonish.NumericValidationExtensions.Max(Admonish.ValidationResult,System.String,System.Decimal,System.Decimal)
-  name: Max(ValidationResult, String, Decimal, Decimal)
-  href: api/Admonish.NumericValidationExtensions.html#Admonish_NumericValidationExtensions_Max_Admonish_ValidationResult_System_String_System_Decimal_System_Decimal_
-  commentId: M:Admonish.NumericValidationExtensions.Max(Admonish.ValidationResult,System.String,System.Decimal,System.Decimal)
-  fullName: Admonish.NumericValidationExtensions.Max(Admonish.ValidationResult, System.String, System.Decimal, System.Decimal)
-  nameWithType: NumericValidationExtensions.Max(ValidationResult, String, Decimal, Decimal)
-- uid: Admonish.NumericValidationExtensions.Max(Admonish.ValidationResult,System.String,System.Int32,System.Int32)
-  name: Max(ValidationResult, String, Int32, Int32)
-  href: api/Admonish.NumericValidationExtensions.html#Admonish_NumericValidationExtensions_Max_Admonish_ValidationResult_System_String_System_Int32_System_Int32_
-  commentId: M:Admonish.NumericValidationExtensions.Max(Admonish.ValidationResult,System.String,System.Int32,System.Int32)
-  fullName: Admonish.NumericValidationExtensions.Max(Admonish.ValidationResult, System.String, System.Int32, System.Int32)
-  nameWithType: NumericValidationExtensions.Max(ValidationResult, String, Int32, Int32)
+- uid: Admonish.NumericValidationExtensions.Max(Admonish.ValidationResult,System.String,System.Decimal,System.Decimal,System.Nullable{System.String})
+  name: Max(ValidationResult, String, Decimal, Decimal, Nullable<String>)
+  href: api/Admonish.NumericValidationExtensions.html#Admonish_NumericValidationExtensions_Max_Admonish_ValidationResult_System_String_System_Decimal_System_Decimal_System_Nullable_System_String__
+  commentId: M:Admonish.NumericValidationExtensions.Max(Admonish.ValidationResult,System.String,System.Decimal,System.Decimal,System.Nullable{System.String})
+  name.vb: Max(ValidationResult, String, Decimal, Decimal, Nullable(Of String))
+  fullName: Admonish.NumericValidationExtensions.Max(Admonish.ValidationResult, System.String, System.Decimal, System.Decimal, System.Nullable<System.String>)
+  fullName.vb: Admonish.NumericValidationExtensions.Max(Admonish.ValidationResult, System.String, System.Decimal, System.Decimal, System.Nullable(Of System.String))
+  nameWithType: NumericValidationExtensions.Max(ValidationResult, String, Decimal, Decimal, Nullable<String>)
+  nameWithType.vb: NumericValidationExtensions.Max(ValidationResult, String, Decimal, Decimal, Nullable(Of String))
+- uid: Admonish.NumericValidationExtensions.Max(Admonish.ValidationResult,System.String,System.Int32,System.Int32,System.Nullable{System.String})
+  name: Max(ValidationResult, String, Int32, Int32, Nullable<String>)
+  href: api/Admonish.NumericValidationExtensions.html#Admonish_NumericValidationExtensions_Max_Admonish_ValidationResult_System_String_System_Int32_System_Int32_System_Nullable_System_String__
+  commentId: M:Admonish.NumericValidationExtensions.Max(Admonish.ValidationResult,System.String,System.Int32,System.Int32,System.Nullable{System.String})
+  name.vb: Max(ValidationResult, String, Int32, Int32, Nullable(Of String))
+  fullName: Admonish.NumericValidationExtensions.Max(Admonish.ValidationResult, System.String, System.Int32, System.Int32, System.Nullable<System.String>)
+  fullName.vb: Admonish.NumericValidationExtensions.Max(Admonish.ValidationResult, System.String, System.Int32, System.Int32, System.Nullable(Of System.String))
+  nameWithType: NumericValidationExtensions.Max(ValidationResult, String, Int32, Int32, Nullable<String>)
+  nameWithType.vb: NumericValidationExtensions.Max(ValidationResult, String, Int32, Int32, Nullable(Of String))
 - uid: Admonish.NumericValidationExtensions.Max*
   name: Max
   href: api/Admonish.NumericValidationExtensions.html#Admonish_NumericValidationExtensions_Max_
@@ -136,18 +166,24 @@ references:
   isSpec: "True"
   fullName: Admonish.NumericValidationExtensions.Max
   nameWithType: NumericValidationExtensions.Max
-- uid: Admonish.NumericValidationExtensions.Min(Admonish.ValidationResult,System.String,System.Decimal,System.Decimal)
-  name: Min(ValidationResult, String, Decimal, Decimal)
-  href: api/Admonish.NumericValidationExtensions.html#Admonish_NumericValidationExtensions_Min_Admonish_ValidationResult_System_String_System_Decimal_System_Decimal_
-  commentId: M:Admonish.NumericValidationExtensions.Min(Admonish.ValidationResult,System.String,System.Decimal,System.Decimal)
-  fullName: Admonish.NumericValidationExtensions.Min(Admonish.ValidationResult, System.String, System.Decimal, System.Decimal)
-  nameWithType: NumericValidationExtensions.Min(ValidationResult, String, Decimal, Decimal)
-- uid: Admonish.NumericValidationExtensions.Min(Admonish.ValidationResult,System.String,System.Int32,System.Int32)
-  name: Min(ValidationResult, String, Int32, Int32)
-  href: api/Admonish.NumericValidationExtensions.html#Admonish_NumericValidationExtensions_Min_Admonish_ValidationResult_System_String_System_Int32_System_Int32_
-  commentId: M:Admonish.NumericValidationExtensions.Min(Admonish.ValidationResult,System.String,System.Int32,System.Int32)
-  fullName: Admonish.NumericValidationExtensions.Min(Admonish.ValidationResult, System.String, System.Int32, System.Int32)
-  nameWithType: NumericValidationExtensions.Min(ValidationResult, String, Int32, Int32)
+- uid: Admonish.NumericValidationExtensions.Min(Admonish.ValidationResult,System.String,System.Decimal,System.Decimal,System.Nullable{System.String})
+  name: Min(ValidationResult, String, Decimal, Decimal, Nullable<String>)
+  href: api/Admonish.NumericValidationExtensions.html#Admonish_NumericValidationExtensions_Min_Admonish_ValidationResult_System_String_System_Decimal_System_Decimal_System_Nullable_System_String__
+  commentId: M:Admonish.NumericValidationExtensions.Min(Admonish.ValidationResult,System.String,System.Decimal,System.Decimal,System.Nullable{System.String})
+  name.vb: Min(ValidationResult, String, Decimal, Decimal, Nullable(Of String))
+  fullName: Admonish.NumericValidationExtensions.Min(Admonish.ValidationResult, System.String, System.Decimal, System.Decimal, System.Nullable<System.String>)
+  fullName.vb: Admonish.NumericValidationExtensions.Min(Admonish.ValidationResult, System.String, System.Decimal, System.Decimal, System.Nullable(Of System.String))
+  nameWithType: NumericValidationExtensions.Min(ValidationResult, String, Decimal, Decimal, Nullable<String>)
+  nameWithType.vb: NumericValidationExtensions.Min(ValidationResult, String, Decimal, Decimal, Nullable(Of String))
+- uid: Admonish.NumericValidationExtensions.Min(Admonish.ValidationResult,System.String,System.Int32,System.Int32,System.Nullable{System.String})
+  name: Min(ValidationResult, String, Int32, Int32, Nullable<String>)
+  href: api/Admonish.NumericValidationExtensions.html#Admonish_NumericValidationExtensions_Min_Admonish_ValidationResult_System_String_System_Int32_System_Int32_System_Nullable_System_String__
+  commentId: M:Admonish.NumericValidationExtensions.Min(Admonish.ValidationResult,System.String,System.Int32,System.Int32,System.Nullable{System.String})
+  name.vb: Min(ValidationResult, String, Int32, Int32, Nullable(Of String))
+  fullName: Admonish.NumericValidationExtensions.Min(Admonish.ValidationResult, System.String, System.Int32, System.Int32, System.Nullable<System.String>)
+  fullName.vb: Admonish.NumericValidationExtensions.Min(Admonish.ValidationResult, System.String, System.Int32, System.Int32, System.Nullable(Of System.String))
+  nameWithType: NumericValidationExtensions.Min(ValidationResult, String, Int32, Int32, Nullable<String>)
+  nameWithType.vb: NumericValidationExtensions.Min(ValidationResult, String, Int32, Int32, Nullable(Of String))
 - uid: Admonish.NumericValidationExtensions.Min*
   name: Min
   href: api/Admonish.NumericValidationExtensions.html#Admonish_NumericValidationExtensions_Min_
@@ -161,6 +197,22 @@ references:
   commentId: T:Admonish.ObjectValidationExtensions
   fullName: Admonish.ObjectValidationExtensions
   nameWithType: ObjectValidationExtensions
+- uid: Admonish.ObjectValidationExtensions.Equal*
+  name: Equal
+  href: api/Admonish.ObjectValidationExtensions.html#Admonish_ObjectValidationExtensions_Equal_
+  commentId: Overload:Admonish.ObjectValidationExtensions.Equal
+  isSpec: "True"
+  fullName: Admonish.ObjectValidationExtensions.Equal
+  nameWithType: ObjectValidationExtensions.Equal
+- uid: Admonish.ObjectValidationExtensions.Equal``1(Admonish.ValidationResult,System.String,``0,``0,System.Nullable{System.String})
+  name: Equal<T>(ValidationResult, String, T, T, Nullable<String>)
+  href: api/Admonish.ObjectValidationExtensions.html#Admonish_ObjectValidationExtensions_Equal__1_Admonish_ValidationResult_System_String___0___0_System_Nullable_System_String__
+  commentId: M:Admonish.ObjectValidationExtensions.Equal``1(Admonish.ValidationResult,System.String,``0,``0,System.Nullable{System.String})
+  name.vb: Equal(Of T)(ValidationResult, String, T, T, Nullable(Of String))
+  fullName: Admonish.ObjectValidationExtensions.Equal<T>(Admonish.ValidationResult, System.String, T, T, System.Nullable<System.String>)
+  fullName.vb: Admonish.ObjectValidationExtensions.Equal(Of T)(Admonish.ValidationResult, System.String, T, T, System.Nullable(Of System.String))
+  nameWithType: ObjectValidationExtensions.Equal<T>(ValidationResult, String, T, T, Nullable<String>)
+  nameWithType.vb: ObjectValidationExtensions.Equal(Of T)(ValidationResult, String, T, T, Nullable(Of String))
 - uid: Admonish.ObjectValidationExtensions.NonNull*
   name: NonNull
   href: api/Admonish.ObjectValidationExtensions.html#Admonish_ObjectValidationExtensions_NonNull_
@@ -168,30 +220,80 @@ references:
   isSpec: "True"
   fullName: Admonish.ObjectValidationExtensions.NonNull
   nameWithType: ObjectValidationExtensions.NonNull
-- uid: Admonish.ObjectValidationExtensions.NonNull``1(Admonish.ValidationResult,System.String,System.Nullable{``0})
-  name: NonNull<T>(ValidationResult, String, Nullable<T>)
-  href: api/Admonish.ObjectValidationExtensions.html#Admonish_ObjectValidationExtensions_NonNull__1_Admonish_ValidationResult_System_String_System_Nullable___0__
-  commentId: M:Admonish.ObjectValidationExtensions.NonNull``1(Admonish.ValidationResult,System.String,System.Nullable{``0})
-  name.vb: NonNull(Of T)(ValidationResult, String, Nullable(Of T))
-  fullName: Admonish.ObjectValidationExtensions.NonNull<T>(Admonish.ValidationResult, System.String, System.Nullable<T>)
-  fullName.vb: Admonish.ObjectValidationExtensions.NonNull(Of T)(Admonish.ValidationResult, System.String, System.Nullable(Of T))
-  nameWithType: ObjectValidationExtensions.NonNull<T>(ValidationResult, String, Nullable<T>)
-  nameWithType.vb: ObjectValidationExtensions.NonNull(Of T)(ValidationResult, String, Nullable(Of T))
+- uid: Admonish.ObjectValidationExtensions.NonNull``1(Admonish.ValidationResult,System.String,``0,System.Nullable{System.String})
+  name: NonNull<T>(ValidationResult, String, T, Nullable<String>)
+  href: api/Admonish.ObjectValidationExtensions.html#Admonish_ObjectValidationExtensions_NonNull__1_Admonish_ValidationResult_System_String___0_System_Nullable_System_String__
+  commentId: M:Admonish.ObjectValidationExtensions.NonNull``1(Admonish.ValidationResult,System.String,``0,System.Nullable{System.String})
+  name.vb: NonNull(Of T)(ValidationResult, String, T, Nullable(Of String))
+  fullName: Admonish.ObjectValidationExtensions.NonNull<T>(Admonish.ValidationResult, System.String, T, System.Nullable<System.String>)
+  fullName.vb: Admonish.ObjectValidationExtensions.NonNull(Of T)(Admonish.ValidationResult, System.String, T, System.Nullable(Of System.String))
+  nameWithType: ObjectValidationExtensions.NonNull<T>(ValidationResult, String, T, Nullable<String>)
+  nameWithType.vb: ObjectValidationExtensions.NonNull(Of T)(ValidationResult, String, T, Nullable(Of String))
+- uid: Admonish.ObjectValidationExtensions.NonNull``1(Admonish.ValidationResult,System.String,System.Nullable{``0},System.Nullable{System.String})
+  name: NonNull<T>(ValidationResult, String, Nullable<T>, Nullable<String>)
+  href: api/Admonish.ObjectValidationExtensions.html#Admonish_ObjectValidationExtensions_NonNull__1_Admonish_ValidationResult_System_String_System_Nullable___0__System_Nullable_System_String__
+  commentId: M:Admonish.ObjectValidationExtensions.NonNull``1(Admonish.ValidationResult,System.String,System.Nullable{``0},System.Nullable{System.String})
+  name.vb: NonNull(Of T)(ValidationResult, String, Nullable(Of T), Nullable(Of String))
+  fullName: Admonish.ObjectValidationExtensions.NonNull<T>(Admonish.ValidationResult, System.String, System.Nullable<T>, System.Nullable<System.String>)
+  fullName.vb: Admonish.ObjectValidationExtensions.NonNull(Of T)(Admonish.ValidationResult, System.String, System.Nullable(Of T), System.Nullable(Of System.String))
+  nameWithType: ObjectValidationExtensions.NonNull<T>(ValidationResult, String, Nullable<T>, Nullable<String>)
+  nameWithType.vb: ObjectValidationExtensions.NonNull(Of T)(ValidationResult, String, Nullable(Of T), Nullable(Of String))
+- uid: Admonish.ObjectValidationExtensions.NotEqual*
+  name: NotEqual
+  href: api/Admonish.ObjectValidationExtensions.html#Admonish_ObjectValidationExtensions_NotEqual_
+  commentId: Overload:Admonish.ObjectValidationExtensions.NotEqual
+  isSpec: "True"
+  fullName: Admonish.ObjectValidationExtensions.NotEqual
+  nameWithType: ObjectValidationExtensions.NotEqual
+- uid: Admonish.ObjectValidationExtensions.NotEqual``1(Admonish.ValidationResult,System.String,``0,``0,System.Nullable{System.String})
+  name: NotEqual<T>(ValidationResult, String, T, T, Nullable<String>)
+  href: api/Admonish.ObjectValidationExtensions.html#Admonish_ObjectValidationExtensions_NotEqual__1_Admonish_ValidationResult_System_String___0___0_System_Nullable_System_String__
+  commentId: M:Admonish.ObjectValidationExtensions.NotEqual``1(Admonish.ValidationResult,System.String,``0,``0,System.Nullable{System.String})
+  name.vb: NotEqual(Of T)(ValidationResult, String, T, T, Nullable(Of String))
+  fullName: Admonish.ObjectValidationExtensions.NotEqual<T>(Admonish.ValidationResult, System.String, T, T, System.Nullable<System.String>)
+  fullName.vb: Admonish.ObjectValidationExtensions.NotEqual(Of T)(Admonish.ValidationResult, System.String, T, T, System.Nullable(Of System.String))
+  nameWithType: ObjectValidationExtensions.NotEqual<T>(ValidationResult, String, T, T, Nullable<String>)
+  nameWithType.vb: ObjectValidationExtensions.NotEqual(Of T)(ValidationResult, String, T, T, Nullable(Of String))
+- uid: Admonish.ObjectValidationExtensions.Null*
+  name: "Null"
+  href: api/Admonish.ObjectValidationExtensions.html#Admonish_ObjectValidationExtensions_Null_
+  commentId: Overload:Admonish.ObjectValidationExtensions.Null
+  isSpec: "True"
+  fullName: Admonish.ObjectValidationExtensions.Null
+  nameWithType: ObjectValidationExtensions.Null
+- uid: Admonish.ObjectValidationExtensions.Null``1(Admonish.ValidationResult,System.String,``0,System.Nullable{System.String})
+  name: Null<T>(ValidationResult, String, T, Nullable<String>)
+  href: api/Admonish.ObjectValidationExtensions.html#Admonish_ObjectValidationExtensions_Null__1_Admonish_ValidationResult_System_String___0_System_Nullable_System_String__
+  commentId: M:Admonish.ObjectValidationExtensions.Null``1(Admonish.ValidationResult,System.String,``0,System.Nullable{System.String})
+  name.vb: Null(Of T)(ValidationResult, String, T, Nullable(Of String))
+  fullName: Admonish.ObjectValidationExtensions.Null<T>(Admonish.ValidationResult, System.String, T, System.Nullable<System.String>)
+  fullName.vb: Admonish.ObjectValidationExtensions.Null(Of T)(Admonish.ValidationResult, System.String, T, System.Nullable(Of System.String))
+  nameWithType: ObjectValidationExtensions.Null<T>(ValidationResult, String, T, Nullable<String>)
+  nameWithType.vb: ObjectValidationExtensions.Null(Of T)(ValidationResult, String, T, Nullable(Of String))
+- uid: Admonish.ObjectValidationExtensions.Null``1(Admonish.ValidationResult,System.String,System.Nullable{``0},System.Nullable{System.String})
+  name: Null<T>(ValidationResult, String, Nullable<T>, Nullable<String>)
+  href: api/Admonish.ObjectValidationExtensions.html#Admonish_ObjectValidationExtensions_Null__1_Admonish_ValidationResult_System_String_System_Nullable___0__System_Nullable_System_String__
+  commentId: M:Admonish.ObjectValidationExtensions.Null``1(Admonish.ValidationResult,System.String,System.Nullable{``0},System.Nullable{System.String})
+  name.vb: Null(Of T)(ValidationResult, String, Nullable(Of T), Nullable(Of String))
+  fullName: Admonish.ObjectValidationExtensions.Null<T>(Admonish.ValidationResult, System.String, System.Nullable<T>, System.Nullable<System.String>)
+  fullName.vb: Admonish.ObjectValidationExtensions.Null(Of T)(Admonish.ValidationResult, System.String, System.Nullable(Of T), System.Nullable(Of System.String))
+  nameWithType: ObjectValidationExtensions.Null<T>(ValidationResult, String, Nullable<T>, Nullable<String>)
+  nameWithType.vb: ObjectValidationExtensions.Null(Of T)(ValidationResult, String, Nullable(Of T), Nullable(Of String))
 - uid: Admonish.StringValidationExtensions
   name: StringValidationExtensions
   href: api/Admonish.StringValidationExtensions.html
   commentId: T:Admonish.StringValidationExtensions
   fullName: Admonish.StringValidationExtensions
   nameWithType: StringValidationExtensions
-- uid: Admonish.StringValidationExtensions.LengthBetween(Admonish.ValidationResult,System.String,System.Nullable{System.String},System.Int32,System.Int32)
-  name: LengthBetween(ValidationResult, String, Nullable<String>, Int32, Int32)
-  href: api/Admonish.StringValidationExtensions.html#Admonish_StringValidationExtensions_LengthBetween_Admonish_ValidationResult_System_String_System_Nullable_System_String__System_Int32_System_Int32_
-  commentId: M:Admonish.StringValidationExtensions.LengthBetween(Admonish.ValidationResult,System.String,System.Nullable{System.String},System.Int32,System.Int32)
-  name.vb: LengthBetween(ValidationResult, String, Nullable(Of String), Int32, Int32)
-  fullName: Admonish.StringValidationExtensions.LengthBetween(Admonish.ValidationResult, System.String, System.Nullable<System.String>, System.Int32, System.Int32)
-  fullName.vb: Admonish.StringValidationExtensions.LengthBetween(Admonish.ValidationResult, System.String, System.Nullable(Of System.String), System.Int32, System.Int32)
-  nameWithType: StringValidationExtensions.LengthBetween(ValidationResult, String, Nullable<String>, Int32, Int32)
-  nameWithType.vb: StringValidationExtensions.LengthBetween(ValidationResult, String, Nullable(Of String), Int32, Int32)
+- uid: Admonish.StringValidationExtensions.LengthBetween(Admonish.ValidationResult,System.String,System.Nullable{System.String},System.Int32,System.Int32,System.Nullable{System.String})
+  name: LengthBetween(ValidationResult, String, Nullable<String>, Int32, Int32, Nullable<String>)
+  href: api/Admonish.StringValidationExtensions.html#Admonish_StringValidationExtensions_LengthBetween_Admonish_ValidationResult_System_String_System_Nullable_System_String__System_Int32_System_Int32_System_Nullable_System_String__
+  commentId: M:Admonish.StringValidationExtensions.LengthBetween(Admonish.ValidationResult,System.String,System.Nullable{System.String},System.Int32,System.Int32,System.Nullable{System.String})
+  name.vb: LengthBetween(ValidationResult, String, Nullable(Of String), Int32, Int32, Nullable(Of String))
+  fullName: Admonish.StringValidationExtensions.LengthBetween(Admonish.ValidationResult, System.String, System.Nullable<System.String>, System.Int32, System.Int32, System.Nullable<System.String>)
+  fullName.vb: Admonish.StringValidationExtensions.LengthBetween(Admonish.ValidationResult, System.String, System.Nullable(Of System.String), System.Int32, System.Int32, System.Nullable(Of System.String))
+  nameWithType: StringValidationExtensions.LengthBetween(ValidationResult, String, Nullable<String>, Int32, Int32, Nullable<String>)
+  nameWithType.vb: StringValidationExtensions.LengthBetween(ValidationResult, String, Nullable(Of String), Int32, Int32, Nullable(Of String))
 - uid: Admonish.StringValidationExtensions.LengthBetween*
   name: LengthBetween
   href: api/Admonish.StringValidationExtensions.html#Admonish_StringValidationExtensions_LengthBetween_
@@ -199,13 +301,13 @@ references:
   isSpec: "True"
   fullName: Admonish.StringValidationExtensions.LengthBetween
   nameWithType: StringValidationExtensions.LengthBetween
-- uid: Admonish.StringValidationExtensions.Matches(Admonish.ValidationResult,System.String,System.Nullable{System.String},System.Text.RegularExpressions.Regex,System.Nullable{System.String})
+- uid: Admonish.StringValidationExtensions.Matches(Admonish.ValidationResult,System.String,System.Nullable{System.String},Regex,System.Nullable{System.String})
   name: Matches(ValidationResult, String, Nullable<String>, Regex, Nullable<String>)
-  href: api/Admonish.StringValidationExtensions.html#Admonish_StringValidationExtensions_Matches_Admonish_ValidationResult_System_String_System_Nullable_System_String__System_Text_RegularExpressions_Regex_System_Nullable_System_String__
-  commentId: M:Admonish.StringValidationExtensions.Matches(Admonish.ValidationResult,System.String,System.Nullable{System.String},System.Text.RegularExpressions.Regex,System.Nullable{System.String})
+  href: api/Admonish.StringValidationExtensions.html#Admonish_StringValidationExtensions_Matches_Admonish_ValidationResult_System_String_System_Nullable_System_String__Regex_System_Nullable_System_String__
+  commentId: M:Admonish.StringValidationExtensions.Matches(Admonish.ValidationResult,System.String,System.Nullable{System.String},Regex,System.Nullable{System.String})
   name.vb: Matches(ValidationResult, String, Nullable(Of String), Regex, Nullable(Of String))
-  fullName: Admonish.StringValidationExtensions.Matches(Admonish.ValidationResult, System.String, System.Nullable<System.String>, System.Text.RegularExpressions.Regex, System.Nullable<System.String>)
-  fullName.vb: Admonish.StringValidationExtensions.Matches(Admonish.ValidationResult, System.String, System.Nullable(Of System.String), System.Text.RegularExpressions.Regex, System.Nullable(Of System.String))
+  fullName: Admonish.StringValidationExtensions.Matches(Admonish.ValidationResult, System.String, System.Nullable<System.String>, Regex, System.Nullable<System.String>)
+  fullName.vb: Admonish.StringValidationExtensions.Matches(Admonish.ValidationResult, System.String, System.Nullable(Of System.String), Regex, System.Nullable(Of System.String))
   nameWithType: StringValidationExtensions.Matches(ValidationResult, String, Nullable<String>, Regex, Nullable<String>)
   nameWithType.vb: StringValidationExtensions.Matches(ValidationResult, String, Nullable(Of String), Regex, Nullable(Of String))
 - uid: Admonish.StringValidationExtensions.Matches*
@@ -215,15 +317,15 @@ references:
   isSpec: "True"
   fullName: Admonish.StringValidationExtensions.Matches
   nameWithType: StringValidationExtensions.Matches
-- uid: Admonish.StringValidationExtensions.NonNullOrEmpty(Admonish.ValidationResult,System.String,System.Nullable{System.String})
-  name: NonNullOrEmpty(ValidationResult, String, Nullable<String>)
-  href: api/Admonish.StringValidationExtensions.html#Admonish_StringValidationExtensions_NonNullOrEmpty_Admonish_ValidationResult_System_String_System_Nullable_System_String__
-  commentId: M:Admonish.StringValidationExtensions.NonNullOrEmpty(Admonish.ValidationResult,System.String,System.Nullable{System.String})
-  name.vb: NonNullOrEmpty(ValidationResult, String, Nullable(Of String))
-  fullName: Admonish.StringValidationExtensions.NonNullOrEmpty(Admonish.ValidationResult, System.String, System.Nullable<System.String>)
-  fullName.vb: Admonish.StringValidationExtensions.NonNullOrEmpty(Admonish.ValidationResult, System.String, System.Nullable(Of System.String))
-  nameWithType: StringValidationExtensions.NonNullOrEmpty(ValidationResult, String, Nullable<String>)
-  nameWithType.vb: StringValidationExtensions.NonNullOrEmpty(ValidationResult, String, Nullable(Of String))
+- uid: Admonish.StringValidationExtensions.NonNullOrEmpty(Admonish.ValidationResult,System.String,System.Nullable{System.String},System.Nullable{System.String})
+  name: NonNullOrEmpty(ValidationResult, String, Nullable<String>, Nullable<String>)
+  href: api/Admonish.StringValidationExtensions.html#Admonish_StringValidationExtensions_NonNullOrEmpty_Admonish_ValidationResult_System_String_System_Nullable_System_String__System_Nullable_System_String__
+  commentId: M:Admonish.StringValidationExtensions.NonNullOrEmpty(Admonish.ValidationResult,System.String,System.Nullable{System.String},System.Nullable{System.String})
+  name.vb: NonNullOrEmpty(ValidationResult, String, Nullable(Of String), Nullable(Of String))
+  fullName: Admonish.StringValidationExtensions.NonNullOrEmpty(Admonish.ValidationResult, System.String, System.Nullable<System.String>, System.Nullable<System.String>)
+  fullName.vb: Admonish.StringValidationExtensions.NonNullOrEmpty(Admonish.ValidationResult, System.String, System.Nullable(Of System.String), System.Nullable(Of System.String))
+  nameWithType: StringValidationExtensions.NonNullOrEmpty(ValidationResult, String, Nullable<String>, Nullable<String>)
+  nameWithType.vb: StringValidationExtensions.NonNullOrEmpty(ValidationResult, String, Nullable(Of String), Nullable(Of String))
 - uid: Admonish.StringValidationExtensions.NonNullOrEmpty*
   name: NonNullOrEmpty
   href: api/Admonish.StringValidationExtensions.html#Admonish_StringValidationExtensions_NonNullOrEmpty_
@@ -231,15 +333,15 @@ references:
   isSpec: "True"
   fullName: Admonish.StringValidationExtensions.NonNullOrEmpty
   nameWithType: StringValidationExtensions.NonNullOrEmpty
-- uid: Admonish.StringValidationExtensions.NonNullOrWhiteSpace(Admonish.ValidationResult,System.String,System.Nullable{System.String})
-  name: NonNullOrWhiteSpace(ValidationResult, String, Nullable<String>)
-  href: api/Admonish.StringValidationExtensions.html#Admonish_StringValidationExtensions_NonNullOrWhiteSpace_Admonish_ValidationResult_System_String_System_Nullable_System_String__
-  commentId: M:Admonish.StringValidationExtensions.NonNullOrWhiteSpace(Admonish.ValidationResult,System.String,System.Nullable{System.String})
-  name.vb: NonNullOrWhiteSpace(ValidationResult, String, Nullable(Of String))
-  fullName: Admonish.StringValidationExtensions.NonNullOrWhiteSpace(Admonish.ValidationResult, System.String, System.Nullable<System.String>)
-  fullName.vb: Admonish.StringValidationExtensions.NonNullOrWhiteSpace(Admonish.ValidationResult, System.String, System.Nullable(Of System.String))
-  nameWithType: StringValidationExtensions.NonNullOrWhiteSpace(ValidationResult, String, Nullable<String>)
-  nameWithType.vb: StringValidationExtensions.NonNullOrWhiteSpace(ValidationResult, String, Nullable(Of String))
+- uid: Admonish.StringValidationExtensions.NonNullOrWhiteSpace(Admonish.ValidationResult,System.String,System.Nullable{System.String},System.Nullable{System.String})
+  name: NonNullOrWhiteSpace(ValidationResult, String, Nullable<String>, Nullable<String>)
+  href: api/Admonish.StringValidationExtensions.html#Admonish_StringValidationExtensions_NonNullOrWhiteSpace_Admonish_ValidationResult_System_String_System_Nullable_System_String__System_Nullable_System_String__
+  commentId: M:Admonish.StringValidationExtensions.NonNullOrWhiteSpace(Admonish.ValidationResult,System.String,System.Nullable{System.String},System.Nullable{System.String})
+  name.vb: NonNullOrWhiteSpace(ValidationResult, String, Nullable(Of String), Nullable(Of String))
+  fullName: Admonish.StringValidationExtensions.NonNullOrWhiteSpace(Admonish.ValidationResult, System.String, System.Nullable<System.String>, System.Nullable<System.String>)
+  fullName.vb: Admonish.StringValidationExtensions.NonNullOrWhiteSpace(Admonish.ValidationResult, System.String, System.Nullable(Of System.String), System.Nullable(Of System.String))
+  nameWithType: StringValidationExtensions.NonNullOrWhiteSpace(ValidationResult, String, Nullable<String>, Nullable<String>)
+  nameWithType.vb: StringValidationExtensions.NonNullOrWhiteSpace(ValidationResult, String, Nullable(Of String), Nullable(Of String))
 - uid: Admonish.StringValidationExtensions.NonNullOrWhiteSpace*
   name: NonNullOrWhiteSpace
   href: api/Admonish.StringValidationExtensions.html#Admonish_StringValidationExtensions_NonNullOrWhiteSpace_
@@ -259,11 +361,11 @@ references:
   commentId: M:Admonish.ValidationException.#ctor(Admonish.ValidationResult)
   fullName: Admonish.ValidationException.ValidationException(Admonish.ValidationResult)
   nameWithType: ValidationException.ValidationException(ValidationResult)
-- uid: Admonish.ValidationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+- uid: Admonish.ValidationException.#ctor(SerializationInfo,StreamingContext)
   name: ValidationException(SerializationInfo, StreamingContext)
-  href: api/Admonish.ValidationException.html#Admonish_ValidationException__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_
-  commentId: M:Admonish.ValidationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-  fullName: Admonish.ValidationException.ValidationException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  href: api/Admonish.ValidationException.html#Admonish_ValidationException__ctor_SerializationInfo_StreamingContext_
+  commentId: M:Admonish.ValidationException.#ctor(SerializationInfo,StreamingContext)
+  fullName: Admonish.ValidationException.ValidationException(SerializationInfo, StreamingContext)
   nameWithType: ValidationException.ValidationException(SerializationInfo, StreamingContext)
 - uid: Admonish.ValidationException.#ctor(System.String)
   name: ValidationException(String)
@@ -323,22 +425,22 @@ references:
   isSpec: "True"
   fullName: Admonish.ValidationExtensions.Collection
   nameWithType: ValidationExtensions.Collection
-- uid: Admonish.ValidationExtensions.Collection``1(Admonish.ValidationResult,System.String,System.Collections.Generic.IEnumerable{``0},System.Func{Admonish.ValidationResult,``0,Admonish.ValidationResult})
+- uid: Admonish.ValidationExtensions.Collection``1(Admonish.ValidationResult,System.String,IEnumerable{``0},Func{Admonish.ValidationResult,``0,Admonish.ValidationResult})
   name: Collection<T>(ValidationResult, String, IEnumerable<T>, Func<ValidationResult, T, ValidationResult>)
-  href: api/Admonish.ValidationExtensions.html#Admonish_ValidationExtensions_Collection__1_Admonish_ValidationResult_System_String_System_Collections_Generic_IEnumerable___0__System_Func_Admonish_ValidationResult___0_Admonish_ValidationResult__
-  commentId: M:Admonish.ValidationExtensions.Collection``1(Admonish.ValidationResult,System.String,System.Collections.Generic.IEnumerable{``0},System.Func{Admonish.ValidationResult,``0,Admonish.ValidationResult})
+  href: api/Admonish.ValidationExtensions.html#Admonish_ValidationExtensions_Collection__1_Admonish_ValidationResult_System_String_IEnumerable___0__Func_Admonish_ValidationResult___0_Admonish_ValidationResult__
+  commentId: M:Admonish.ValidationExtensions.Collection``1(Admonish.ValidationResult,System.String,IEnumerable{``0},Func{Admonish.ValidationResult,``0,Admonish.ValidationResult})
   name.vb: Collection(Of T)(ValidationResult, String, IEnumerable(Of T), Func(Of ValidationResult, T, ValidationResult))
-  fullName: Admonish.ValidationExtensions.Collection<T>(Admonish.ValidationResult, System.String, System.Collections.Generic.IEnumerable<T>, System.Func<Admonish.ValidationResult, T, Admonish.ValidationResult>)
-  fullName.vb: Admonish.ValidationExtensions.Collection(Of T)(Admonish.ValidationResult, System.String, System.Collections.Generic.IEnumerable(Of T), System.Func(Of Admonish.ValidationResult, T, Admonish.ValidationResult))
+  fullName: Admonish.ValidationExtensions.Collection<T>(Admonish.ValidationResult, System.String, IEnumerable<T>, Func<Admonish.ValidationResult, T, Admonish.ValidationResult>)
+  fullName.vb: Admonish.ValidationExtensions.Collection(Of T)(Admonish.ValidationResult, System.String, IEnumerable(Of T), Func(Of Admonish.ValidationResult, T, Admonish.ValidationResult))
   nameWithType: ValidationExtensions.Collection<T>(ValidationResult, String, IEnumerable<T>, Func<ValidationResult, T, ValidationResult>)
   nameWithType.vb: ValidationExtensions.Collection(Of T)(ValidationResult, String, IEnumerable(Of T), Func(Of ValidationResult, T, ValidationResult))
-- uid: Admonish.ValidationExtensions.WithKey(Admonish.ValidationResult,System.String,System.Func{Admonish.ValidationResult,Admonish.ValidationResult})
+- uid: Admonish.ValidationExtensions.WithKey(Admonish.ValidationResult,System.String,Func{Admonish.ValidationResult,Admonish.ValidationResult})
   name: WithKey(ValidationResult, String, Func<ValidationResult, ValidationResult>)
-  href: api/Admonish.ValidationExtensions.html#Admonish_ValidationExtensions_WithKey_Admonish_ValidationResult_System_String_System_Func_Admonish_ValidationResult_Admonish_ValidationResult__
-  commentId: M:Admonish.ValidationExtensions.WithKey(Admonish.ValidationResult,System.String,System.Func{Admonish.ValidationResult,Admonish.ValidationResult})
+  href: api/Admonish.ValidationExtensions.html#Admonish_ValidationExtensions_WithKey_Admonish_ValidationResult_System_String_Func_Admonish_ValidationResult_Admonish_ValidationResult__
+  commentId: M:Admonish.ValidationExtensions.WithKey(Admonish.ValidationResult,System.String,Func{Admonish.ValidationResult,Admonish.ValidationResult})
   name.vb: WithKey(ValidationResult, String, Func(Of ValidationResult, ValidationResult))
-  fullName: Admonish.ValidationExtensions.WithKey(Admonish.ValidationResult, System.String, System.Func<Admonish.ValidationResult, Admonish.ValidationResult>)
-  fullName.vb: Admonish.ValidationExtensions.WithKey(Admonish.ValidationResult, System.String, System.Func(Of Admonish.ValidationResult, Admonish.ValidationResult))
+  fullName: Admonish.ValidationExtensions.WithKey(Admonish.ValidationResult, System.String, Func<Admonish.ValidationResult, Admonish.ValidationResult>)
+  fullName.vb: Admonish.ValidationExtensions.WithKey(Admonish.ValidationResult, System.String, Func(Of Admonish.ValidationResult, Admonish.ValidationResult))
   nameWithType: ValidationExtensions.WithKey(ValidationResult, String, Func<ValidationResult, ValidationResult>)
   nameWithType.vb: ValidationExtensions.WithKey(ValidationResult, String, Func(Of ValidationResult, ValidationResult))
 - uid: Admonish.ValidationExtensions.WithKey*
@@ -354,13 +456,13 @@ references:
   commentId: T:Admonish.ValidationResult
   fullName: Admonish.ValidationResult
   nameWithType: ValidationResult
-- uid: Admonish.ValidationResult.#ctor(System.Func{Admonish.ValidationResult,System.Exception})
+- uid: Admonish.ValidationResult.#ctor(Func{Admonish.ValidationResult,Exception})
   name: ValidationResult(Func<ValidationResult, Exception>)
-  href: api/Admonish.ValidationResult.html#Admonish_ValidationResult__ctor_System_Func_Admonish_ValidationResult_System_Exception__
-  commentId: M:Admonish.ValidationResult.#ctor(System.Func{Admonish.ValidationResult,System.Exception})
+  href: api/Admonish.ValidationResult.html#Admonish_ValidationResult__ctor_Func_Admonish_ValidationResult_Exception__
+  commentId: M:Admonish.ValidationResult.#ctor(Func{Admonish.ValidationResult,Exception})
   name.vb: ValidationResult(Func(Of ValidationResult, Exception))
-  fullName: Admonish.ValidationResult.ValidationResult(System.Func<Admonish.ValidationResult, System.Exception>)
-  fullName.vb: Admonish.ValidationResult.ValidationResult(System.Func(Of Admonish.ValidationResult, System.Exception))
+  fullName: Admonish.ValidationResult.ValidationResult(Func<Admonish.ValidationResult, Exception>)
+  fullName.vb: Admonish.ValidationResult.ValidationResult(Func(Of Admonish.ValidationResult, Exception))
   nameWithType: ValidationResult.ValidationResult(Func<ValidationResult, Exception>)
   nameWithType.vb: ValidationResult.ValidationResult(Func(Of ValidationResult, Exception))
 - uid: Admonish.ValidationResult.#ctor*
@@ -466,13 +568,13 @@ references:
   isSpec: "True"
   fullName: Admonish.Validator.Create
   nameWithType: Validator.Create
-- uid: Admonish.Validator.UnsafeConfigureException(System.Func{Admonish.ValidationResult,System.Exception})
+- uid: Admonish.Validator.UnsafeConfigureException(Func{Admonish.ValidationResult,Exception})
   name: UnsafeConfigureException(Func<ValidationResult, Exception>)
-  href: api/Admonish.Validator.html#Admonish_Validator_UnsafeConfigureException_System_Func_Admonish_ValidationResult_System_Exception__
-  commentId: M:Admonish.Validator.UnsafeConfigureException(System.Func{Admonish.ValidationResult,System.Exception})
+  href: api/Admonish.Validator.html#Admonish_Validator_UnsafeConfigureException_Func_Admonish_ValidationResult_Exception__
+  commentId: M:Admonish.Validator.UnsafeConfigureException(Func{Admonish.ValidationResult,Exception})
   name.vb: UnsafeConfigureException(Func(Of ValidationResult, Exception))
-  fullName: Admonish.Validator.UnsafeConfigureException(System.Func<Admonish.ValidationResult, System.Exception>)
-  fullName.vb: Admonish.Validator.UnsafeConfigureException(System.Func(Of Admonish.ValidationResult, System.Exception))
+  fullName: Admonish.Validator.UnsafeConfigureException(Func<Admonish.ValidationResult, Exception>)
+  fullName.vb: Admonish.Validator.UnsafeConfigureException(Func(Of Admonish.ValidationResult, Exception))
   nameWithType: Validator.UnsafeConfigureException(Func<ValidationResult, Exception>)
   nameWithType.vb: Validator.UnsafeConfigureException(Func(Of ValidationResult, Exception))
 - uid: Admonish.Validator.UnsafeConfigureException*

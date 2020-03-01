@@ -8,7 +8,7 @@
     <title>Introduction | Admonish validation library </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Introduction | Admonish validation library ">
-    <meta name="generator" content="docfx 2.45.1.0">
+    <meta name="generator" content="docfx 2.49.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -101,7 +101,7 @@ namespace Domain
 </code></pre>
 <p>If you need additional validation in an app service, for example, you need to check if such an
 entity already exists in the database, you do it like this:</p>
-<pre><code class="lang-csharp" name="Startup" highlight-lines="19-24">public class AppService
+<pre><code class="lang-csharp" name="Startup" highlight-lines="8-14">public class AppService
 {
     private static Dictionary&lt;string, Entity&gt; _db =
         new Dictionary&lt;string, Entity&gt;();
@@ -111,6 +111,7 @@ entity already exists in the database, you do it like this:</p>
         Validator
             .Create()
             .Check(
+                nameof(dto.Name),
                 !_db.ContainsKey(dto.Name ?? &quot;&quot;),
                 &quot;An entity with this name already exists.&quot;)
             .ThrowIfInvalid();
@@ -130,7 +131,7 @@ which you handle with a special middleware.
 You can configure Admonish to throw the needed excepton type, so that validation errors from
 domain and application modules are still handled by your middleware
 without making any changes in it:</p>
-<pre><code class="lang-csharp" name="Startup">public class Startup
+<pre><code class="lang-csharp" name="Startup" highlight-lines="15-18">public class Startup
 {
     public Startup(IConfiguration configuration)
     {
@@ -141,7 +142,7 @@ without making any changes in it:</p>
 
     public void ConfigureServices(IServiceCollection services)
     {
-        services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+        services.AddControllers();
         services.AddTransient&lt;AppService&gt;();
 
         // Throw a custom exception on validation
@@ -150,7 +151,7 @@ without making any changes in it:</p>
             r =&gt; new CustomValidationException(r.ToDictionary()));
     }
 
-    public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+    public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
     {
         if (env.IsDevelopment())
         {
@@ -165,7 +166,14 @@ without making any changes in it:</p>
         app.UseMiddleware&lt;ErrorHandlerMiddleware&gt;();
 
         app.UseHttpsRedirection();
-        app.UseMvc();
+        app.UseRouting();
+
+        app.UseAuthentication();
+        app.UseAuthorization();
+
+        app.UseEndpoints(endpoints =&gt; {
+            endpoints.MapControllers();
+        });
     }
 }
 </code></pre>

@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class DateTimeValidationExtensions
    | Admonish validation library ">
-    <meta name="generator" content="docfx 2.45.1.0">
+    <meta name="generator" content="docfx 2.49.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -82,55 +82,31 @@ of <a class="xref" href="Admonish.ValidationResult.html">ValidationResult</a>.</
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">DateTimeValidationExtensions</span></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Admonish.html">Admonish</a></h6>
   <h6><strong>Assembly</strong>: Admonish.dll</h6>
   <h5 id="Admonish_DateTimeValidationExtensions_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class DateTimeValidationExtensions</code></pre>
+    <pre><code class="lang-csharp hljs">public static class DateTimeValidationExtensions : object</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/otto-gebb/Admonish/new/master/apiSpec/new?filename=Admonish_DateTimeValidationExtensions_Between_Admonish_ValidationResult_System_String_System_DateTime_System_DateTime_System_DateTime_.md&amp;value=---%0Auid%3A%20Admonish.DateTimeValidationExtensions.Between(Admonish.ValidationResult%2CSystem.String%2CSystem.DateTime%2CSystem.DateTime%2CSystem.DateTime)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/otto-gebb/Admonish/new/master/apiSpec/new?filename=Admonish_DateTimeValidationExtensions_Between_Admonish_ValidationResult_System_String_DateTime_DateTime_DateTime_System_Nullable_System_String__.md&amp;value=---%0Auid%3A%20Admonish.DateTimeValidationExtensions.Between(Admonish.ValidationResult%2CSystem.String%2CDateTime%2CDateTime%2CDateTime%2CSystem.Nullable%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/otto-gebb/Admonish/blob/master/src/Admonish/Extensions/DateTimeValidationExtensions.cs/#L118">View Source</a>
+    <a href="https://github.com/otto-gebb/Admonish/blob/master/src/Admonish/Extensions/DateTimeValidationExtensions.cs/#L131">View Source</a>
   </span>
   <a id="Admonish_DateTimeValidationExtensions_Between_" data-uid="Admonish.DateTimeValidationExtensions.Between*"></a>
-  <h4 id="Admonish_DateTimeValidationExtensions_Between_Admonish_ValidationResult_System_String_System_DateTime_System_DateTime_System_DateTime_" data-uid="Admonish.DateTimeValidationExtensions.Between(Admonish.ValidationResult,System.String,System.DateTime,System.DateTime,System.DateTime)">Between(ValidationResult, String, DateTime, DateTime, DateTime)</h4>
-  <div class="markdown level1 summary"><p>Checks whether the specified date is within the specified range (inclusive).
+  <h4 id="Admonish_DateTimeValidationExtensions_Between_Admonish_ValidationResult_System_String_DateTime_DateTime_DateTime_System_Nullable_System_String__" data-uid="Admonish.DateTimeValidationExtensions.Between(Admonish.ValidationResult,System.String,DateTime,DateTime,DateTime,System.Nullable{System.String})">Between(ValidationResult, String, DateTime, DateTime, DateTime, Nullable&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Ensures that the specified date is within the specified range (inclusive).
 When the check fails, adds an error message to the
 <a class="xref" href="Admonish.ValidationResult.html">ValidationResult</a> and associates it with the specified key.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static ValidationResult Between(this ValidationResult r, string key, DateTime value, DateTime minValue, DateTime maxValue)</code></pre>
+    <pre><code class="lang-csharp hljs">public static ValidationResult Between(this ValidationResult r, string key, DateTime value, DateTime minValue, DateTime maxValue, string? message = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -155,21 +131,27 @@ When the check fails, adds an error message to the
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.DateTime</span></td>
+        <td><span class="xref">DateTime</span></td>
         <td><span class="parametername">value</span></td>
         <td><p>The date to check.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.DateTime</span></td>
+        <td><span class="xref">DateTime</span></td>
         <td><span class="parametername">minValue</span></td>
         <td><p>The minimum allowed value.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.DateTime</span></td>
+        <td><span class="xref">DateTime</span></td>
         <td><span class="parametername">maxValue</span></td>
         <td><p>The maximum allowed value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">message</span></td>
+        <td><p>An optional error message.</p>
 </td>
       </tr>
     </tbody>
@@ -192,21 +174,21 @@ When the check fails, adds an error message to the
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/otto-gebb/Admonish/new/master/apiSpec/new?filename=Admonish_DateTimeValidationExtensions_Between_Admonish_ValidationResult_System_String_System_DateTimeOffset_System_DateTimeOffset_System_DateTimeOffset_.md&amp;value=---%0Auid%3A%20Admonish.DateTimeValidationExtensions.Between(Admonish.ValidationResult%2CSystem.String%2CSystem.DateTimeOffset%2CSystem.DateTimeOffset%2CSystem.DateTimeOffset)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/otto-gebb/Admonish/new/master/apiSpec/new?filename=Admonish_DateTimeValidationExtensions_Between_Admonish_ValidationResult_System_String_DateTimeOffset_DateTimeOffset_DateTimeOffset_System_Nullable_System_String__.md&amp;value=---%0Auid%3A%20Admonish.DateTimeValidationExtensions.Between(Admonish.ValidationResult%2CSystem.String%2CDateTimeOffset%2CDateTimeOffset%2CDateTimeOffset%2CSystem.Nullable%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/otto-gebb/Admonish/blob/master/src/Admonish/Extensions/DateTimeValidationExtensions.cs/#L153">View Source</a>
+    <a href="https://github.com/otto-gebb/Admonish/blob/master/src/Admonish/Extensions/DateTimeValidationExtensions.cs/#L168">View Source</a>
   </span>
   <a id="Admonish_DateTimeValidationExtensions_Between_" data-uid="Admonish.DateTimeValidationExtensions.Between*"></a>
-  <h4 id="Admonish_DateTimeValidationExtensions_Between_Admonish_ValidationResult_System_String_System_DateTimeOffset_System_DateTimeOffset_System_DateTimeOffset_" data-uid="Admonish.DateTimeValidationExtensions.Between(Admonish.ValidationResult,System.String,System.DateTimeOffset,System.DateTimeOffset,System.DateTimeOffset)">Between(ValidationResult, String, DateTimeOffset, DateTimeOffset, DateTimeOffset)</h4>
-  <div class="markdown level1 summary"><p>Checks whether the specified date is within the specified range (inclusive).
+  <h4 id="Admonish_DateTimeValidationExtensions_Between_Admonish_ValidationResult_System_String_DateTimeOffset_DateTimeOffset_DateTimeOffset_System_Nullable_System_String__" data-uid="Admonish.DateTimeValidationExtensions.Between(Admonish.ValidationResult,System.String,DateTimeOffset,DateTimeOffset,DateTimeOffset,System.Nullable{System.String})">Between(ValidationResult, String, DateTimeOffset, DateTimeOffset, DateTimeOffset, Nullable&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Ensures that the specified date is within the specified range (inclusive).
 When the check fails, adds an error message to the
 <a class="xref" href="Admonish.ValidationResult.html">ValidationResult</a> and associates it with the specified key.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static ValidationResult Between(this ValidationResult r, string key, DateTimeOffset value, DateTimeOffset minValue, DateTimeOffset maxValue)</code></pre>
+    <pre><code class="lang-csharp hljs">public static ValidationResult Between(this ValidationResult r, string key, DateTimeOffset value, DateTimeOffset minValue, DateTimeOffset maxValue, string? message = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -231,21 +213,27 @@ When the check fails, adds an error message to the
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.DateTimeOffset</span></td>
+        <td><span class="xref">DateTimeOffset</span></td>
         <td><span class="parametername">value</span></td>
         <td><p>The date to check.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.DateTimeOffset</span></td>
+        <td><span class="xref">DateTimeOffset</span></td>
         <td><span class="parametername">minValue</span></td>
         <td><p>The minimum allowed value.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.DateTimeOffset</span></td>
+        <td><span class="xref">DateTimeOffset</span></td>
         <td><span class="parametername">maxValue</span></td>
         <td><p>The maximum allowed value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">message</span></td>
+        <td><p>An optional error message.</p>
 </td>
       </tr>
     </tbody>
@@ -268,21 +256,21 @@ When the check fails, adds an error message to the
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/otto-gebb/Admonish/new/master/apiSpec/new?filename=Admonish_DateTimeValidationExtensions_Max_Admonish_ValidationResult_System_String_System_DateTime_System_DateTime_.md&amp;value=---%0Auid%3A%20Admonish.DateTimeValidationExtensions.Max(Admonish.ValidationResult%2CSystem.String%2CSystem.DateTime%2CSystem.DateTime)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/otto-gebb/Admonish/new/master/apiSpec/new?filename=Admonish_DateTimeValidationExtensions_Max_Admonish_ValidationResult_System_String_DateTime_DateTime_System_Nullable_System_String__.md&amp;value=---%0Auid%3A%20Admonish.DateTimeValidationExtensions.Max(Admonish.ValidationResult%2CSystem.String%2CDateTime%2CDateTime%2CSystem.Nullable%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/otto-gebb/Admonish/blob/master/src/Admonish/Extensions/DateTimeValidationExtensions.cs/#L69">View Source</a>
+    <a href="https://github.com/otto-gebb/Admonish/blob/master/src/Admonish/Extensions/DateTimeValidationExtensions.cs/#L76">View Source</a>
   </span>
   <a id="Admonish_DateTimeValidationExtensions_Max_" data-uid="Admonish.DateTimeValidationExtensions.Max*"></a>
-  <h4 id="Admonish_DateTimeValidationExtensions_Max_Admonish_ValidationResult_System_String_System_DateTime_System_DateTime_" data-uid="Admonish.DateTimeValidationExtensions.Max(Admonish.ValidationResult,System.String,System.DateTime,System.DateTime)">Max(ValidationResult, String, DateTime, DateTime)</h4>
-  <div class="markdown level1 summary"><p>Checks whether the specified date is less than or equal to the specified value.
+  <h4 id="Admonish_DateTimeValidationExtensions_Max_Admonish_ValidationResult_System_String_DateTime_DateTime_System_Nullable_System_String__" data-uid="Admonish.DateTimeValidationExtensions.Max(Admonish.ValidationResult,System.String,DateTime,DateTime,System.Nullable{System.String})">Max(ValidationResult, String, DateTime, DateTime, Nullable&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Ensures that the specified date is less than or equal to the specified value.
 When the check fails, adds an error message to the
 <a class="xref" href="Admonish.ValidationResult.html">ValidationResult</a> and associates it with the specified key.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static ValidationResult Max(this ValidationResult r, string key, DateTime value, DateTime maxValue)</code></pre>
+    <pre><code class="lang-csharp hljs">public static ValidationResult Max(this ValidationResult r, string key, DateTime value, DateTime maxValue, string? message = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -307,15 +295,21 @@ When the check fails, adds an error message to the
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.DateTime</span></td>
+        <td><span class="xref">DateTime</span></td>
         <td><span class="parametername">value</span></td>
         <td><p>The date to check.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.DateTime</span></td>
+        <td><span class="xref">DateTime</span></td>
         <td><span class="parametername">maxValue</span></td>
         <td><p>The maximum allowed value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">message</span></td>
+        <td><p>An optional error message.</p>
 </td>
       </tr>
     </tbody>
@@ -338,21 +332,21 @@ When the check fails, adds an error message to the
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/otto-gebb/Admonish/new/master/apiSpec/new?filename=Admonish_DateTimeValidationExtensions_Max_Admonish_ValidationResult_System_String_System_DateTimeOffset_System_DateTimeOffset_.md&amp;value=---%0Auid%3A%20Admonish.DateTimeValidationExtensions.Max(Admonish.ValidationResult%2CSystem.String%2CSystem.DateTimeOffset%2CSystem.DateTimeOffset)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/otto-gebb/Admonish/new/master/apiSpec/new?filename=Admonish_DateTimeValidationExtensions_Max_Admonish_ValidationResult_System_String_DateTimeOffset_DateTimeOffset_System_Nullable_System_String__.md&amp;value=---%0Auid%3A%20Admonish.DateTimeValidationExtensions.Max(Admonish.ValidationResult%2CSystem.String%2CDateTimeOffset%2CDateTimeOffset%2CSystem.Nullable%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/otto-gebb/Admonish/blob/master/src/Admonish/Extensions/DateTimeValidationExtensions.cs/#L93">View Source</a>
+    <a href="https://github.com/otto-gebb/Admonish/blob/master/src/Admonish/Extensions/DateTimeValidationExtensions.cs/#L103">View Source</a>
   </span>
   <a id="Admonish_DateTimeValidationExtensions_Max_" data-uid="Admonish.DateTimeValidationExtensions.Max*"></a>
-  <h4 id="Admonish_DateTimeValidationExtensions_Max_Admonish_ValidationResult_System_String_System_DateTimeOffset_System_DateTimeOffset_" data-uid="Admonish.DateTimeValidationExtensions.Max(Admonish.ValidationResult,System.String,System.DateTimeOffset,System.DateTimeOffset)">Max(ValidationResult, String, DateTimeOffset, DateTimeOffset)</h4>
-  <div class="markdown level1 summary"><p>Checks whether the specified date is less than or equal to the specified value.
+  <h4 id="Admonish_DateTimeValidationExtensions_Max_Admonish_ValidationResult_System_String_DateTimeOffset_DateTimeOffset_System_Nullable_System_String__" data-uid="Admonish.DateTimeValidationExtensions.Max(Admonish.ValidationResult,System.String,DateTimeOffset,DateTimeOffset,System.Nullable{System.String})">Max(ValidationResult, String, DateTimeOffset, DateTimeOffset, Nullable&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Ensures that the specified date is less than or equal to the specified value.
 When the check fails, adds an error message to the
 <a class="xref" href="Admonish.ValidationResult.html">ValidationResult</a> and associates it with the specified key.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static ValidationResult Max(this ValidationResult r, string key, DateTimeOffset value, DateTimeOffset maxValue)</code></pre>
+    <pre><code class="lang-csharp hljs">public static ValidationResult Max(this ValidationResult r, string key, DateTimeOffset value, DateTimeOffset maxValue, string? message = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -377,17 +371,23 @@ When the check fails, adds an error message to the
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.DateTimeOffset</span></td>
+        <td><span class="xref">DateTimeOffset</span></td>
         <td><span class="parametername">value</span></td>
         <td><p>The date to check.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.DateTimeOffset</span></td>
+        <td><span class="xref">DateTimeOffset</span></td>
         <td><span class="parametername">maxValue</span></td>
         <td><p>The maximum allowed value.</p>
 </td>
       </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">message</span></td>
+        <td><p>An optional error message.</p>
+</td>
+      </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
@@ -408,21 +408,21 @@ When the check fails, adds an error message to the
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/otto-gebb/Admonish/new/master/apiSpec/new?filename=Admonish_DateTimeValidationExtensions_Min_Admonish_ValidationResult_System_String_System_DateTime_System_DateTime_.md&amp;value=---%0Auid%3A%20Admonish.DateTimeValidationExtensions.Min(Admonish.ValidationResult%2CSystem.String%2CSystem.DateTime%2CSystem.DateTime)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/otto-gebb/Admonish/new/master/apiSpec/new?filename=Admonish_DateTimeValidationExtensions_Min_Admonish_ValidationResult_System_String_DateTime_DateTime_System_Nullable_System_String__.md&amp;value=---%0Auid%3A%20Admonish.DateTimeValidationExtensions.Min(Admonish.ValidationResult%2CSystem.String%2CDateTime%2CDateTime%2CSystem.Nullable%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/otto-gebb/Admonish/blob/master/src/Admonish/Extensions/DateTimeValidationExtensions.cs/#L21">View Source</a>
+    <a href="https://github.com/otto-gebb/Admonish/blob/master/src/Admonish/Extensions/DateTimeValidationExtensions.cs/#L22">View Source</a>
   </span>
   <a id="Admonish_DateTimeValidationExtensions_Min_" data-uid="Admonish.DateTimeValidationExtensions.Min*"></a>
-  <h4 id="Admonish_DateTimeValidationExtensions_Min_Admonish_ValidationResult_System_String_System_DateTime_System_DateTime_" data-uid="Admonish.DateTimeValidationExtensions.Min(Admonish.ValidationResult,System.String,System.DateTime,System.DateTime)">Min(ValidationResult, String, DateTime, DateTime)</h4>
-  <div class="markdown level1 summary"><p>Checks whether the specified date is greater than or equal to the specified value.
+  <h4 id="Admonish_DateTimeValidationExtensions_Min_Admonish_ValidationResult_System_String_DateTime_DateTime_System_Nullable_System_String__" data-uid="Admonish.DateTimeValidationExtensions.Min(Admonish.ValidationResult,System.String,DateTime,DateTime,System.Nullable{System.String})">Min(ValidationResult, String, DateTime, DateTime, Nullable&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Ensures that the specified date is greater than or equal to the specified value.
 When the check fails, adds an error message to the
 <a class="xref" href="Admonish.ValidationResult.html">ValidationResult</a> and associates it with the specified key.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static ValidationResult Min(this ValidationResult r, string key, DateTime value, DateTime minValue)</code></pre>
+    <pre><code class="lang-csharp hljs">public static ValidationResult Min(this ValidationResult r, string key, DateTime value, DateTime minValue, string? message = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -447,15 +447,21 @@ When the check fails, adds an error message to the
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.DateTime</span></td>
+        <td><span class="xref">DateTime</span></td>
         <td><span class="parametername">value</span></td>
         <td><p>The date to check.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.DateTime</span></td>
+        <td><span class="xref">DateTime</span></td>
         <td><span class="parametername">minValue</span></td>
         <td><p>The minimum allowed value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">message</span></td>
+        <td><p>An optional error message.</p>
 </td>
       </tr>
     </tbody>
@@ -478,21 +484,21 @@ When the check fails, adds an error message to the
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/otto-gebb/Admonish/new/master/apiSpec/new?filename=Admonish_DateTimeValidationExtensions_Min_Admonish_ValidationResult_System_String_System_DateTimeOffset_System_DateTimeOffset_.md&amp;value=---%0Auid%3A%20Admonish.DateTimeValidationExtensions.Min(Admonish.ValidationResult%2CSystem.String%2CSystem.DateTimeOffset%2CSystem.DateTimeOffset)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/otto-gebb/Admonish/new/master/apiSpec/new?filename=Admonish_DateTimeValidationExtensions_Min_Admonish_ValidationResult_System_String_DateTimeOffset_DateTimeOffset_System_Nullable_System_String__.md&amp;value=---%0Auid%3A%20Admonish.DateTimeValidationExtensions.Min(Admonish.ValidationResult%2CSystem.String%2CDateTimeOffset%2CDateTimeOffset%2CSystem.Nullable%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/otto-gebb/Admonish/blob/master/src/Admonish/Extensions/DateTimeValidationExtensions.cs/#L45">View Source</a>
+    <a href="https://github.com/otto-gebb/Admonish/blob/master/src/Admonish/Extensions/DateTimeValidationExtensions.cs/#L49">View Source</a>
   </span>
   <a id="Admonish_DateTimeValidationExtensions_Min_" data-uid="Admonish.DateTimeValidationExtensions.Min*"></a>
-  <h4 id="Admonish_DateTimeValidationExtensions_Min_Admonish_ValidationResult_System_String_System_DateTimeOffset_System_DateTimeOffset_" data-uid="Admonish.DateTimeValidationExtensions.Min(Admonish.ValidationResult,System.String,System.DateTimeOffset,System.DateTimeOffset)">Min(ValidationResult, String, DateTimeOffset, DateTimeOffset)</h4>
-  <div class="markdown level1 summary"><p>Checks whether the specified date is greater than or equal to the specified value.
+  <h4 id="Admonish_DateTimeValidationExtensions_Min_Admonish_ValidationResult_System_String_DateTimeOffset_DateTimeOffset_System_Nullable_System_String__" data-uid="Admonish.DateTimeValidationExtensions.Min(Admonish.ValidationResult,System.String,DateTimeOffset,DateTimeOffset,System.Nullable{System.String})">Min(ValidationResult, String, DateTimeOffset, DateTimeOffset, Nullable&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Ensures that the specified date is greater than or equal to the specified value.
 When the check fails, adds an error message to the
 <a class="xref" href="Admonish.ValidationResult.html">ValidationResult</a> and associates it with the specified key.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static ValidationResult Min(this ValidationResult r, string key, DateTimeOffset value, DateTimeOffset minValue)</code></pre>
+    <pre><code class="lang-csharp hljs">public static ValidationResult Min(this ValidationResult r, string key, DateTimeOffset value, DateTimeOffset minValue, string? message = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -517,15 +523,21 @@ When the check fails, adds an error message to the
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.DateTimeOffset</span></td>
+        <td><span class="xref">DateTimeOffset</span></td>
         <td><span class="parametername">value</span></td>
         <td><p>The date to check.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.DateTimeOffset</span></td>
+        <td><span class="xref">DateTimeOffset</span></td>
         <td><span class="parametername">minValue</span></td>
         <td><p>The minimum allowed value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">message</span></td>
+        <td><p>An optional error message.</p>
 </td>
       </tr>
     </tbody>
