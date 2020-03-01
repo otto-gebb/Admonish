@@ -49,6 +49,8 @@ Target.create "Clean" (fun _ ->
     ++ "test/**/bin"
     ++ "test/**/obj"
     ++ "nugetpkg"
+    ++ "temp-docs"
+    ++ "doc/_site"
     |> Shell.deleteDirs
 )
 

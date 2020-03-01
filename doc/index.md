@@ -45,7 +45,7 @@ validation rules, e.g. `CheckCreditCard`.
 ### Customization
 
 Users can substitute the type of exception thrown on validation errors (see the
-[UnsafeConfigureException](xref:Admonish.Validator.UnsafeConfigureException(System.Func{Admonish.ValidationResult,System.Exception}))
+[UnsafeConfigureException](xref:Admonish.Validator.UnsafeConfigureException*)
 method) making domain validation code throw a custom exception (defined e.g. in a web
 infrastructure library) without "knowing" about it.
 
