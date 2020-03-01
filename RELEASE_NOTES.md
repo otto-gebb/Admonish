@@ -1,3 +1,7 @@
+### 1.0.1 - 2020-03-01
+
+- Minor documentation improvemets.
+
 ### 1.0.0 - 2020-02-28
 
 - Add optional custom error message to all validation helpers.
