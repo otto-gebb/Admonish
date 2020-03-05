@@ -10,7 +10,7 @@ namespace Admonish
     {
         /// <summary>
         /// Ensures that the specified condition is true.
-        /// When it is flase, adds the specified error message to the
+        /// When it is false, adds the specified error message to the
         /// <see cref="ValidationResult" /> and associates it with the specified key.
         /// </summary>
         /// <param name="r">The validation result.</param>
@@ -34,7 +34,7 @@ namespace Admonish
 
         /// <summary>
         /// Ensures that the specified condition is true.
-        /// When it is flase, adds the specified error message to the
+        /// When it is false, adds the specified error message to the
         /// <see cref="ValidationResult" />.
         /// </summary>
         /// <param name="r">The validation result.</param>
