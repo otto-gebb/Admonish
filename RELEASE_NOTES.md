@@ -1,3 +1,10 @@
+### 1.0.2 - 2023-03-02
+
+- Mark `NonNull*` methods with the `[NotNull]` attribute. This asserts to the compiler that the specified value
+  cannot be null after calling the method, but the developer must not forget to call `ThrowIfInvalid` for the
+  assertion to be true.
+- Switch TargetFramework: `netstandard2.0` -> `netstandard2.1`.
+
 ### 1.0.1 - 2020-03-01
 
 - Minor documentation improvemets.

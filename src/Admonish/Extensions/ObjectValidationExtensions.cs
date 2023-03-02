@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 
 namespace Admonish
 {
@@ -20,7 +21,7 @@ namespace Admonish
         public static ValidationResult NonNull<T>(
             this ValidationResult r,
             string key,
-            T? value,
+            [NotNull] T? value,
             string? message = null) where T: class
         {
             if (value == null)
@@ -29,7 +30,10 @@ namespace Admonish
                 r.AddError(key, message);
             }
 
+            // CS8777: Parameter 'value' must have a non-null value when exiting.
+#pragma warning disable CS8777
             return r;
+#pragma warning restore CS8777
         }
 
         /// <summary>
@@ -45,7 +49,7 @@ namespace Admonish
         public static ValidationResult NonNull<T>(
             this ValidationResult r,
             string key,
-            T? value,
+            [NotNull] T? value,
             string? message = null) where T : struct
         {
             if (value == null)
@@ -54,7 +58,10 @@ namespace Admonish
                 r.AddError(key, message);
             }
 
+            // CS8777: Parameter 'value' must have a non-null value when exiting.
+#pragma warning disable CS8777
             return r;
+#pragma warning restore CS8777
         }
 
         /// <summary>

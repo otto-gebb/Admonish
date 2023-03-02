@@ -1,4 +1,5 @@
 using System.Text.RegularExpressions;
+using System.Diagnostics.CodeAnalysis;
 
 namespace Admonish
 {
@@ -20,7 +21,7 @@ namespace Admonish
         public static ValidationResult NonNullOrEmpty(
             this ValidationResult r,
             string key,
-            string? value,
+            [NotNull] string? value,
             string? message = null)
         {
             if (string.IsNullOrEmpty(value))
@@ -29,7 +30,10 @@ namespace Admonish
                 r.AddError(key, message);
             }
 
+            // CS8777: Parameter 'value' must have a non-null value when exiting.
+#pragma warning disable CS8777
             return r;
+#pragma warning restore CS8777
         }
 
         /// <summary>
@@ -46,7 +50,7 @@ namespace Admonish
         public static ValidationResult NonNullOrWhiteSpace(
             this ValidationResult r,
             string key,
-            string? value,
+            [NotNull] string? value,
             string? message = null)
         {
             if (string.IsNullOrWhiteSpace(value))
@@ -56,7 +60,10 @@ namespace Admonish
                 r.AddError(key, message);
             }
 
+            // CS8777: Parameter 'value' must have a non-null value when exiting.
+#pragma warning disable CS8777
             return r;
+#pragma warning restore CS8777
         }
 
         /// <summary>

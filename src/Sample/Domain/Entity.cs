@@ -7,7 +7,7 @@ namespace Domain
 {
     public class Entity
     {
-        public Entity(int age, string name)
+        public Entity(int age, string? name)
         {
             Validator
                 .Create()
