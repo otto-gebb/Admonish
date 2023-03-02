@@ -7,7 +7,7 @@ skip_non_tags: true
 install:
 - ps: dotnet tool install paket -g
 build_script:
-- ps: dotnet run ./build/Build.fsproj -t BuildPackage
+- ps: dotnet run --project ./build/Build.fsproj -t BuildPackage
 test: off
 artifacts:
 - path: nugetpkg/*.nupkg
