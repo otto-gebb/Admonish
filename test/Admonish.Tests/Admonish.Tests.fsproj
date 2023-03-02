@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     <LangVersion>preview</LangVersion>
     <GenerateProgramFile>false</GenerateProgramFile>
   </PropertyGroup>
@@ -22,7 +22,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Expecto" Version="8.13.1" />
-    <PackageReference Include="FSharp.Core" Version="4.7.0" />
+    <!-- <PackageReference Include="FSharp.Core" Version="4.7.0" /> -->
     <PackageReference Include="YoloDev.Expecto.TestSdk" Version="0.8.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
   </ItemGroup>

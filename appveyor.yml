@@ -1,12 +1,13 @@
+version: 1.0.{build}
 image: Visual Studio 2022
 branches:
   only:
   - master
 skip_non_tags: true
 install:
-- ps: dotnet tool install fake-cli -g
+- ps: dotnet tool install paket -g
 build_script:
-- ps: fake build -t BuildPackage
+- ps: dotnet run ./build/Build.fsproj -t BuildPackage
 test: off
 artifacts:
 - path: nugetpkg/*.nupkg
@@ -15,4 +16,5 @@ deploy:
 - provider: NuGet
   api_key:
     secure: ZVtUInEH/ZxA6fWIsFZOE45PALWk84+U/kPqFIVBeREKiMADoEI4FZ/LuOStaLF4
+  skip_symbols: false
   artifact: packages

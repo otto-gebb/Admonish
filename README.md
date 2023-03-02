@@ -10,4 +10,4 @@ See [documentation](https://otto-gebb.github.io/Admonish) for details.
 ## Building
 
 - Clone the repository.
-- Run `fake.cmd build` (or `fake.sh build` on Linux)
+- Run `dotnet run --project ./build/Build.fsproj -t All`
