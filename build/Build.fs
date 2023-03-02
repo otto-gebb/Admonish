@@ -104,18 +104,10 @@ Target.create "BuildPackage" (fun _ ->
         // "PackageIconUrl", iconUrl
         "PackageLicenseExpression", "MIT"
       ]
-    let conf (p: DotNet.PackOptions) =
-      {p with
-        NoBuild = true
-        Configuration = configuration
-        OutputPath = Some nugetpkg
-        MSBuildParams = {p.MSBuildParams with Properties = msbuildProps}
-      }
     let msbuildParams =
       [for (name,v) in msbuildProps -> $"-p:{name}=\"{v}\""]
       |> String.concat " "
     run dotnet $"pack -c %A{configuration} -o {nugetpkg} --no-build {msbuildParams}" projDir
-    //DotNet.pack conf project
 
   !! ("src/**/" + product + ".*proj")
   |> Seq.iter pack
@@ -125,7 +117,7 @@ Target.create "BuildPackage" (fun _ ->
 Target.create "PublishNuget" (fun _ ->
   // To run this target create a file named "PublishNuget.cmd" with the following contents:
   // SET nugetkey=<your_nuget_api_key>
-  // fk.cmd build -t PublishNuget
+  // dotnet run --project ./build/Build.fsproj -t PublishNuget
   let key = Environment.environVarOrFail "nugetkey"
   let push (package: string) =
     let name = Path.GetFileNameWithoutExtension package
@@ -159,7 +151,7 @@ Target.create "PublishDocs" (fun _ ->
 Target.create "Release" (fun _ ->
   // To run this target create a file named "release.cmd" with the following contents:
   // SET GITHUB_TOKEN=<your_github_token>
-  // fk.cmd build -t Release
+  // dotnet run --project ./build/Build.fsproj -t Release
   let token = Environment.environVarOrFail "GITHUB_TOKEN"
   let v = release.NugetVersion
   let isPreRelease = release.SemVer.PreRelease.IsSome
