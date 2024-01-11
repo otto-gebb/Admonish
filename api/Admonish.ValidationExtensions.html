@@ -1,0 +1,379 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ValidationExtensions
+ | Admonish validation library </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ValidationExtensions
+ | Admonish validation library ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/otto-gebb/Admonish/new/master/apiSpec/new?filename=Admonish_ValidationExtensions.md&amp;value=---%0Auid%3A%20Admonish.ValidationExtensions%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.svg" alt="Admonish">
+            Admonish
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Admonish.ValidationExtensions">
+
+
+
+  <h1 id="Admonish_ValidationExtensions" data-uid="Admonish.ValidationExtensions" class="text-break">
+    Class ValidationExtensions
+  <a class="header-action link-secondary" title="View source" href="https://github.com/otto-gebb/Admonish/blob/master/src/Admonish/Extensions/ValidationExtensions.cs/#L9"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Admonish.html">Admonish</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Admonish.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Contains convenience methods for <a class="xref" href="Admonish.ValidationResult.html">ValidationResult</a>.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class ValidationExtensions</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">ValidationExtensions</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Admonish_ValidationExtensions_Check_" data-uid="Admonish.ValidationExtensions.Check*"></a>
+
+  <h3 id="Admonish_ValidationExtensions_Check_Admonish_ValidationResult_System_Boolean_System_String_" data-uid="Admonish.ValidationExtensions.Check(Admonish.ValidationResult,System.Boolean,System.String)">
+  Check(ValidationResult, bool, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/otto-gebb/Admonish/blob/master/src/Admonish/Extensions/ValidationExtensions.cs/#L44"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Ensures that the specified condition is true.
+When it is false, adds the specified error message to the
+<a class="xref" href="Admonish.ValidationResult.html">ValidationResult</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ValidationResult Check(this ValidationResult r, bool condition, string message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>r</code> <a class="xref" href="Admonish.ValidationResult.html">ValidationResult</a></dt>
+    <dd><p>The validation result.</p>
+</dd>
+    <dt><code>condition</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>The condition to check.</p>
+</dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The error message.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Admonish.ValidationResult.html">ValidationResult</a></dt>
+    <dd><p>The validation result.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Admonish_ValidationExtensions_Check_" data-uid="Admonish.ValidationExtensions.Check*"></a>
+
+  <h3 id="Admonish_ValidationExtensions_Check_Admonish_ValidationResult_System_String_System_Boolean_System_String_" data-uid="Admonish.ValidationExtensions.Check(Admonish.ValidationResult,System.String,System.Boolean,System.String)">
+  Check(ValidationResult, string, bool, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/otto-gebb/Admonish/blob/master/src/Admonish/Extensions/ValidationExtensions.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Ensures that the specified condition is true.
+When it is false, adds the specified error message to the
+<a class="xref" href="Admonish.ValidationResult.html">ValidationResult</a> and associates it with the specified key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ValidationResult Check(this ValidationResult r, string key, bool condition, string message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>r</code> <a class="xref" href="Admonish.ValidationResult.html">ValidationResult</a></dt>
+    <dd><p>The validation result.</p>
+</dd>
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The key to associate the error with.</p>
+</dd>
+    <dt><code>condition</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>The condition to check.</p>
+</dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The error message.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Admonish.ValidationResult.html">ValidationResult</a></dt>
+    <dd><p>The validation result.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Admonish_ValidationExtensions_Collection_" data-uid="Admonish.ValidationExtensions.Collection*"></a>
+
+  <h3 id="Admonish_ValidationExtensions_Collection__1_Admonish_ValidationResult_System_String_System_Collections_Generic_IEnumerable___0__System_Func_Admonish_ValidationResult___0_Admonish_ValidationResult__" data-uid="Admonish.ValidationExtensions.Collection``1(Admonish.ValidationResult,System.String,System.Collections.Generic.IEnumerable{``0},System.Func{Admonish.ValidationResult,``0,Admonish.ValidationResult})">
+  Collection&lt;T&gt;(ValidationResult, string, IEnumerable&lt;T&gt;, Func&lt;ValidationResult, T, ValidationResult&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/otto-gebb/Admonish/blob/master/src/Admonish/Extensions/ValidationExtensions.cs/#L89"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Begins a scope in which a collection is validated and errors are associated
+with the specified key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ValidationResult Collection&lt;T&gt;(this ValidationResult r, string key, IEnumerable&lt;T&gt; value, Func&lt;ValidationResult, T, ValidationResult&gt; validateItem)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>r</code> <a class="xref" href="Admonish.ValidationResult.html">ValidationResult</a></dt>
+    <dd><p>The validation result.</p>
+</dd>
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The key to associate the errors in the scope with.</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</dt>
+    <dd><p>The collection to validate.</p>
+</dd>
+    <dt><code>validateItem</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<a class="xref" href="Admonish.ValidationResult.html">ValidationResult</a>, T, <a class="xref" href="Admonish.ValidationResult.html">ValidationResult</a>&gt;</dt>
+    <dd><p>A callback validating a single item.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Admonish.ValidationResult.html">ValidationResult</a></dt>
+    <dd><p>The validation result.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Admonish_ValidationExtensions_WithKey_" data-uid="Admonish.ValidationExtensions.WithKey*"></a>
+
+  <h3 id="Admonish_ValidationExtensions_WithKey_Admonish_ValidationResult_System_String_System_Func_Admonish_ValidationResult_Admonish_ValidationResult__" data-uid="Admonish.ValidationExtensions.WithKey(Admonish.ValidationResult,System.String,System.Func{Admonish.ValidationResult,Admonish.ValidationResult})">
+  WithKey(ValidationResult, string, Func&lt;ValidationResult, ValidationResult&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/otto-gebb/Admonish/blob/master/src/Admonish/Extensions/ValidationExtensions.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Begins a scope in which all errors are associated with the specified key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ValidationResult WithKey(this ValidationResult r, string key, Func&lt;ValidationResult, ValidationResult&gt; validateParameter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>r</code> <a class="xref" href="Admonish.ValidationResult.html">ValidationResult</a></dt>
+    <dd><p>The validation result.</p>
+</dd>
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The key to associate the errors in the scope with.</p>
+</dd>
+    <dt><code>validateParameter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="Admonish.ValidationResult.html">ValidationResult</a>, <a class="xref" href="Admonish.ValidationResult.html">ValidationResult</a>&gt;</dt>
+    <dd><p>A callback with nested error checks.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Admonish.ValidationResult.html">ValidationResult</a></dt>
+    <dd><p>The validation result.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/otto-gebb/Admonish/blob/master/src/Admonish/Extensions/ValidationExtensions.cs/#L9" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

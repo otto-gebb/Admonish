@@ -1,0 +1,508 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class DateTimeValidationExtensions
+ | Admonish validation library </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class DateTimeValidationExtensions
+ | Admonish validation library ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/otto-gebb/Admonish/new/master/apiSpec/new?filename=Admonish_DateTimeValidationExtensions.md&amp;value=---%0Auid%3A%20Admonish.DateTimeValidationExtensions%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.svg" alt="Admonish">
+            Admonish
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Admonish.DateTimeValidationExtensions">
+
+
+
+  <h1 id="Admonish_DateTimeValidationExtensions" data-uid="Admonish.DateTimeValidationExtensions" class="text-break">
+    Class DateTimeValidationExtensions
+  <a class="header-action link-secondary" title="View source" href="https://github.com/otto-gebb/Admonish/blob/master/src/Admonish/Extensions/DateTimeValidationExtensions.cs/#L9"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Admonish.html">Admonish</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Admonish.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Contains date and time related validation extension methods
+of <a class="xref" href="Admonish.ValidationResult.html">ValidationResult</a>.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class DateTimeValidationExtensions</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">DateTimeValidationExtensions</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Admonish_DateTimeValidationExtensions_Between_" data-uid="Admonish.DateTimeValidationExtensions.Between*"></a>
+
+  <h3 id="Admonish_DateTimeValidationExtensions_Between_Admonish_ValidationResult_System_String_System_DateTime_System_DateTime_System_DateTime_System_String_" data-uid="Admonish.DateTimeValidationExtensions.Between(Admonish.ValidationResult,System.String,System.DateTime,System.DateTime,System.DateTime,System.String)">
+  Between(ValidationResult, string, DateTime, DateTime, DateTime, string?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/otto-gebb/Admonish/blob/master/src/Admonish/Extensions/DateTimeValidationExtensions.cs/#L131"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Ensures that the specified date is within the specified range (inclusive).
+When the check fails, adds an error message to the
+<a class="xref" href="Admonish.ValidationResult.html">ValidationResult</a> and associates it with the specified key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ValidationResult Between(this ValidationResult r, string key, DateTime value, DateTime minValue, DateTime maxValue, string? message = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>r</code> <a class="xref" href="Admonish.ValidationResult.html">ValidationResult</a></dt>
+    <dd><p>The validation result.</p>
+</dd>
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The key to associate the error with.</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>The date to check.</p>
+</dd>
+    <dt><code>minValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>The minimum allowed value.</p>
+</dd>
+    <dt><code>maxValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>The maximum allowed value.</p>
+</dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>An optional error message.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Admonish.ValidationResult.html">ValidationResult</a></dt>
+    <dd><p>The validation result.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Admonish_DateTimeValidationExtensions_Between_" data-uid="Admonish.DateTimeValidationExtensions.Between*"></a>
+
+  <h3 id="Admonish_DateTimeValidationExtensions_Between_Admonish_ValidationResult_System_String_System_DateTimeOffset_System_DateTimeOffset_System_DateTimeOffset_System_String_" data-uid="Admonish.DateTimeValidationExtensions.Between(Admonish.ValidationResult,System.String,System.DateTimeOffset,System.DateTimeOffset,System.DateTimeOffset,System.String)">
+  Between(ValidationResult, string, DateTimeOffset, DateTimeOffset, DateTimeOffset, string?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/otto-gebb/Admonish/blob/master/src/Admonish/Extensions/DateTimeValidationExtensions.cs/#L168"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Ensures that the specified date is within the specified range (inclusive).
+When the check fails, adds an error message to the
+<a class="xref" href="Admonish.ValidationResult.html">ValidationResult</a> and associates it with the specified key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ValidationResult Between(this ValidationResult r, string key, DateTimeOffset value, DateTimeOffset minValue, DateTimeOffset maxValue, string? message = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>r</code> <a class="xref" href="Admonish.ValidationResult.html">ValidationResult</a></dt>
+    <dd><p>The validation result.</p>
+</dd>
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The key to associate the error with.</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a></dt>
+    <dd><p>The date to check.</p>
+</dd>
+    <dt><code>minValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a></dt>
+    <dd><p>The minimum allowed value.</p>
+</dd>
+    <dt><code>maxValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a></dt>
+    <dd><p>The maximum allowed value.</p>
+</dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>An optional error message.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Admonish.ValidationResult.html">ValidationResult</a></dt>
+    <dd><p>The validation result.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Admonish_DateTimeValidationExtensions_Max_" data-uid="Admonish.DateTimeValidationExtensions.Max*"></a>
+
+  <h3 id="Admonish_DateTimeValidationExtensions_Max_Admonish_ValidationResult_System_String_System_DateTime_System_DateTime_System_String_" data-uid="Admonish.DateTimeValidationExtensions.Max(Admonish.ValidationResult,System.String,System.DateTime,System.DateTime,System.String)">
+  Max(ValidationResult, string, DateTime, DateTime, string?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/otto-gebb/Admonish/blob/master/src/Admonish/Extensions/DateTimeValidationExtensions.cs/#L76"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Ensures that the specified date is less than or equal to the specified value.
+When the check fails, adds an error message to the
+<a class="xref" href="Admonish.ValidationResult.html">ValidationResult</a> and associates it with the specified key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ValidationResult Max(this ValidationResult r, string key, DateTime value, DateTime maxValue, string? message = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>r</code> <a class="xref" href="Admonish.ValidationResult.html">ValidationResult</a></dt>
+    <dd><p>The validation result.</p>
+</dd>
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The key to associate the error with.</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>The date to check.</p>
+</dd>
+    <dt><code>maxValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>The maximum allowed value.</p>
+</dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>An optional error message.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Admonish.ValidationResult.html">ValidationResult</a></dt>
+    <dd><p>The validation result.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Admonish_DateTimeValidationExtensions_Max_" data-uid="Admonish.DateTimeValidationExtensions.Max*"></a>
+
+  <h3 id="Admonish_DateTimeValidationExtensions_Max_Admonish_ValidationResult_System_String_System_DateTimeOffset_System_DateTimeOffset_System_String_" data-uid="Admonish.DateTimeValidationExtensions.Max(Admonish.ValidationResult,System.String,System.DateTimeOffset,System.DateTimeOffset,System.String)">
+  Max(ValidationResult, string, DateTimeOffset, DateTimeOffset, string?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/otto-gebb/Admonish/blob/master/src/Admonish/Extensions/DateTimeValidationExtensions.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Ensures that the specified date is less than or equal to the specified value.
+When the check fails, adds an error message to the
+<a class="xref" href="Admonish.ValidationResult.html">ValidationResult</a> and associates it with the specified key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ValidationResult Max(this ValidationResult r, string key, DateTimeOffset value, DateTimeOffset maxValue, string? message = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>r</code> <a class="xref" href="Admonish.ValidationResult.html">ValidationResult</a></dt>
+    <dd><p>The validation result.</p>
+</dd>
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The key to associate the error with.</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a></dt>
+    <dd><p>The date to check.</p>
+</dd>
+    <dt><code>maxValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a></dt>
+    <dd><p>The maximum allowed value.</p>
+</dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>An optional error message.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Admonish.ValidationResult.html">ValidationResult</a></dt>
+    <dd><p>The validation result.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Admonish_DateTimeValidationExtensions_Min_" data-uid="Admonish.DateTimeValidationExtensions.Min*"></a>
+
+  <h3 id="Admonish_DateTimeValidationExtensions_Min_Admonish_ValidationResult_System_String_System_DateTime_System_DateTime_System_String_" data-uid="Admonish.DateTimeValidationExtensions.Min(Admonish.ValidationResult,System.String,System.DateTime,System.DateTime,System.String)">
+  Min(ValidationResult, string, DateTime, DateTime, string?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/otto-gebb/Admonish/blob/master/src/Admonish/Extensions/DateTimeValidationExtensions.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Ensures that the specified date is greater than or equal to the specified value.
+When the check fails, adds an error message to the
+<a class="xref" href="Admonish.ValidationResult.html">ValidationResult</a> and associates it with the specified key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ValidationResult Min(this ValidationResult r, string key, DateTime value, DateTime minValue, string? message = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>r</code> <a class="xref" href="Admonish.ValidationResult.html">ValidationResult</a></dt>
+    <dd><p>The validation result.</p>
+</dd>
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The key to associate the error with.</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>The date to check.</p>
+</dd>
+    <dt><code>minValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>The minimum allowed value.</p>
+</dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>An optional error message.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Admonish.ValidationResult.html">ValidationResult</a></dt>
+    <dd><p>The validation result.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Admonish_DateTimeValidationExtensions_Min_" data-uid="Admonish.DateTimeValidationExtensions.Min*"></a>
+
+  <h3 id="Admonish_DateTimeValidationExtensions_Min_Admonish_ValidationResult_System_String_System_DateTimeOffset_System_DateTimeOffset_System_String_" data-uid="Admonish.DateTimeValidationExtensions.Min(Admonish.ValidationResult,System.String,System.DateTimeOffset,System.DateTimeOffset,System.String)">
+  Min(ValidationResult, string, DateTimeOffset, DateTimeOffset, string?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/otto-gebb/Admonish/blob/master/src/Admonish/Extensions/DateTimeValidationExtensions.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Ensures that the specified date is greater than or equal to the specified value.
+When the check fails, adds an error message to the
+<a class="xref" href="Admonish.ValidationResult.html">ValidationResult</a> and associates it with the specified key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ValidationResult Min(this ValidationResult r, string key, DateTimeOffset value, DateTimeOffset minValue, string? message = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>r</code> <a class="xref" href="Admonish.ValidationResult.html">ValidationResult</a></dt>
+    <dd><p>The validation result.</p>
+</dd>
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The key to associate the error with.</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a></dt>
+    <dd><p>The date to check.</p>
+</dd>
+    <dt><code>minValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a></dt>
+    <dd><p>The minimum allowed value.</p>
+</dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>An optional error message.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Admonish.ValidationResult.html">ValidationResult</a></dt>
+    <dd><p>The validation result.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/otto-gebb/Admonish/blob/master/src/Admonish/Extensions/DateTimeValidationExtensions.cs/#L9" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
