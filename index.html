@@ -10,7 +10,7 @@
       <meta name="title" content="Admonish | Admonish validation library ">
     
       <link rel="shortcut icon" href="favicon.ico">
-      <link rel="stylesheet" href="styles/docfx.vendor.css">
+      <link rel="stylesheet" href="styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="styles/docfx.css">
       <link rel="stylesheet" href="styles/main.css">
       <meta property="docfx:navrel" content="toc.html">
@@ -83,7 +83,7 @@ only in entities.</p>
 validating privitive values, not DTOs, unlike most other libraries.</p>
 <p>Although some methods are provided to validate complex objects, such usage is discouraged.</p>
 <h3 id="error-accumulation">Error accumulation</h3>
-<p>Admonish accumulates errors until <a class="xref" href="api/Admonish.ValidationResult.html#Admonish_ValidationResult_ThrowIfInvalid">ThrowIfInvalid()</a> is called. This
+<p>Admonish accumulates errors until &lt;xref:Admonish.ValidationResult.ThrowIfInvalid&gt; is called. This
 is in contrast to the approach taken in some other libraries that throw an exception
 immediately on the first error encounterd.</p>
 <h3 id="extensibility">Extensibility</h3>
@@ -91,11 +91,12 @@ immediately on the first error encounterd.</p>
 validation rules, e.g. <code>CheckCreditCard</code>.</p>
 <h3 id="customization">Customization</h3>
 <p>Users can substitute the type of exception thrown on validation errors (see the
-<a class="xref" href="api/Admonish.Validator.html#Admonish_Validator_UnsafeConfigureException_">UnsafeConfigureException</a>
+<a href="xref:Admonish.Validator.UnsafeConfigureException*">UnsafeConfigureException</a>
 method) making domain validation code throw a custom exception (defined e.g. in a web
 infrastructure library) without &quot;knowing&quot; about it.</p>
 <h3 id="simplicity">Simplicity</h3>
 <p>The code and the API of the library are kept as simple as possible.</p>
+
 </article>
           </div>
 
@@ -104,12 +105,12 @@ infrastructure library) without &quot;knowing&quot; about it.</p>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/otto-gebb/Admonish/blob/master/doc/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/otto-gebb/Admonish/blob/develop/doc/index.md/#L1" class="contribution-link">Edit this page</a>
                   </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In This Article</h5>
+                <h5>In this article</h5>
                 <div></div>
               </nav>
             </div>
@@ -131,7 +132,7 @@ infrastructure library) without &quot;knowing&quot; about it.</p>
       </footer>
     </div>
 
-    <script type="text/javascript" src="styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="styles/docfx.vendor.min.js"></script>
     <script type="text/javascript" src="styles/docfx.js"></script>
     <script type="text/javascript" src="styles/main.js"></script>
   </body>

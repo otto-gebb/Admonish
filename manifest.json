@@ -1,136 +1,13 @@
 {
-  "homepages": [],
-  "source_base_path": "E:/Projects/Admonish/doc",
+  "source_base_path": "/home/gebb/_o/Admonish/doc",
   "xrefmap": "xrefmap.yml",
   "files": [
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Admonish.DateTimeValidationExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Admonish.DateTimeValidationExtensions.html",
-          "hash": "hFTzkM/AnMTHQlvA3MlUc53zE3P9CLizaupZT5KBL9Y="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Admonish.EnumValidationExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Admonish.EnumValidationExtensions.html",
-          "hash": "MUq1MGpMToK1syALC25cOGwavhZ+QrVfd6KRjBAh9rg="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Admonish.NumericValidationExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Admonish.NumericValidationExtensions.html",
-          "hash": "WO5lS2EixA7JhmBnXGxSY5/dJ6Ze4t8cccQo60XNrkA="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Admonish.ObjectValidationExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Admonish.ObjectValidationExtensions.html",
-          "hash": "Mt5EeTNumlUvNEIDJoAo8+aAp2mGAsLbzuEPXyRlIOo="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Admonish.StringValidationExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Admonish.StringValidationExtensions.html",
-          "hash": "0ewKjgsARvsRNWIcKjeT3zyNWGRFyfq4sWdjJ539/tc="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Admonish.ValidationException.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Admonish.ValidationException.html",
-          "hash": "4G+kmOXyAsquLhyaAdSbQStDCZ1dpWQ3Xd8ry7CHcj0="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Admonish.ValidationExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Admonish.ValidationExtensions.html",
-          "hash": "Uih58wsI7epe1qa5ckrNxtgG65d2BpHqMpmRLa7ER4M="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Admonish.ValidationResult.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Admonish.ValidationResult.html",
-          "hash": "up5Nxu452VSMjUe7CEw5IN0N7GTPwc32omBJ6Z6MwjI="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Admonish.Validator.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Admonish.Validator.html",
-          "hash": "3SDS4x4ZTA7RznYRLR3RnMEmOU1PoAKuveMbtu+OYwM="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Admonish.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Admonish.html",
-          "hash": "nuF1cfWmNXchTdU7MA1kIdzUoIxh/LyNIhoOE2affOo="
-        }
-      },
-      "version": ""
-    },
     {
       "type": "Conceptual",
       "source_relative_path": "api/index.md",
       "output": {
         ".html": {
-          "relative_path": "api/index.html",
-          "hash": "ACe8oy2p2ruzYLb4MVw79o66cWFsfKHXO30xkI7WNW4="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "api/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/toc.html",
-          "hash": "i3NFgFh4gVTFqNCKvXLLYAWFV0ggpJBb3HD7DNUmNXo="
+          "relative_path": "api/index.html"
         }
       },
       "version": ""
@@ -140,8 +17,7 @@
       "source_relative_path": "articles/intro.md",
       "output": {
         ".html": {
-          "relative_path": "articles/intro.html",
-          "hash": "r/vpRNWGlzeudLPTxQ2Ii7dOJjYEOjvUzd7XJu0ImcE="
+          "relative_path": "articles/intro.html"
         }
       },
       "version": ""
@@ -151,8 +27,10 @@
       "source_relative_path": "articles/toc.yml",
       "output": {
         ".html": {
-          "relative_path": "articles/toc.html",
-          "hash": "+FPCLcvmNhVb9VLasYr6Tnep0PZtIA6V/UOJ0u+1RmE="
+          "relative_path": "articles/toc.html"
+        },
+        ".json": {
+          "relative_path": "articles/toc.json"
         }
       },
       "version": ""
@@ -172,8 +50,7 @@
       "source_relative_path": "index.md",
       "output": {
         ".html": {
-          "relative_path": "index.html",
-          "hash": "a0m6heSkRgEeoB/9N1IAvjZBNC/2ot1oTen/hfk9A0E="
+          "relative_path": "index.html"
         }
       },
       "version": ""
@@ -183,14 +60,15 @@
       "source_relative_path": "toc.yml",
       "output": {
         ".html": {
-          "relative_path": "toc.html",
-          "hash": "jatzy/mmFz2x5nDrUvMYOQQA/LpOp80knJR9AKF7p5A="
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
         }
       },
       "version": ""
     }
   ],
-  "version_info": {},
   "groups": [
     {
       "xrefmap": "xrefmap.yml"
