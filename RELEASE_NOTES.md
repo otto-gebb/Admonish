@@ -1,3 +1,7 @@
+### 2.0.0 - 2024-01-11
+
+- Hide the constructor `ValidationException(string message)` to force the usage of `ValidationResult`.
+
 ### 1.0.2 - 2023-03-02
 
 - Mark `NonNull*` methods with the `[NotNull]` attribute.

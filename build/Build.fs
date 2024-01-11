@@ -133,8 +133,6 @@ Target.create "PublishDocs" (fun _ ->
   Git.Repository.cloneSingleBranch "" url "gh-pages" "temp-docs"
   Git.Repository.fullClean "temp-docs"
 
-  // If building docs fails, try setting
-  // $env:MSBUILD_EXE_PATH="c:\Program Files\dotnet\sdk\3.1.101\MSBuild.dll"
   CreateProcess.fromRawCommand "docfx" []
   |> CreateProcess.withWorkingDirectory "doc"
   |> CreateProcess.withTimeout (TimeSpan.FromMinutes 1.0)
