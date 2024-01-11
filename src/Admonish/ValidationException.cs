@@ -15,7 +15,7 @@ namespace Admonish
         /// with a specified error message.
         /// </summary>
         /// <param name="message">The error message.</param>
-        public ValidationException(string message) : base(message)
+        protected ValidationException(string message) : base(message)
         {
         }
 
